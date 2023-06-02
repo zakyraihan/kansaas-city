@@ -37,3 +37,26 @@ function informasi() {
 function potensidaerah() {
   window.location.href = 'http://127.0.0.1:5500/public/potensidaerah.html';
 }
+
+function berita() {
+  window.location.href = 'http://127.0.0.1:5500/public/berita.html';
+}
+
+function agenda() {
+  window.location.href = 'http://127.0.0.1:5500/public/agenda.html';
+}
+
+function galeri() {
+  window.location.href = 'http://127.0.0.1:5500/public/gallery.html';
+}
+
+function berita() {
+  window.location.href = 'http://127.0.0.1:5500/public/berita.html';
+}
+
+function berita() {
+  window.location.href = 'http://127.0.0.1:5500/public/berita.html';
+}
+
+
+

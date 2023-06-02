@@ -967,6 +967,18 @@ video {
   margin-top: 5rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1315,6 +1327,18 @@ video {
   width: 33.333333%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[2rem\] {
+  width: 2rem;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1481,6 +1505,14 @@ video {
 
 .gap-\[2rem\] {
   gap: 2rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-\[1rem\] {
+  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1748,6 +1780,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1800,6 +1837,10 @@ video {
 
 .fill-\[\#777777\] {
   fill: #777777;
+}
+
+.fill-\[\#9BA4B5\] {
+  fill: #9BA4B5;
 }
 
 .stroke-black {
@@ -1980,6 +2021,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2006,6 +2052,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-52 {
+  padding-bottom: 13rem;
 }
 
 .text-center {
@@ -2544,6 +2594,26 @@ video {
   fill: #000;
 }
 
+.hover\:fill-blue-600:hover {
+  fill: #2563eb;
+}
+
+.hover\:fill-green-600:hover {
+  fill: #16a34a;
+}
+
+.hover\:fill-pink-600:hover {
+  fill: #db2777;
+}
+
+.hover\:fill-red-600:hover {
+  fill: #dc2626;
+}
+
+.hover\:fill-yellow-500:hover {
+  fill: #eab308;
+}
+
 .hover\:text-green-600:hover {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
@@ -3015,6 +3085,10 @@ video {
     margin-top: 3rem;
   }
 
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -3175,6 +3249,10 @@ video {
     width: 33.333333%;
   }
 
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3221,6 +3299,26 @@ video {
 
   .md\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .md\:gap-\[2rem\] {
+    gap: 2rem;
+  }
+
+  .md\:gap-\[1rem\] {
+    gap: 1rem;
+  }
+
+  .md\:gap-\[3rem\] {
+    gap: 3rem;
+  }
+
+  .md\:gap-\[4rem\] {
+    gap: 4rem;
+  }
+
+  .md\:gap-\[10rem\] {
+    gap: 10rem;
   }
 
   .md\:rounded-xl {

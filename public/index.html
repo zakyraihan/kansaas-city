@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kansaas city - home</title>
+    <link rel="icon" type="image/x-icon" href="/src/img/city_86340.png">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/903f15c174.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+</head>
+
+<body class="overflow-y-hidden dark:bg-item overflow-x-hidden" id="body">
+    <div class="h-screen w-screen justify-center items-center bg-white flex text-white " id="spinner" onload="spin()">
+        <svg class="w-10 h-10 animate-spin text-white" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z" />
+        </svg>
+    </div>
+
+    <header class="fixed w-full z-50 " id="header">
+        <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-medium cursor-pointer ">
+                    <span class="dark:text-putih font-poppins">Kansaas</span><span class="dark:text-white"></span>
+                    <img class="h-[50px]  w-[50px] inline" src="/src/img/city-removebg-preview.png">
+                </div>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul
+                class="md:flex md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
+                <li class="text-orange dark:text-biru font-medium "><a href="">Beranda</a></li>
+
+                <li class="hidden md:flex">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profil
+                        <i
+                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
+                    <div
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-48  md:absolute md:top-[3.5rem] md:right-[34rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Visi
+                                    & misi</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Sejarah</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Geografis</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Penghargaan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col md:hidden">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        onclick="dorpDown()">Profil<i class="fas fa-thin fa-chevron-down px-2 text-lg"
+                            id="down"></i></a>
+                    <div id="dropdown"
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition"
+                                    onclick="visimisi()">Visi
+                                    & misi</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition"
+                                    onclick="sejarah()">Sejarah</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition"
+                                    onclick="geografis()">Geografis</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition"
+                                    onclick="penghargaan()">Penghargaan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="hidden md:flex">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-slate-700 dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center h-9">Informasi<i
+                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
+                    <div
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[24rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Berita</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Agenda</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Galeri</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Dokumen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col md:hidden">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        onclick="dorpDown1()">Informasi<i class="fas fa-thin fa-chevron-down px-2 text-lg"
+                            id="down1"></i></a>
+                    <div id="dropdown2"
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Berita</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Agenda</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galeri</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dokumen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="hidden md:flex">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-slate-700 peer dark:text-putih focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Pemerintahan
+                        <i
+                            class="fas fa-thin fa-chevron-down hover:translate-y-1 group-hover:translate-y-1 group-hover:text-orange transition px-2 text-lg"></i></a>
+                    <div
+                        class="z-10 hidden bg-white border-t-2  border-orange divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[12rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition ">Profile
+                                    Pemimpin</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">DPRD</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">SKPD</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Pemerintahan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col md:hidden">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        onclick="dorpDown2()">Pemerintah<i class="fas fa-thin fa-chevron-down px-2 text-lg"
+                            id="down2"></i></a>
+                    <div id="dropdown3"
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings1</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <button
+                    class="py-2 px-5 rounded-xl border-2 border-orange text-white bg-orange hover:bg-transparent hover:text-orange transition font-medium dark:text-white"
+                    onclick="login()">
+                    <p>Login</p>
+                </button>
+
+
+                <div id="theme-toggle" type="button"
+                    class="text-gray-500  cursor-pointer dark:text-gray-100  text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="relative">
+            <ul id="slider">
+                <li class="h-screen relative ">
+                    <img src="/src/img/photo2.jpg" alt="" class="w-full h-full object-cover">
+                    <div class="absolute top-0 left-0 h-full w-full flex">
+                        <h2 class="text-4xl text-center my-auto font-bold  px-20 flex flex-col text-white">
+                            Kansaas City <span class="text-slate-200 font-poppins text-xl">the thousand of culture and
+                                nature</span></h2>
+                    </div>
+                </li>
+                <li class="h-screen relative hidden">
+                    <img src="/src/img/photo3.avif" alt="" class="w-full h-full object-cover">
+                    <div class="absolute top-0 bottom-[3rem] left-0  md:w-[70%] w-full flex flex-col">
+                        <h2 class="text-4xl text-center my-auto font-bold  px-20 flex flex-col text-orange">
+                            Kansaas City <span class="text-slate-300">the thousand of culture and nature</span></h2>
+                    </div>
+                </li>
+                <li class="h-screen relative hidden">
+                    <img src="/src/img/photo1.avif" alt="" class="w-full h-full object-cover">
+                    <div class="absolute top-0 left-0 h-full w-full flex">
+                        <h2 class="text-4xl text-center my-auto font-bold text-white px-20 w-full">Some big heading</h2>
+                    </div>
+                </li>
+            </ul>
+            <div class="absolute px-5 flex h-full w-full top-0 left-0">
+                <div class="my-auto w-full flex justify-between">
+                    <button onclick="prev()" id="right" class="">
+                        <i class="fas fa-arrow-left text-slate-300"></i>
+                    </button>
+                    <button onclick="next()" class=" text-xl">
+                        <i class="fas fa-arrow-right text-slate-300"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOME -->
+    <section class="md:px-20 px-10 my-[6rem]">
+        <div class="flex md:justify-between md:flex-row flex-col">
+            <div class="overflow-x-hidden md:mt-0 mt-10">
+                <span id="element" class="font-medium text-2xl dark:text-putih">
+                </span>
+                <h1 class="text-3xl font-bold text-orange my-2 dark:text-biru">KANSAAS CITY</h1>
+                <h3 class="text-3xl font-semibold md:w-[450px] dark:text-slate-300">Menuju Kota Maju, Inovatif dan
+                    Berkelanjutan</h3>
+                <p class="md:w-[400px] mt-2 font-medium text-slate-500 dark:text-slate-400">Lorem ipsum, dolor sit amet
+                    consectetur
+                    adipisicing elit. Dolore molestiae iste optio. Ducimus
+                    quidem fugit deleniti, error ipsa enim. Possimus enim quaerat cupiditate excepturi adipisci
+                    minus laboriosam sit consequatur quas! Lorem ipsum dolor sit amet.</p>
+            </div>
+            <img src="/src/img/city-removebg-preview.png" alt=""
+                class="md:w-[25%] w-[90%] md:order-1 order-[-1] mt-[-1rem]">
+        </div>
+
+        <!-- informasi publik -->
+        <section class="mb-[10rem] mt-[9rem]">
+            <div class="flex flex-col  items-center">
+                <div class="bg-orange/40 dark:bg-biru w-[100px] rounded-full flex justify-center animate-bounce">
+                    <p class="text-orange dark:text-item">INFO</p>
+                </div>
+                <h1 class="text-3xl font-medium text-center dark:text-putih font-poppins"><span
+                        class="text-orange dark:text-biru">Informasi</span> Publik</h1>
+            </div>
+
+            <div class="flex flex-wrap  mt-[3rem] gap-[2rem] justify-center">
+                <div class="md:w-[15%] md:h-[12rem] items-center flex-col w-[50%] h-[10rem] shadow-xl dark:border-slate-400 border group flex  dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl"
+                    id="blom">
+
+                    <lord-icon src="https://cdn.lordicon.com/ttioogfl.json" trigger="morph"
+                        colors="primary:#121331,secondary:#ebe6ef,tertiary:#4bb3fd,quaternary:#92140c,quinary:#f9c9c0"
+                        style="width:250px;height:250px">
+                    </lord-icon>
+                    <h5
+                        class="text-2xl font-semibold  mb-5 text-slate-600 group-hover:text-orange transition dark:text-slate-300 ">
+                        Informasi</h5>
+                </div>
+                <div
+                    class="md:w-[15%] md:h-[12rem] items-center flex-col  w-[50%] h-[10rem] shadow-xl dark:border-slate-400 border group  flex  dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
+                    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                    <lord-icon src="https://cdn.lordicon.com/zeabctil.json" trigger="loop-on-hover" delay="100"
+                        colors="outline:#121331,primary:#4bb3fd,secondary:#ebe6ef" style="width:250px;height:250px">
+                    </lord-icon>
+                    <h5
+                        class="text-2xl font-semibold dark:text-slate-300 mb-5 text-slate-600 group-hover:text-orange transition">
+                        Lingkungan</h5>
+                </div>
+                <div
+                    class="md:w-[15%] md:h-[12rem] w-[50%] group h-[10rem] shadow-xl items-center flex-col dark:border-slate-400 border  flex dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
+                    <lord-icon src="https://cdn.lordicon.com/keiaatat.json" trigger="hover"
+                        colors="primary:#121331,secondary:#ffc738,tertiary:#92140c,quaternary:#b26836,quinary:#ebe6ef,senary:#3a3347,septenary:#646e78"
+                        style="width:250px;height:250px">
+                    </lord-icon>
+                    <h5
+                        class="text-2xl font-semibold group-hover:text-orange dark:text-slate-300 mb-5 text-slate-600 transition">
+                        Smart City</h5>
+                </div>
+                <div onclick="lapor()"
+                    class="md:w-[15%] md:h-[12rem] w-[50%] h-[10rem] shadow-xl group flex-col items-center dark:border-slate-400 border  flex  dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
+                    <lord-icon src="https://cdn.lordicon.com/gzmgulpl.json" trigger="loop-on-hover" delay="500"
+                        colors="outline:#121331,primary:#4bb3fd,secondary:#ebe6ef" style="width:250px;height:250px">
+                    </lord-icon>
+                    <h5
+                        class="text-2xl font-semibold dark:text-slate-300 mb-5 text-slate-600 group-hover:text-red-600 transition">
+                        Lapor<span class="">!</span></h5>
+                </div>
+                <div
+                    class="md:w-[15%] md:h-[12rem] w-[50%] h-[10rem] shadow-xl dark:border-slate-400 border flex-col group items-center  flex  dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
+                    <lord-icon src="https://cdn.lordicon.com/equajobp.json" trigger="loop-on-hover" delay="500"
+                        colors="primary:#121331,secondary:#ebe6ef,tertiary:#92140c,quaternary:#f9c9c0,quinary:#646e78,senary:#f24c00"
+                        style="width:250px;height:250px">
+                    </lord-icon>
+                    <h5
+                        class="text-2xl font-semibold dark:text-slate-300 mb-2 group-hover:text-orange text-slate-600 text-center transition">
+                        Potensi Daerah</h5>
+                </div>
+                <div
+                    class="md:w-[15%] md:h-[12rem] w-[50%] h-[10rem] shadow-xl flex-col group items-center dark:border-slate-400 border flex  dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
+
+                    <lord-icon src="https://cdn.lordicon.com/kjkiqtxg.json" trigger="hover"
+                        colors="outline:#121331,primary:#646e78,secondary:#4bb3fd,tertiary:#ebe6ef"
+                        style="width:250px;height:250px">
+                    </lord-icon>
+                    <h5
+                        class="text-2xl font-semibold dark:text-slate-300 mb-5 group-hover:text-orange text-slate-600 transition">
+                        Kerja Sama</h5>
+                </div>
+                <div
+                    class="md:w-[15%] md:h-[12rem] w-[50%] h-[10rem] flex-col items-center group shadow-xl dark:border-slate-400 border   flex dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
+                    <lord-icon src="https://cdn.lordicon.com/ozqvdvoh.json" trigger="hover"
+                        colors="outline:#121331,primary :#2ca58d,secondary :#ffc738" style="width:250px;height:250px">
+                    </lord-icon>
+                    <h5
+                        class="text-2xl font-semibold dark:text-slate-300 mb-5 group-hover:text-orange transition text-slate-600">
+                        Keuangan</h5>
+                </div>
+
+            </div>
+        </section>
+        <!-- informasi publik -->
+
+        <!-- partner -->
+        <section class="md:px-32 px-10 mb-5">
+            <div class="text-center my-10">
+                <h1 class="text-2xl font-poppins"><span class="text-slate-400">Company partner</h1>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-9 items-center ">
+                <div
+                    class="w-full md:w-[35%] rounded-xl  hover:shadow-xl transition shadow-lg bg-white h-[12rem] flex  items-center justify-center">
+                    <img src="/src/img//ciputra-removebg-preview.png" alt="">
+                </div>
+                <div
+                    class="w-full md:w-[35%] rounded-xl shadow-lg  hover:shadow-xl transition bg-white flex items-center justify-center ">
+                    <img src="/src/img//residence-removebg-preview.png" alt="">
+                </div>
+                <div
+                    class="w-full md:w-[35%] rounded-xl shadow-lg  hover:shadow-xl transition items-center justify-center bg-white h-[12.3rem]">
+                    <img src="/src/img//ciputrapalembang-removebg-preview.png" alt="">
+                </div>
+            </div>
+
+        </section>
+        <!-- partner -->
+    </section>
+
+
+    <!-- pemimpin -->
+    <section class="md:px-0 px-0">
+        <div class="bg-patern bg-fixed dark:bg-white md:h-[80vh]">
+            <div class="flex flex-col  items-center">
+                <div class="bg-orange/40 w-[100px] rounded-full flex justify-center mt-11 animate-bounce">
+                    <p class="text-orange">PEMIMPIN</p>
+                </div>
+                <h1 class="text-3xl font-medium text-center py-2"><span class="text-orange">WALIKOTA</span> & FOUNDERS
+                </h1>
+
+            </div>
+
+            <div class="flex mt-7 items-center justify-center  gap-12 md:flex-row flex-col">
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div
+                        class="relative bg-white h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0">
+                            <img class="h-[300px] w-full rounded-t-xl shadow-sm object-cover  shadow-black/40"
+                                src="/src/img/ceo1.jpeg" alt="" />
+                            <div class="flex flex-col ml-3">
+                                <h5 class="text-xl font-semibold mt-2">
+                                    Dr.chikonese
+                                </h5>
+                                <p class="mt-1 text-gray-400 font-medium">
+                                    Wakil walikota
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute inset-0 h-full w-full rounded-xl dark:bg-black/90 px-12 text-center text-white bg-orange/90 dark:text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="flex min-h-full flex-col items-center justify-center">
+                                <h1 class="text-2xl font-bold w-full">Dr. chinkonese</h1>
+                                <p class="text-md font-semibold mt-3">Wakil walikota</p>
+                                <p class="text-sm mt-3">Menjadi walikota sejak 2012 pak jokowi berhasil membangun kota
+                                    kansas menjadi sangat sukses dan teratur berkatnya
+                                    kini kota kansas menjadi kota terbersih sedunia.
+                                </p>
+                                <button
+                                    class="mt-3 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900 text-white">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div
+                        class="relative bg-white h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0">
+                            <img class="h-[300px] w-full rounded-t-xl shadow-sm object-cover  shadow-black/40"
+                                src="/src/img/ceo5.jpeg" alt="" />
+                            <div class="flex flex-col ml-3">
+                                <h5 class="text-xl font-semibold mt-2">
+                                    Dr.dewan prawidata
+                                </h5>
+                                <p class="mt-1 text-gray-400 font-medium">
+                                    walikota
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute inset-0 h-full w-full rounded-xl dark:bg-black/90 px-12 text-center text-white bg-orange/90 dark:text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="flex min-h-full flex-col items-center justify-center">
+                                <h1 class="text-2xl font-bold w-full">Dr. dewan prawidata</h1>
+                                <p class="text-md font-semibold mt-3">walikota</p>
+                                <p class="text-sm mt-3">Menjadi walikota sejak 2012 pak jokowi berhasil membangun kota
+                                    kansas menjadi sangat sukses dan teratur berkatnya
+                                    kini kota kansas menjadi kota terbersih sedunia.
+                                </p>
+                                <button
+                                    class="mt-3 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900 text-white">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group h-96 w-80 [perspective:1000px]">
+                    <div
+                        class="relative bg-white h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                        <div class="absolute inset-0">
+                            <img class="h-[300px] w-full rounded-t-xl shadow-sm object-cover  shadow-black/40"
+                                src="/src/img/fonder.jpeg" alt="" />
+                            <div class="flex flex-col ml-3">
+                                <h5 class="text-xl font-semibold mt-2">
+                                    kirani tri
+                                </h5>
+                                <p class="mt-1 text-gray-400 font-medium">
+                                    founders
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute inset-0 h-full w-full rounded-xl bg-orange/90  dark:bg-black/90 px-12 text-center text-white dark:text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                            <div class="flex min-h-full flex-col items-center justify-center">
+                                <h1 class="text-2xl font-bold w-full">kirani tri</h1>
+                                <p class="text-md font-semibold mt-3">Wakil walikota</p>
+                                <p class="text-sm mt-3">Menjadi walikota sejak 2012 pak jokowi berhasil membangun kota
+                                    kansas menjadi sangat sukses dan teratur berkatnya
+                                    kini kota kansas menjadi kota terbersih sedunia.
+                                </p>
+                                <button
+                                    class="mt-3 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900 text-white">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="fixed bottom-6">
+                  <p class="text-lg font-semibold text-neutral-800">All Images are from <a href="https://unsplash.com" class="text-blue-600">Unsplash.com</a></p>
+                  <p class="text-lg font-semibold text-neutral-800">Visit <a href="https://beyondbuilder.io" class="text-blue-600">BeyondBuilder.io</a> to get more Tailwind CSS UI Components.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- pemimpin -->
+
+    <!-- berita -->
+    <section class="md:px-20 justify-center w-screen mt-[10rem] px-7">
+        <button class="bg-orange/40 dark:bg-biru w-[110px] p-2 rounded-lg">
+            <p class="text-red-500 dark:text-item">Berita</p>
+        </button>
+
+        <div class="flex justify-between flex-col  md:flex-row mt-8">
+            <h1 class="text-2xl font-medium dark:text-slate-300">Berita <span class="text-red-500 ">Terkini </span>kota
+                Kansaas</h1>
+            <button
+                class="border-orange dark:border-biru border-2 w-[130px] p-2 rounded-lg md:mt-0 mt-5 hover:bg-orange transition hover:text-putih text-red-500">
+                Berita Lainnya
+            </button>
+        </div>
+
+        <div class="flex md:flex-row justify-center md:px-0 flex-col gap-[2rem] mt-7 my-10 px-8">
+
+            <!-- berita 1 -->
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu ">
+                <img class="w-full cursor-pointer" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains"
+                    onclick="buka()">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2 dark:text-putih">Ramainya Mudik tahun baru</div>
+                    <p class="text-slate-500 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+
+                    <span
+                        class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                            class="fa-solid fa-calendar-days"><a
+                                href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                        09 Mei 2029</a></span>
+                    <span
+                        class="inline-block bg-orange/80 dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                        <i class="fa-solid fa-eye"></i> 12</span>
+                </div>
+            </div>
+            <div class="max-w-2xl mx-auto md:flex hidden"> <!-- pop up berita 1 -->
+                <div id="pop"
+                    class="hidden overflow-x-hidden backdrop-blur-lg md:w-full w-full overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50 justify-center items-center">
+                    <div
+                        class="w-screen md:w-full px-20 flex gap-6 flex-col overflow-hidden h-screen md:mt-0 mt-[20vh] md:h-auto">
+                        <div class="md:w-4/16  md:mx-20 mt-15 rounded-lg h-auto md:h-[600px]  bg-white">
+                            <i class="tutup fas fa-times absolute cursor-pointer top-[5rem] right-44 text-black"></i>
+                            <img class="w-[25rem] mx-6 mt-5" src="/src/img/unsplash_3aVlWP-7bg8.png"
+                                alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-base mb-2 hover:text-orange cursor-pointer">Ramainya Mudik
+                                    tahun baru</div>
+                                <p class="text-gray-700 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum <a href=""
+                                        class="italic text-orange font-medium">Selengkapnya...</a>
+                                </p>
+                            </div>
+                            <div class="border-y "></div>
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-calendar-days"><a
+                                            href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                                    09 Mei 2029</a></span>
+                                <span
+                                    class="inline-block bg-orange/80 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-eye"></i> 12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- berita 1 -->
+
+
+
+            <!-- berita 2 -->
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu ">
+                <img class="w-full cursor-pointer" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains"
+                    onclick="buka1()">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2 dark:text-putih">Ramainya Mudik tahun baru</div>
+                    <p class="text-slate-500 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+
+                    <span
+                        class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                            class="fa-solid fa-calendar-days"><a
+                                href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                        09 Mei 2029</a></span>
+                    <span
+                        class="inline-block bg-orange/80 dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                        <i class="fa-solid fa-eye"></i> 12</span>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto md:flex hidden"> <!-- pop up berita 2 -->
+                <div id="pop1"
+                    class="hidden overflow-x-hidden backdrop-blur-lg md:w-full  w-full overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50 justify-center items-center">
+                    <div
+                        class="w-screen md:w-full px-20 flex gap-6 flex-col overflow-hidden h-screen md:mt-0 mt-[20vh] md:h-auto">
+                        <div class="w-4/16 md:mx-20 mt-15 rounded-lg h-auto md:h-[600px]  bg-white">
+                            <i class="tutup fas fa-times absolute cursor-pointer top-[5rem] right-44 text-black"></i>
+                            <img class="w-[25rem] mx-6 mt-5" src="/src/img/unsplash_3aVlWP-7bg8.png"
+                                alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-base mb-2 hover:text-orange cursor-pointer">Ramainya Mudik
+                                    tahun baru</div>
+                                <p class="text-gray-700 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum <a href=""
+                                        class="italic text-orange font-medium">Selengkapnya...</a>
+                                </p>
+                            </div>
+                            <div class="border-y "></div>
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-calendar-days"><a
+                                            href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                                    09 Mei 2029</a></span>
+                                <span
+                                    class="inline-block bg-orange/80 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-eye"></i> 12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- berita 2 -->
+
+
+
+
+
+            <!-- berita 3 -->
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
+                <img class="w-full cursor-pointer" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains"
+                    onclick="buka2()">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2 dark:text-putih">Ramainya Mudik tahun baru</div>
+                    <p class="text-slate-500 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+
+                    <span
+                        class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                            class="fa-solid fa-calendar-days"><a
+                                href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                        09 Mei 2029</a></span>
+                    <span
+                        class="inline-block bg-orange/80 dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                        <i class="fa-solid fa-eye"></i> 12</span>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto md:flex hidden"> <!-- pop up berita 3 -->
+                <div id="pop3"
+                    class="hidden overflow-x-hidden backdrop-blur-lg md:w-full  w-full overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50 justify-center items-center">
+                    <div
+                        class="w-screen md:w-full px-20 flex gap-6 flex-col overflow-hidden h-screen md:mt-0 mt-[20vh] md:h-auto">
+                        <div class="w-4/16 md:mx-20 mt-15 rounded-lg h-auto md:h-[600px]  bg-white">
+                            <i class="tutup fas fa-times absolute cursor-pointer top-[5rem] right-44 text-black"></i>
+                            <img class="w-[25rem] mx-6 mt-5" src="/src/img/unsplash_3aVlWP-7bg8.png"
+                                alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-base mb-2 hover:text-orange cursor-pointer">Ramainya Mudik
+                                    tahun baru</div>
+                                <p class="text-gray-700 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum <a href=""
+                                        class="italic text-orange font-medium">Selengkapnya...</a>
+                                </p>
+                            </div>
+                            <div class="border-y "></div>
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-calendar-days"><a
+                                            href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                                    09 Mei 2029</a></span>
+                                <span
+                                    class="inline-block bg-orange/80 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-eye"></i> 12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- berita 3 -->
+        </div>
+
+        <div class="md:flex-row flex flex-col gap-5 md:px-0  px-8">
+            <!-- berita 4 -->
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
+                <img class="w-full cursor-pointer" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains"
+                    onclick="buka3()">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2 dark:text-putih">Ramainya Mudik tahun baru</div>
+                    <p class="text-slate-500 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+
+                    <span
+                        class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                            class="fa-solid fa-calendar-days"><a
+                                href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                        09 Mei 2029</a></span>
+                    <span
+                        class="inline-block bg-orange/80 dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                        <i class="fa-solid fa-eye"></i> 12</span>
+                </div>
+            </div>
+            <div class="max-w-2xl mx-auto md:flex hidden"> <!-- pop up berita 4 -->
+                <div id="pop2"
+                    class="hidden overflow-x-hidden backdrop-blur-lg md:w-full  w-full overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50 justify-center items-center">
+                    <div
+                        class="w-screen md:w-full px-20 flex gap-6 flex-col overflow-hidden h-screen md:mt-0 mt-[20vh] md:h-auto">
+                        <div class="w-4/16 md:mx-20 mt-15 rounded-lg h-auto md:h-[600px]  bg-white">
+                            <i class="tutup fas fa-times absolute cursor-pointer top-[5rem] right-44 text-black"></i>
+                            <img class="w-[25rem] mx-6 mt-5" src="/src/img/unsplash_3aVlWP-7bg8.png"
+                                alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-base mb-2 hover:text-orange cursor-pointer">Ramainya Mudik
+                                    tahun baru</div>
+                                <p class="text-gray-700 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum <a href=""
+                                        class="italic text-orange font-medium">Selengkapnya...</a>
+                                </p>
+                            </div>
+                            <div class="border-y "></div>
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-calendar-days"><a
+                                            href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                                    09 Mei 2029</a></span>
+                                <span
+                                    class="inline-block bg-orange/80 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-eye"></i> 12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- berita 4 -->
+
+
+
+            <!-- berita 5 -->
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
+                <img class="w-full cursor-pointer" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains"
+                    onclick="buka4()">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2 dark:text-putih">Ramainya Mudik tahun baru</div>
+                    <p class="text-slate-500 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+
+                    <span
+                        class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                            class="fa-solid fa-calendar-days"><a
+                                href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                        09 Mei 2029</a></span>
+                    <span
+                        class="inline-block bg-orange/80 dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                        <i class="fa-solid fa-eye"></i> 12</span>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto md:flex hidden"> <!-- pop up berita 5 -->
+                <div id="pop4"
+                    class="hidden overflow-x-hidden backdrop-blur-lg md:w-full  w-full overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50 justify-center items-center">
+                    <div
+                        class="w-screen md:w-full px-20 flex gap-6 flex-col overflow-hidden h-screen md:mt-0 mt-[20vh] md:h-auto">
+                        <div class="w-4/16 md:mx-20 mt-15 rounded-lg h-auto md:h-[600px]  bg-white">
+                            <i class="tutup fas fa-times absolute top-[5rem] right-44 text-black cursor-pointer"></i>
+                            <img class="w-[25rem] mx-6 mt-5" src="/src/img/unsplash_3aVlWP-7bg8.png"
+                                alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-base mb-2 hover:text-orange cursor-pointer">Ramainya Mudik
+                                    tahun baru</div>
+                                <p class="text-gray-700 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum <a href=""
+                                        class="italic text-orange font-medium">Selengkapnya...</a>
+                                </p>
+                            </div>
+                            <div class="border-y "></div>
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-calendar-days"><a
+                                            href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                                    09 Mei 2029</a></span>
+                                <span
+                                    class="inline-block bg-orange/80 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-eye"></i> 12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- berita 5 -->
+
+            <!-- berita 6 -->
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
+                <img class="w-full cursor-pointer" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains"
+                    onclick="buka5()">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2 dark:text-putih">Ramainya Mudik tahun baru</div>
+                    <p class="text-slate-500 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+
+                    <span
+                        class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                            class="fa-solid fa-calendar-days"><a
+                                href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                        09 Mei 2029</a></span>
+                    <span
+                        class="inline-block bg-orange/80 dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
+                        <i class="fa-solid fa-eye"></i> 12</span>
+                </div>
+            </div>
+            <div class="max-w-2xl mx-auto md:flex hidden"> <!-- pop up berita 6 -->
+                <div id="pop5"
+                    class="hidden overflow-x-hidden backdrop-blur-lg md:w-full  w-full overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50 justify-center items-center">
+                    <div
+                        class="w-screen md:w-full px-20 flex gap-6 flex-col overflow-hidden h-screen md:mt-0 mt-[20vh] md:h-auto">
+                        <div class="w-4/16 md:mx-20 mt-15 rounded-lg h-auto md:h-[600px]  bg-white">
+                            <i class="tutup fas fa-times absolute cursor-pointer top-[5rem] right-44 text-black"></i>
+                            <img class="w-[25rem] mx-6 mt-5" src="/src/img/unsplash_3aVlWP-7bg8.png"
+                                alt="Sunset in the mountains">
+                            <div class="px-6 py-4">
+                                <div class="font-bold text-base mb-2 hover:text-orange cursor-pointer">Ramainya Mudik
+                                    tahun baru</div>
+                                <p class="text-gray-700 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa obcaecati
+                                    suscipit ipsam dolore ducimus, sed repellendus minima ab dolorum. Temporibus
+                                    repudiandae nisi illum reiciendis quas laboriosam architecto mollitia cum <a href=""
+                                        class="italic text-orange font-medium">Selengkapnya...</a>
+                                </p>
+                            </div>
+                            <div class="border-y "></div>
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-orange dark:bg-biru dark:text-item rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-calendar-days"><a
+                                            href="https://calendar.google.com/calendar/u/0/r?pli=1"></i> Monday,
+                                    09 Mei 2029</a></span>
+                                <span
+                                    class="inline-block bg-orange/80 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"><i
+                                        class="fa-solid fa-eye"></i> 12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- berita 6 -->
+        </div>
+
+    </section>
+
+
+
+    <!-- agenda -->
+    <section class="md:px-20 px-7">
+        <div class="flex justify-between md:flex-row ">
+            <button class="bg-orange/40 dark:bg-biru md:w-[110px] w-[110px] h-[2.5rem] rounded-lg md:mt-10 mt-10">
+                <p class="text-red-500 dark:text-item">Agenda</p>
+            </button>
+            <button
+                class="border-orange dark:border-biru border-2 w-[130px] dark:hover:bg-abu ease-in-out  rounded-lg md:mt-10 mt-10 hover:bg-orange text-red-500 hover:text-white transition">
+                Agenda Lainnya
+            </button>
+        </div>
+        <div class="mt-8">
+            <h1 class="text-2xl font-medium dark:text-slate-300">Daftar <span class="text-red-500">Agenda</span> kota
+                Kansaas</h1>
+        </div>
+
+        <!-- card -->
+        <div class="mt-12 flex md:flex-row justify-center flex-col flex-wrap gap-[2rem] md:px-0 px-8">
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
+                <img class="w-full" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
+                            class="fa-solid fa-calendar-days"></i> Monday, 09
+                        Mei 2029</div>
+                    <p class="text-gray-700 text-base dark:text-putih/90">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru"></i>
+                    <span
+                        class="inline-block rounded-full px-3 py-1  text-sm font-semibold dark:text-putih/90 text-slate-500 mr-2 mb-2">los
+                        santos, USA</span>
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
+                <img class="w-full" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
+                            class="fa-solid fa-calendar-days"></i> Monday, 09
+                        Mei 2029</div>
+                    <p class="text-gray-700 text-base dark:text-putih/90">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru "></i>
+                    <span
+                        class="inline-block rounded-full px-3 py-1 text-sm  font-semibold dark:text-putih/90 text-slate-500 mr-2 mb-2">los
+                        santos, USA</span>
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
+                <img class="w-full" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
+                            class="fa-solid fa-calendar-days"></i> Monday, 09
+                        Mei 2029</div>
+                    <p class="text-gray-700 text-base dark:text-putih/90">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru"></i>
+                    <span
+                        class="inline-block rounded-full px-3 py-1 text-sm  font-semibold dark:text-putih/90 text-slate-500 mr-2 mb-2">los
+                        santos, USA</span>
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
+                <img class="w-full" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
+                            class="fa-solid fa-calendar-days"></i> Monday, 09
+                        Mei 2029</div>
+                    <p class="text-gray-700 text-base dark:text-putih/90">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru "></i>
+                    <span
+                        class="inline-block rounded-full px-3 py-1 text-sm font-semibold dark:text-putih text-slate-500 mr-2 mb-2">los
+                        santos, USA</span>
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
+                <img class="w-full" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
+                            class="fa-solid fa-calendar-days"></i> Monday, 09
+                        Mei 2029</div>
+                    <p class="text-gray-700 text-base dark:text-putih/90">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru"></i>
+                    <span
+                        class="inline-block rounded-full px-3 py-1 text-sm font-semibold dark:text-putih/90 text-slate-500 mr-2 mb-2">los
+                        santos, USA</span>
+                </div>
+            </div>
+
+            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
+                <img class="w-full" src="/src/img/unsplash_3aVlWP-7bg8.png" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
+                            class="fa-solid fa-calendar-days"></i> Monday, 09
+                        Mei 2029</div>
+                    <p class="text-gray-700 text-base dark:text-putih/90">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+                        perferendis eaque, exercitationem praesentium nihil.
+                    </p>
+                </div>
+                <div class="border-y "></div>
+                <div class="px-6 pt-4 pb-2">
+                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru"></i>
+                    <span
+                        class="inline-block rounded-full px-3 py-1 text-sm font-semibold dark:text-putih/90 text-slate-500 mr-2 mb-2">los
+                        santos, USA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- agenda -->
+
+
+    <!-- galeri -->
+    <section class="md:px-32 px-10 md:mt-[3rem] mt-[3rem]">
+        <div class="flex justify-between md:flex-row ">
+            <button class="bg-orange/40 md:w-[110px] w-[110px] h-[2.5rem] rounded-lg md:mt-10 mt-10">
+                <p class="text-red-500">Galeri</p>
+            </button>
+            <button class="border-orange border-2 w-[130px]  rounded-lg md:mt-10 mt-[2rem]">
+                <p class="text-red-500">Galeri Lainnya</p>
+            </button>
+        </div>
+        <h1 class="text-2xl mt-10 dark:text-slate-300">Galeri <span class="text-red-500">terbaru</span> kota Kansaas
+        </h1>
+
+        <div class="my-10">
+            <div class="swiper mySwiper flex justify-center items-center w-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/src/img/Rectangle 65.png" alt="" class="w-full">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/Rectangle 65.png" alt="" class="w-full">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/Rectangle 65.png" alt="" class="w-full">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/Rectangle 65.png" alt="" class="w-full">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/src/img/Rectangle 65.png" alt="" class="w-full">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <style>
+                .swiper-slide {
+                    text-align: center;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .swiper-slide img {
+                    display: block;
+                    /* width: 100%;
+            height: 100%; */
+                    object-fit: cover;
+                }
+            </style>
+        </div>
+    </section>
+    <!-- galeri -->
+
+    <section class="my-24">
+        <div class="flex justify-center items-center my-5">
+            <div class="flex-none">
+                <h1 class="text-3xl font-medium text-center dark:text-slate-200">Destinasi dan Atraksi</h1>
+                <p class="font-poppins text-slate-400 ">Kami menyediakan keindahan, keragaman, dan kenyamana di Cipta
+                    Wiyata</p>
+            </div>
+        </div>
+        <div class="swiper mySwiper flex justify-center items-center w-full md:w-[60%]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="shadow-2xl rounded-lg w-3/4 md:w-1/2 h-full">
+                        <img src="/src/img/destinasi1.png" alt="" class=" rounded-t-lg w-full object-top">
+                        <h2 class="my-3 text-lg font-semibold text-gray-500 hover:text-orange-400 dark:text-slate-400"
+                            onclick="halaman()">Tempat Rekreasi dan
+                            Taman Bermain</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" shadow-xl  rounded-lg w-3/4 md:w-1/2 h-full">
+                        <img src="/src/img/destinasi2.png" alt="" class=" rounded-t-lg w-full object-top">
+                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Wisata Bersejarah</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" shadow-xl  rounded-lg w-3/4 md:w-1/2 h-full">
+                        <img src="/src/img/pavillion.png" alt="" class=" rounded-t-lg w-full object-top">
+                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Pavilion</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" shadow-xl  rounded-lg w-3/4 md:w-1/2 h-full">
+                        <img src="/src/img/wisatakepulauan.png" alt="" class=" rounded-t-lg w-full object-top">
+                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Wisata kepulauan</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
+                        <img src="/src/img/wisatakuliner.png" alt="" class=" rounded-t-lg w-full object-top">
+                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Wisata kuliner</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
+                        <img src="/src/img/tamankota.png" alt="" class=" rounded-t-lg w-full object-top">
+                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Taman kota</h2>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
+                        <img src="/src/img/olahraga.png" alt="" class=" rounded-t-lg w-full object-top">
+                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Olahraga</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next hidden"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <style>
+            .swiper-slide {
+                text-align: center;
+                background: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .swiper-slide img {
+                display: block;
+                /* width: 100%;
+            height: 100%; */
+                object-fit: cover;
+            }
+
+            .swiper-button-next {
+                color: orange;
+                padding: 2rem;
+            }
+
+            .swiper-button-prev {
+                color: orange;
+                padding: 2rem;
+            }
+        </style>
+    </section>
+
+    <footer
+        class="w-full md:h-[411px] h-[700px] flex bg-footerCol md:flex-row flex-col justify-center md:items-start md:justify-start items-center mt-20">
+        <div class="md:flex md:items-end hidden  md:h-full md:p-6 ">
+            <p class="text-gray-400 text-sm">
+                &copy; 2023, All Rights Reserved
+            </p>
+        </div>
+        <div class="flex md:p-11 md:mt-4 md:ml-6 mt-6">
+            <div class="gmap_canvas"><iframe class="md:w-[350px] md:h-[250px] w-[350px] h-[250px] rounded-sm"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=kansas city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                    href="https://capcuttemplate.org/"></a></div>
+        </div>
+        <div class="md:flex-col flex-row md:p-11 md:mt-4 md:items-center md:ml-[60px]  mt-4 cursor-pointer">
+            <div class="flex md:justify-between gap-2">
+                <div class="">
+                    <img src="/src/img/call-calling.png" alt="..." class="w-9 h-9">
+                </div>
+                <div class="">
+                    <h3 class="text-gray-400 text-sm font-light">Tel</h3>
+                    <h4 class="text-white text-md">+62-456-7802</h4>
+                    <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
+                </div>
+            </div>
+            <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
+                <div class="">
+                    <img src="/src/img/Icon.png" alt="..." class="w-9 h-9">
+                </div>
+                <div class="">
+                    <h3 class="text-gray-400 text-sm font-light">Mail</h3>
+                    <h4 class="text-white text-md">kansascityGoverment@gmail.com</h4>
+                    <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
+                </div>
+            </div>
+            <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
+                <div class="">
+                    <img src="/src/img/Icon-1.png" alt="..." class="w-9 h-9">
+                </div>
+                <div class="">
+                    <h3 class="text-gray-400 text-sm font-light">Address</h3>
+                    <h4 class="text-white text-md">706 Campfire Ave.Meriden, CT 06450</h4>
+                </div>
+            </div>
+        </div>
+        <div
+            class="md:p-11 mt-4 md:ml-26 flex flex-col md:justify-start md:items-start items-center justify-center cursor-pointer">
+            <h5 class="text-white font-semibold text-md md:text-xl">
+                Social Media
+            </h5>
+            <p class="md:w-[70%] text-gray-400 text-sm mt-1 md:mt-2">
+                Follow our social media to get the latest news and events for sure
+            </p>
+            <div class="flex gap-3 md:mt-0 mt-5">
+                <div
+                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-blue-900 hover:transition-colors">
+                    <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4 ">
+                </div>
+                <div
+                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                    <img src="/src/img/Social_Icons-1.png" alt=".." class="w-4 h-4">
+                </div>
+                <div
+                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-green-900 hover:transition-colors">
+                    <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4">
+                </div>
+                <div
+                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-gray-900 hover:transition-colors">
+                    <img src="/src/img/Social_Icons-3.png" alt=".." class="w-4 h-4">
+                </div>
+                <div
+                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                    <img src="/src/img/Social_Icons-3.png" alt=".." class="w-5 h-4">
+                </div>
+            </div>
+            <div class="flex md:justify-end md:mt-20 mt-4 md:w-[340px]">
+                <h5 class="text-white text-2xl">
+                    <span class="text-3xl">K</span>ansas City
+                </h5>
+                <img src="/src//img/city-removebg-preview.png" alt="..." class="w-7 h-7">
+            </div>
+        </div>
+        <div class="md:hidden flex justify-end items-end h-screen">
+            <p class="text-gray-400 text-sm">
+                &copy; 2023, All Rights Reserved
+            </p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {   
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Selamat Datang di Website Resmi', 'Kota Masa depan Anda',],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+<script>
+    function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+            ? ((e.name = "close"),
+                list.classList.add("top-[80px]"),
+                list.classList.add("opacity-100"))
+            : ((e.name = "menu"),
+                list.classList.remove("top-[80px]"),
+                list.classList.remove("opacity-100"));
+    }
+
+    function login() {
+        window.location.href = 'http://127.0.0.1:5500/public/login.html'
+    }
+
+    function buka() {
+        pop.classList.add("flex")
+        pop.classList.remove("hidden")
+    }
+    function buka1() {
+        pop1.classList.add("flex")
+        pop1.classList.remove("hidden")
+    }
+    function buka2() {
+        pop2.classList.add("flex")
+        pop2.classList.remove("hidden")
+    }
+    function buka3() {
+        pop3.classList.add("flex")
+        pop3.classList.remove("hidden")
+    }
+    function buka4() {
+        pop4.classList.add("flex")
+        pop4.classList.remove("hidden")
+    }
+    function buka5() {
+        pop5.classList.add("flex")
+        pop5.classList.remove("hidden")
+    }
+
+
+    const tutup = document.querySelectorAll('.tutup')
+    const pop = document.getElementById("pop")
+    const pop1 = document.getElementById("pop1")
+    const pop2 = document.getElementById("pop2")
+    const pop3 = document.getElementById("pop3")
+    const pop4 = document.getElementById("pop4")
+    const pop5 = document.getElementById("pop5")
+
+    for (let i = 0; 0 < tutup.length; i++) {
+        tutup[i].addEventListener('click', function () {
+            pop.classList.add('hidden')
+            pop1.classList.add('hidden')
+            pop2.classList.add('hidden')
+            pop3.classList.add('hidden')
+            pop4.classList.add('hidden')
+            pop5.classList.add('hidden')
+        })
+    }
+
+
+</script>
+<script src="/src/js/home.js"></script>
+
+
+</body>
+
+</html>

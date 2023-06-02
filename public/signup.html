@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="/src/img/city_86340.png">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header class="fixed w-full z-50 " id="header">
+        <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-medium cursor-pointer ">
+                    <img class="h-[50px] w-[50px] inline" src="/src/img/city-removebg-preview.png">
+                </div>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul
+                class="md:flex md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
+                <li class="text-orange dark:text-biru font-medium "><a href="">Beranda</a></li>
+
+                <div id="theme-toggle" type="button"
+                    class="text-gray-500  md:absolute md:top-[40rem] md:left-[85rem]   cursor-pointer border-2 rounded-full dark:text-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700  text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex md:justify-between md:flex-row-reverse max-h-screen  flex-col ">
+        <div
+            class=" bg-login2 md:w-2/4 w-full min-h-screen bg-cover relative flex justify-center items-center flex-col">
+            <!-- <div class="md:text-start text-center">
+                <h1 class="text-4xl text-putih font-semibold absolute right-[20rem] top-[10rem]">
+                    Explore the World of
+                    kansas city
+
+                </h1>
+                <h2 class="text-2xl font-poppins my-10 text-putih absolute right-[17.5rem] bottom-[22rem]">discover the thousand of culture and nature</h2>
+            </div> -->
+        </div>
+        <div class="md:w-2/4 bg-white flex justify-center items-center w-full">
+            <main class="w-4/6">
+                <form action="/" id="form">
+                    <div class="text-center my-10">
+                        <h1 class="text-2xl font-poppins text-slate-600">Create Account</h1>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="" class="font-poppins text-[#1F1F1F]">Name*</label>
+                        <input type="name" id="nama"
+                            class=" px-4 py-4 bg-slate-100 rounded-md border shadow-md w-full hover:border-clrfigma"
+                            placeholder="">
+                        <p id="error" class="text-red-500"></p>
+                    </div>
+
+                    <div class="mb-3 ">
+                        <label for="" class="font-poppins text-[#1F1F1F]">Email*</label>
+                        <input type="email" id="email"
+                            class=" mt-4 px-4 bg-slate-100 py-4 rounded-md border shadow-md w-full hover:border-clrfigma"
+                            placeholder="">
+                        <p id="error" class="text-red-500"></p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="" class="font-poppins text-[#1F1F1F]">Password*</label>
+                        <input type="password" id="password"
+                            class=" mt-4 px-4 bg-slate-100 py-4 rounded-md border shadow-md w-full hover:border-clrfigma"
+                            placeholder="">
+                        <p id="error" class="text-red-500"></p>
+                    </div>
+
+                    <button id="btn"
+                        class="w-full py-4 bg-orange mt-5 text-putih font-medium hover:bg-transparent hover:text-item hover:ring-2 hover:ring-orange transition-all ease-in-out rounded-md">Sign
+                        Up</button>
+
+                    <p class="text-[#686868] text-center mt-20">already have an account? <a href=""
+                            class="text-item font-semibold">Login</a></p>
+
+                </form>
+            </main>
+
+
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+        const nama = document.getElementById('nama');
+        const email = document.getElementById('email')
+        const password = document.getElementById('password')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            validateInputs();
+        })
+
+        const setError = (element, message) => {
+            const inputControl = element.parentElement;
+            const errorDisplay = inputControl.querySelector('#error')
+            const border = document.getElementById('nama');
+
+            border.classList.add('border')
+            border.classList.add('border-red-500')
+            errorDisplay.innerText = message;
+            inputControl.classList.add('error');
+            inputControl.classList.remove('succes');
+        }
+
+        const setSucces = element => {
+            const inputControl = element.parentElement;
+            const errorDisplay = inputControl.querySelector('#error');
+            const border = document.getElementById('nama');
+
+            border.classList.add('border')
+            border.classList.add('border-green-500')
+            errorDisplay.innerText = '';
+            inputControl.classList.add('succes');
+            inputControl.classList.remove('error');
+        };
+
+
+        const validateInputs = () => {
+            const usernameValue = nama.value.trim();
+            const emailValue = email.value.trim();
+            const passwordValue = password.value.trim();
+
+            if (usernameValue === '') {
+                setError(nama, 'username is required');
+            } else {
+                setSucces(nama)
+            }
+
+            if (emailValue === '') {
+                setError(email, 'email is required');
+            } else {
+                setSucces(email)
+            }
+
+            if (passwordValue == '') {
+                setError(password, 'password is required');
+            } else {
+                setSucces(password);
+            }
+
+        }
+
+        if (nama && email && password) {
+            document.getElementById('btn').addEventListener('click', function () {
+                window.location.href = 'http://127.0.0.1:5500/public/index.html'
+                console.log('berhasil')
+            })
+        } 
+
+
+    </script>
+</body>
+
+</html>

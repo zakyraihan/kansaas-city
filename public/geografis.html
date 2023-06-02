@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geografis</title>
+    <link rel="icon" type="image/x-icon" href="/src/img/city_86340.png">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/903f15c174.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="w-full z-50 " id="header">
+        <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-medium cursor-pointer ">
+                    <span class="dark:text-putih font-poppins">Kansaas</span><span class="dark:text-white"></span>
+                    <img class="h-[50px]  w-[50px] inline" src="/src/img/city-removebg-preview.png">
+                </div>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul
+                class="md:flex md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
+                <li class="text-orange dark:text-biru font-medium "><a href="">Beranda</a></li>
+
+                <li class="hidden md:flex">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profil
+                        <i
+                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 transition text-lg"></i></a>
+                    <div
+                        class="z-10 hidden bg-white border-t-2 border-gray-200 divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-48  md:absolute md:top-[3.5rem] md:right-[38rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="hidden md:flex">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-slate-700 dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center h-9">Informasi<i
+                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 transition text-lg"></i></a>
+                    <div
+                        class="z-10 hidden bg-white border-t-2 border-gray-200 divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[28rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Berita</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Agenda</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galeri</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dokumen</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hidden md:flex">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-slate-700 peer dark:text-putih focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Pemerintahan
+                        <i
+                            class="fas fa-thin fa-chevron-down hover:translate-y-1 group-hover:translate-y-1 transition px-2 text-lg"></i></a>
+                    <div
+                        class="z-10 hidden bg-white border-t-2  border-gray-200 divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[16.5rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <div class="flex gap-3">
+                    <img src="/src/img/pp.png" alt="" class="w-12 h-12 rounded-full " onclick="profile()">
+                    <div class="my-auto">
+                        <p class="text-slate-600 font-poppins dark:text-putih">Helo, Human</p>
+                    </div>
+                </div>
+                <div class="hidden bg-white" id="menuprofile">
+                    <p class="">lorem</p>
+                </div>
+                <div id="theme-toggle" type="button"
+                    class="text-gray-500  cursor-pointer dark:text-gray-100  text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bg-beritaimg w-full h-[15rem] ">
+        <div class="relative top-[2rem]">
+            <h1 class="text-4xl font-semibold text-white ml-20 absolute top-10">Geografis</h1>
+
+
+            <h1 class="text-2xl font-medium text-white ml-[7rem] absolute top-[5rem]">Beranda / Geografis
+            </h1>
+        </div>
+    </div>
+
+    <main class="md:px-32 px-10 mt-14">
+        <div class="flex justify-center">
+            <img src="/src/img/peta.png" alt="" class="w-[60%]">
+        </div>
+        <p class="text-2xl font-poppins text-slate-600 text-center mt-5">Peta Kota kansaas</p>
+
+        <div class="mt-16">
+            <h1 class="text-2xl font-poppins">Letak Geografis</h1>
+            <p>Kota Palopo secara geografis terletak antara 2053?15? ? 3o04?08? Lintang Selatan dan 120o03?10? ?
+                120o14?34? Bujur Timur.
+                Kota Palopo yang merupakan daerah otonom kedua terakhir dari empat daerah otonom di Tanah Luwu. Secara
+                Geografis Kota Palopo Kurang Lebih 375 Km dari Kota Makassar ke arah Utara dengan posisi antara 120
+                derajat 03 sampai dengan 120 derajat 17,3 Bujur Timur dan 2 derajat 53,13 sampai dengan 3 derajat 4
+                Lintang Selatan, pada ketinggian 0 sampai 300 meter di atas permukaan laut.
+                Kota Palopo di bagian sisi sebelah Timur memanjang dari Utara ke Selatan merupakan dataran rendah atau
+                Kawasan Pantai seluas kurang lebih 30% dari total keseluruhan, sedangkan lainnya bergunung dan berbukit
+                di bagian Barat, memanjang dari Utara ke Seatan, dengan ketinggian maksimum adalah 1000 meter di atas
+                permukaan laut.
+                Kota Palopo sebagai sebuah daerah otonom hasil pemekaran dari Kabupaten Luwu, dengan batas-batas :
+                - Sebelah Utara berbatasan dengan Kecamatan Walenrang Kabupaten Luwu
+                - Sebelah Timur dengan Teluk Bone
+                - Sebelah Selatan berbatasan dengan Kecamatan Bua Kabupaten Luwu
+                - Sebelah Barat berbatasan dengan Kecamatan Tondon Nanggala Kabupaten Tana Toraja.</p>
+        </div>
+
+        <div class="mt-20">
+            <h1 class="text-2xl font-poppins">Luas Wilayah</h1>
+            <p>Luas wilayah administrasi Kota Palopo sekitar 247,52 kilometer persegi atau sama dengan 0,39% dari luas
+                wilayah Propinsi Sulawesi Selatan. Secara administratif Kota Palopo terbagi menjadi 9 Kecamatan dan 48
+                Kelurahan.
+                Sebagian besar Wilayah Kota Palopo merupakan dataran rendah sesuai dengan keberadaanya sebagai daerah
+                yang terletak di pesisir pantai. Sekitar 62,00 persen dari luas Kota Palopo merupakan daerah dataran
+                rendah dengan ketinggian 0-500 m dari permukaan laut, 24,00 persen terletak pada ketinggian 501-1000 m
+                sekitar 14,00 persen yang terletak diatas ketinggian lebih dari 1000 m.
+                Dari segi luas nampak bahwa Kecamatan terluas adalah Kecamatan Wara Barat dengan luas 54,13 km2 dan yang
+                tersempit adalah Kecamatan Wara Utara dengan luas 10,58 km2.</p>
+        </div>
+
+        <div class="mt-20">
+            <h1 class="text-2xl font-poppins">Struktur Tanah</h1>
+            <p>Struktur lapisan dan jenis tanah serta batuan di Kota Palopo pada umumnya terdiri dari 3 jenis batuan
+                beku, Batuan metamorf dan batuan vulkanik serta endapan alluvial yang hampir mendominasi seluruh wilayah
+                Kota Palopo. Penyebaran jenis batuan dan struktur lapisan tanahnya mempunyai kecenderungan batuan beku
+                granit dan garbo serta beberapa intrusi batuan lainnya. Kemudian dijumpai pula batuan beku yang
+                merupakan jejak aliran lava yang telah membeku yang bersusunan balastik hingga andesitik. Batuan sedimen
+                yang dijumpai meliputi batu gamping, batu pasir, untuk mendukung pembangunan dan bangunan di kawasan
+                Kota Palopo. Ketersediaan tanah urugan, pasir serta batuan di wilayah Kota Palopo cukup tersedia yang
+                terhampar di beberapa sungai Battang, sungai Latuppa dan sungai yang berbatasan dengan Kabupaten Luwu
+                Kecamatan Lamasi atau Walenrang.</p>
+        </div>
+
+        <div class="mt-20">
+            <h1 class="text-2xl font-poppins">Topografi dan Kelerengan</h1>
+            <p>Kondisi permukaan tanah kawasan perkotaan (Kawasan Build-up Area) cenderung datar, linier sepanjang jalur
+                jalan Trans Sulawesi, dan sedikit menyebar pada arah jalan kolektor dan jalan lingkungan di wilayah
+                perkotaan, sedangkan kawasan yang menjadi pusat kegiatan dan cukup padat adalah di sekitar kawasan pasar
+                (pusat perdagangan dan jasa), sekitar perkantoran, dan sepanjang pesisir pantai, yang merupakan kawasan
+                pemukiman kumuh yang basah dengan kondisi tanah genangan dan pasang surut air laut. Secara garis besar
+                keadaan topografis Kota Palopo ini terdiri dari 3 variasi yaitu daratan rendah sepanjang pantai, wilayah
+                perbukitan bergelombang dan datar di bagian Tengah, dan wilayah perbukitan dan pegunungan di bagian
+                Barat, Selatan dan sebagian di bagian Utara.</p>
+        </div>
+
+        <div class="mt-20">
+            <h1 class="text-2xl font-poppins">Keadaan Iklim</h1>
+            <p>Palopo secara spesifik dipengaruhi oleh adanya iklim tropis basah, dengan keadaan curah hujan bervariasi
+                antara 500-1000 mm/tahun sedangkan untuk daerah hulu sungai di bagian pegunungan berkisar antara
+                1000-2000 mm/tahun. Suhu udara berkisar antara 25,5 derajat sampai dengan 29,7 derajat celcius, dan
+                berkurang 0,6 derajat celcius setiap kenaikan sampai dengan 85% tergantung lamanya penyinaran matahari
+                yang bervariasi antara 5,2 sampai 8,5 jam perhari.</p>
+        </div>
+    </main>
+
+    <footer class="w-full md:h-[411px] h-[700px] mt-[5rem] flex bg-footerCol md:flex-row flex-col justify-center md:items-start md:justify-start items-center">
+        <div class="md:flex md:items-end hidden  md:h-full md:p-6 ">
+            <p class="text-gray-400 text-sm">
+            &copy; 2023, All Rights Reserved
+            </p>
+        </div>
+        <div class="flex md:p-11 md:mt-4 md:ml-6 mt-6">
+            <div class="gmap_canvas"><iframe class="md:w-[350px] md:h-[250px] w-[350px] h-[250px] rounded-sm" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=kansas city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                    href="https://capcuttemplate.org/"></a></div>
+        </div>
+        <div class="md:flex-col flex-row md:p-11 md:mt-4 md:items-center md:ml-[60px]  mt-4 cursor-pointer">
+            <div class="flex md:justify-between gap-2">
+                <div class="">
+                    <img src="/src/img/call-calling.png" alt="..." class="w-9 h-9">
+                </div>
+                <div class="">
+                    <h3 class="text-gray-400 text-sm font-light">Tel</h3>
+                    <h4 class="text-white text-md">+62-456-7802</h4>
+                    <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
+                </div>
+            </div>
+            <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
+                <div class="">
+                    <img src="/src/img/Icon.png" alt="..." class="w-9 h-9">
+                </div>
+                <div class="">
+                    <h3 class="text-gray-400 text-sm font-light">Mail</h3>
+                    <h4 class="text-white text-md">kansascityGoverment@gmail.com</h4>
+                    <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
+                </div>
+            </div>
+            <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
+                <div class="">
+                    <img src="/src/img/Icon-1.png" alt="..." class="w-9 h-9">
+                </div>
+                <div class="">
+                    <h3 class="text-gray-400 text-sm font-light">Address</h3>
+                    <h4 class="text-white text-md">706 Campfire Ave.Meriden, CT 06450</h4>
+                </div>
+            </div>
+        </div>
+        <div class="md:p-11 mt-4 md:ml-26 flex flex-col md:justify-start md:items-start items-center justify-center cursor-pointer">
+            <h5 class="text-white font-semibold text-md md:text-xl">
+                Social Media
+            </h5>
+            <p class="md:w-[70%] text-gray-400 text-sm mt-1 md:mt-2">
+                Follow our social media to get the latest news and events for sure
+            </p>
+            <div class="flex gap-3 md:mt-0 mt-5">
+            <div class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-blue-900 hover:transition-colors">
+                <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4 ">
+            </div>
+            <div class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                <img src="/src/img/Social_Icons-1.png" alt=".." class="w-4 h-4">
+            </div>
+            <div class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-green-900 hover:transition-colors">
+                <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4">
+            </div>
+            <div class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-gray-900 hover:transition-colors">
+                <img src="/src/img/Social_Icons-3.png" alt=".." class="w-4 h-4">
+            </div>
+            <div class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                <img src="/src/img/Social_Icons-3.png" alt=".." class="w-5 h-4">
+            </div>
+        </div>
+        <div class="flex md:justify-end md:mt-20 mt-4 md:w-[340px]">
+            <h5 class="text-white text-2xl">
+               <span class="text-3xl">K</span>ansas City
+            </h5>
+            <img src="/src//img/city-removebg-preview.png" alt="..." class="w-7 h-7">
+        </div>
+        </div>
+        <div class="md:hidden flex justify-end items-end h-screen">
+            <p class="text-gray-400 text-sm">
+                &copy; 2023, All Rights Reserved
+                </p>
+        </div>
+       
+    </footer>
+</body>
+
+</html>

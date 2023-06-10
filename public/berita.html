@@ -15,6 +15,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/903f15c174.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 </head>
 
 <body class="dark:bg-item ">
@@ -38,25 +39,30 @@
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
                         class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profil
                         <i
-                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 transition text-lg"></i></a>
+                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
                     <div
-                        class="z-10 hidden bg-white border-t-2 border-gray-200 divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-48  md:absolute md:top-[3.5rem] md:right-[38rem] mt-2 lg:peer-hover:flex hover:flex">
-                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-48  md:absolute md:top-[3.5rem] md:right-[38rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visi & misi</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
+                                    onclick="visimisi()"">Visi
+                                    & misi</a>
+                            </li>
+                            <li>
+                                <a href=" #"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
+                                    onclick="sejarah()">Sejarah</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sejarah</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
+                                    onclick="geografis()">Geografis</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Geografis</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Penghargaan</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
+                                    onclick="penghargaan()">Penghargaan</a>
                             </li>
                         </ul>
                     </div>
@@ -64,25 +70,27 @@
                 <li class="flex flex-col md:hidden">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
                         class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                        onclick="dorpDown()">Profil<i class="fas fa-thin fa-chevron-down px-2 text-lg" id="down"></i></a>
+                        onclick="dorpDown()">Profil<i class="fas fa-thin fa-chevron-down px-2 text-lg"
+                            id="down"></i></a>
                     <div id="dropdown"
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visi & misi</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Visi
+                                    & misi</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sejarah</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Sejarah</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Geografis</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Geografis</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Penghargaan</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Penghargaan</a>
                             </li>
                         </ul>
                     </div>
@@ -91,25 +99,25 @@
                 <li class="hidden md:flex">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
                         class="text-slate-700 dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center h-9">Informasi<i
-                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 transition text-lg"></i></a>
+                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
                     <div
-                        class="z-10 hidden bg-white border-t-2 border-gray-200 divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[28rem] mt-2 lg:peer-hover:flex hover:flex">
-                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[28rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Berita</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" onclick="berita()">Berita</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Agenda</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" onclick="agenda()">Agenda</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galeri</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" onclick="galeri()">Galeri</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dokumen</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Dokumen</a>
                             </li>
                         </ul>
                     </div>
@@ -124,15 +132,15 @@
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Berita</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onclick="berita()">Berita</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Agenda</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onclick="agenda()">Agenda</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galeri</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onclick="galeri()">Galeri</a>
                             </li>
                             <li>
                                 <a href="#"
@@ -146,25 +154,26 @@
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
                         class="text-slate-700 peer dark:text-putih focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Pemerintahan
                         <i
-                            class="fas fa-thin fa-chevron-down hover:translate-y-1 group-hover:translate-y-1 transition px-2 text-lg"></i></a>
+                            class="fas fa-thin fa-chevron-down hover:translate-y-1 group-hover:translate-y-1 group-hover:text-orange transition px-2 text-lg"></i></a>
                     <div
-                        class="z-10 hidden bg-white border-t-2  border-gray-200 divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[16.5rem] mt-2 lg:peer-hover:flex hover:flex">
-                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                        class="z-10 hidden bg-white border-t-2  border-orange divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[16.5rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile Pemimpin</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition ">Profile
+                                    Pemimpin</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">DPRD</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">DPRD</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">SKPD</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">SKPD</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pemerintahan</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Pemerintahan</a>
                             </li>
                         </ul>
                     </div>
@@ -198,15 +207,86 @@
                     </div>
                 </li>
 
-                <div class="flex gap-3">
-                    <img src="/src/img/pp.png" alt="" class="w-12 h-12 rounded-full " onclick="profile()">
-                    <div class="my-auto">
-                        <p class="text-slate-600 font-poppins dark:text-putih">Helo, Human</p>
+                <div class=" flex justify-center items-center">
+                    <div x-data="{ open: false }" class=" flex justify-center items-center">
+                        <div @click="open = !open" class="relative "
+                            :class="{' transform transition duration-300 ': open}"
+                            x-transition:enter-end="transform opacity-100 scale-100"
+                            x-transition:leave="transition ease-in duration-75"
+                            x-transition:leave-start="transform opacity-100 scale-100">
+                            <div class="flex justify-center items-center gap-2 space-x-3 cursor-pointer">
+                                <div class="w-12 h-12 rounded-full overflow-hidden ">
+                                    <img src="https://images.unsplash.com/photo-1610397095767-84a5b4736cbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                                        alt="" class="w-full h-full object-cover">
+                                </div>
+                                <div class="text-slate-500 text-lg ">
+                                    <div class="cursor-pointer dark:text-putih">Hi, Human</div>
+                                </div>
+                            </div>
+
+                            <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                                x-transition:enter-start="transform opacity-0 scale-95"
+                                x-transition:enter-end="transform opacity-100 scale-100"
+                                x-transition:leave="transition ease-in duration-75"
+                                x-transition:leave-start="transform opacity-100 scale-100"
+                                x-transition:leave-end="transform opacity-0 scale-95"
+                                class="absolute w-[12.5rem] px-5 py-3 dark:bg-gray-800 bg-white rounded-lg shadow border dark:border-transparent mt-5">
+                                <ul class="space-y-3 dark:text-white">
+                                    <li class="font-medium">
+                                        <a href="#"
+                                            class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-indigo-700">
+                                            <div class="mr-3">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            Account
+                                        </a>
+                                    </li>
+                                    <li class="font-medium">
+                                        <a href="#"
+                                            class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-indigo-700">
+                                            <div class="mr-3">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                                                    </path>
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                                </svg>
+                                            </div>
+                                            Setting
+                                        </a>
+                                    </li>
+                                    <hr class="dark:border-gray-700">
+                                    <li class="font-medium">
+                                        <a href="#"
+                                            class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-red-600">
+                                            <div class="mr-3 text-red-600">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="hidden bg-white" id="menuprofile">
-                    <p class="">lorem</p>
                 </div>
+
                 <div id="theme-toggle" type="button"
                     class="text-gray-500  cursor-pointer dark:text-gray-100  text-sm p-2.5">
                     <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
@@ -230,12 +310,10 @@
     <section class="mb-28 mt-10 md:mt-28 dark:text-white ">
         <div class="flex flex-col md:flex-row justify-center items-center mx-5 gap-8">
             <div class="w-full md:w-[60%]">
-                <i class="fas fa-thin fa-chevron-left hover:translate-y-1 transition px-2 text-2xl"
-                    onclick="back()"></i>
                     <h1 class="text-2xl md:text-4xl">Ada Penyesuaian Subsidi BBM, Ini Penjelasan Rinci Menteri <br> Keuangan
                         Sri Mulyani
                     </h1>
-                    <img src="sri-mulyani.jpg" class="w-[80%] object-contain border rounded my-2">
+                    <img src="data:image/jpeg;base64,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" class="w-[80%] object-contain border rounded my-2">
                 <div class="flex gap-2 my-5">
                     <i class="fas fa-calendar-alt pt-1 text-gray-400"></i>
                     <p class="text-gray-400">27 agustus 2022</p>
@@ -279,42 +357,42 @@
             </div>
             <div class="w-full md:w-[20%] mt-5 md:mt-0">
                 <h3 class="text-2xl md:text-3xl text-orange-500">Latest News</h3>
-                <div class="flex my-5 hover:bg-orange-400 hover:text-white p-1">
+                <div class="flex my-5 hover:bg-orange-400 hover:text-orange p-1">
                     <i class="fas fa-thin fa-chevron-right hover:translate-y-1 transition px-2 text-lg"></i>
                     <p>fredi sambo dihukum mati</p>
                 </div>
                 <hr>
-                <div class="flex my-5 hover:bg-orange-400 hover:text-white p-1">
+                <div class="flex my-5 hover:bg-orange-400 hover:text-orange p-1">
                     <i class="fas fa-thin fa-chevron-right hover:translate-y-1 transition px-2 text-lg"></i>
                     <p>fredi sambo dihukum mati</p>
                 </div>
                 <hr>
-                <div class="flex my-5 hover:bg-orange-400 hover:text-white p-1">
+                <div class="flex my-5 hover:bg-orange-400 hover:text-orange p-1">
                     <i class="fas fa-thin fa-chevron-right hover:translate-y-1 transition px-2 text-lg"></i>
                     <p>fredi sambo dihukum mati</p>
                 </div>
                 <hr>
-                <div class="flex my-5 hover:bg-orange-400 hover:text-white p-1">
+                <div class="flex my-5 hover:bg-orange-400 hover:text-orange p-1">
                     <i class="fas fa-thin fa-chevron-right hover:translate-y-1 transition px-2 text-lg"></i>
                     <p>fredi sambo dihukum mati</p>
                 </div>
                 <hr>
-                <div class="flex my-5 hover:bg-orange-400 hover:text-white p-1">
+                <div class="flex my-5 hover:bg-orange-400 hover:text-orange p-1">
                     <i class="fas fa-thin fa-chevron-right hover:translate-y-1 transition px-2 text-lg"></i>
                     <p>fredi sambo dihukum mati</p>
                 </div>
                 <hr>
-                <div class="flex my-5 hover:bg-orange-400 hover:text-white p-1">
+                <div class="flex my-5 hover:bg-orange-400 hover:text-orange p-1">
                     <i class="fas fa-thin fa-chevron-right hover:translate-y-1 transition px-2 text-lg"></i>
                     <p>fredi sambo dihukum mati</p>
                 </div>
                 <hr>
-                <div class="flex my-5 hover:bg-orange-400 hover:text-white p-1">
+                <div class="flex my-5 hover:bg-orange-400 hover:text-orange p-1">
                     <i class="fas fa-thin fa-chevron-right hover:translate-y-1 transition px-2 text-lg"></i>
                     <p>fredi sambo dihukum mati</p>
                 </div>
                 <hr>
-                <div class="flex my-5 hover:bg-orange-400 hover:text-white p-1">
+                <div class="flex my-5 hover:bg-orange-400 hover:text-orange p-1">
                     <i class="fas fa-thin fa-chevron-right hover:translate-y-1 transition px-2 text-lg"></i>
                     <p>fredi sambo dihukum mati</p>
                 </div>

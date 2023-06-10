@@ -1,7 +1,3 @@
-function visimisi() {
-  window.Location.href = 'http://127.0.0.1:5500/public/visimisi.html'
-}
-
 function sejarah() {
   window.location.href = 'http://127.0.0.1:5500/public/sejarah.html'
 }

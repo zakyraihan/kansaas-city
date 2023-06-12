@@ -1,38 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kansaas city - home</title>
-    <link rel="icon" type="image/x-icon" href="/src/img/city_86340.png">
+    <title>Beranda Berita</title>
     <link rel="stylesheet" href="/src/css/output.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/903f15c174.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 
 </head>
-
-<body class="overflow-y-hidden dark:bg-item overflow-x-hidden" id="body">
-    <div class="h-screen w-screen justify-center items-center bg-white flex text-white " id="spinner" onload="spin()">
-        <svg class="w-10 h-10 animate-spin text-white" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path
-                d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z" />
-        </svg>
-    </div>
-
-    <header class="fixed w-full z-50 " id="header">
+<body class="overflow-x-hidden dark:bg-item">
+    <header class=" w-full z-50 " id="header">
         <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
             <div class="flex justify-between items-center">
                 <div class="text-2xl font-medium cursor-pointer ">
@@ -45,7 +23,7 @@
             </div>
             <ul
                 class="md:flex md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
-                <li class="text-orange dark:text-biru font-medium "><a href="">Beranda</a></li>
+                <li class="text-orange dark:text-biru font-medium "><a href="http://127.0.0.1:5500/public/home.html#">Beranda</a></li>
 
                 
                 <li class="hidden md:flex">
@@ -214,8 +192,8 @@
                                     <img src="https://images.unsplash.com/photo-1610397095767-84a5b4736cbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                                         alt="" class="w-full h-full object-cover">
                                 </div>
-                                <div class=" text-lg ">
-                                    <div class="cursor-pointer text-slate-500 dark:text-slate-500">Hi, Human</div>
+                                <div class="text-slate-500 text-lg ">
+                                    <div class="cursor-pointer dark:text-putih">Hi, Human</div>
                                 </div>
                             </div>
 
@@ -300,303 +278,7 @@
         </nav>
     </header>
 
-
-    <section>
-        <div class="relative">
-            <ul id="slider">
-                <li class="h-screen relative ">
-                    <img src="/src/img/photo2.jpg" alt="" class="w-full h-full object-cover">
-                    <div class="absolute top-0 left-0 h-full w-full flex">
-                        <h2 class="text-4xl text-center my-auto font-bold  px-20 flex flex-col text-white">
-                            Kansaas City <span class="text-slate-200 font-poppins text-xl">the thousand of culture and
-                                nature</span></h2>
-                    </div>
-                </li>
-                <li class="h-screen relative hidden">
-                    <img src="/src/img/photo3.avif" alt="" class="w-full h-full object-cover">
-                    <div class="absolute top-0 bottom-[3rem] left-0  md:w-[70%] w-full flex flex-col">
-                        <h2 class="text-4xl text-center my-auto font-bold  px-20 flex flex-col text-orange">
-                            Kansaas City <span class="text-slate-300">the thousand of culture and nature</span></h2>
-                    </div>
-                </li>
-                <li class="h-screen relative hidden">
-                    <img src="/src/img/photo1.avif" alt="" class="w-full h-full object-cover">
-                    <div class="absolute top-0 left-0 h-full w-full flex">
-                        <h2 class="text-4xl text-center my-auto font-bold text-white px-20 w-full">Some big heading</h2>
-                    </div>
-                </li>
-            </ul>
-            <div class="absolute px-5 flex h-full w-full top-0 left-0">
-                <div class="my-auto w-full flex justify-between">
-                    <button onclick="prev()" id="right" class="">
-                        <i class="fas fa-arrow-left text-slate-300"></i>
-                    </button>
-                    <button onclick="next()" class=" text-xl">
-                        <i class="fas fa-arrow-right text-slate-300"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- HOME -->
-    <section class="md:px-20 px-10 my-[6rem]">
-        <div class="flex md:justify-between md:flex-row flex-col">
-            <div class="overflow-x-hidden md:mt-0 mt-10">
-                <span id="element" class="font-medium text-2xl dark:text-putih">
-                </span>
-                <h1 class="text-3xl font-bold text-orange my-2 dark:text-biru ">KANSAAS CITY</h1>
-                <h3 class="text-3xl font-semibold md:w-[450px] dark:text-slate-300">Menuju Kota Maju, Inovatif dan
-                    Berkelanjutan</h3>
-                <p class="md:w-[400px] mt-2 font-medium text-slate-500 dark:text-slate-400">Lorem ipsum, dolor sit amet
-                    consectetur
-                    adipisicing elit. Dolore molestiae iste optio. Ducimus
-                    quidem fugit deleniti, error ipsa enim. Possimus enim quaerat cupiditate excepturi adipisci
-                    minus laboriosam sit consequatur quas! Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="flex flex-col justify-center items-center">
-                <div class="w-full h-full">
-                    <img src="/src/img/city-removebg-preview.png" alt=""
-                        class="md:w-full h-full w-[90%] md:order-1  mt-[-1rem] flex">
-                    <p class="text-center text-4xl dark:text-slate-300 font-semibold font-poppins">Kansaas City</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- informasi publik -->
-        <section class="mb-[10rem] mt-[9rem]">
-            <div class="flex flex-col items-center">
-                <div class="bg-orange/40 dark:bg-biru w-[150px] rounded-full flex justify-center animate-bounce">
-                    <p class="text-orange dark:text-item">INFO MASZEH!</p>
-                </div>
-                <h1 class="text-3xl font-medium text-center dark:text-putih font-poppins"><span
-                        class="text-orange dark:text-biru">Informasi</span> Publik</h1>
-            </div>
-
-            <div class="flex flex-wrap  mt-[3rem] md:gap-[2rem]  justify-center">
-                <div onclick="informasi()"
-                class="md:w-[15%] md:h-[12rem] items-center flex-col w-[50%] h-[10rem] shadow-xl dark:border-slate-400 border group flex  dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl"
-                    id="blom">
-                    <lord-icon src="https://cdn.lordicon.com/ttioogfl.json" trigger="morph"
-                        colors="primary:#121331,secondary:#ebe6ef,tertiary:#4bb3fd,quaternary:#92140c,quinary:#f9c9c0"
-                        style="width:250px;height:250px">
-                    </lord-icon>
-                    <h5
-                        class="text-2xl font-semibold  mb-5 text-slate-600 group-hover:text-orange transition dark:text-slate-300 ">
-                        Informasi</h5>
-                </div>
-                <div onclick="lingkungan()"
-                    class="md:w-[15%] md:h-[12rem] items-center flex-col  w-[50%] h-[10rem] shadow-xl dark:border-slate-400 border group  flex  dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
-                    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                    <lord-icon src="https://cdn.lordicon.com/zeabctil.json" trigger="loop-on-hover" delay="100"
-                        colors="outline:#121331,primary:#4bb3fd,secondary:#ebe6ef" style="width:250px;height:250px">
-                    </lord-icon>
-                    <h5
-                        class="text-2xl font-semibold dark:text-slate-300 mb-5 text-slate-600 group-hover:text-orange transition">
-                        Lingkungan</h5>
-                </div>
-                <div onclick="smartcity()"
-                    class="md:w-[15%] md:h-[12rem] w-[50%] group h-[10rem] shadow-xl items-center flex-col dark:border-slate-400 border  flex dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
-                    <lord-icon src="https://cdn.lordicon.com/keiaatat.json" trigger="hover"
-                        colors="primary:#121331,secondary:#ffc738,tertiary:#92140c,quaternary:#b26836,quinary:#ebe6ef,senary:#3a3347,septenary:#646e78"
-                        style="width:250px;height:250px">
-                    </lord-icon>
-                    <h5
-                        class="text-2xl font-semibold group-hover:text-orange dark:text-slate-300 mb-5 text-slate-600 transition">
-                        Smart City</h5>
-                </div>
-                <div onclick="lapor()"
-                    class="md:w-[15%] md:h-[12rem] w-[50%] h-[10rem] shadow-xl group flex-col items-center dark:border-slate-400 border  flex  dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
-                    <lord-icon src="https://cdn.lordicon.com/gzmgulpl.json" trigger="loop-on-hover" delay="500"
-                        colors="outline:#121331,primary:#4bb3fd,secondary:#ebe6ef" style="width:250px;height:250px">
-                    </lord-icon>
-                    <h5
-                        class="text-2xl font-semibold dark:text-slate-300 mb-5 text-slate-600 group-hover:text-red-600 transition">
-                        Lapor<span class="">!</span></h5>
-                </div>
-                <div onclick="potensidaerah()"
-                    class="md:w-[15%] md:h-[12rem] w-[50%] h-[10rem] shadow-xl dark:border-slate-400 border flex-col group items-center  flex  dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
-                    <lord-icon src="https://cdn.lordicon.com/equajobp.json" trigger="loop-on-hover" delay="500"
-                        colors="primary:#121331,secondary:#ebe6ef,tertiary:#92140c,quaternary:#f9c9c0,quinary:#646e78,senary:#f24c00"
-                        style="width:250px;height:250px">
-                    </lord-icon>
-                    <h5
-                        class="text-2xl font-semibold dark:text-slate-300 mb-2 group-hover:text-orange text-slate-600 text-center transition">
-                        Potensi Daerah</h5>
-                </div>
-                <div onclick="kerjasama()"
-                    class="md:w-[15%] md:h-[12rem] w-[50%] h-[10rem] shadow-xl flex-col group items-center dark:border-slate-400 border flex  dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
-
-                    <lord-icon src="https://cdn.lordicon.com/kjkiqtxg.json" trigger="hover"
-                        colors="outline:#121331,primary:#646e78,secondary:#4bb3fd,tertiary:#ebe6ef"
-                        style="width:250px;height:250px">
-                    </lord-icon>
-                    <h5
-                        class="text-2xl font-semibold dark:text-slate-300 mb-5 group-hover:text-orange text-slate-600 transition">
-                        Kerja Sama</h5>
-                </div>
-                <div onclick="keuangan()"
-                    class="md:w-[15%] md:h-[12rem] w-[50%] h-[10rem] flex-col items-center group shadow-xl dark:border-slate-400 border   flex dark:hover:border-biru justify-center rounded-md transition hover:border-orange cursor-pointer hover:-translate-y-2 hover:shadow-2xl">
-                    <lord-icon src="https://cdn.lordicon.com/ozqvdvoh.json" trigger="hover"
-                        colors="outline:#121331,primary :#2ca58d,secondary :#ffc738" style="width:250px;height:250px">
-                    </lord-icon>
-                    <h5
-                        class="text-2xl font-semibold dark:text-slate-300 mb-5 group-hover:text-orange transition text-slate-600">
-                        Keuangan</h5>
-                </div>
-
-                
-
-            </div>
-            </div>
-        </section>
-        <!-- informasi publik -->
-
-        <!-- partner -->
-        <section class="md:px-32 px-10 mb-5">
-            <div class="text-center my-10">
-                <h1 class="text-2xl font-poppins"><span class="text-slate-400">Company partner</h1>
-            </div>
-
-            <div class="flex flex-col md:flex-row gap-9 items-center ">
-                <div
-                    class="w-full md:w-[35%] rounded-xl  hover:shadow-xl transition shadow-lg bg-white h-[12rem] flex  items-center justify-center">
-                    <img src="/src/img//ciputra-removebg-preview.png" alt="">
-                </div>
-                <div
-                    class="w-full md:w-[35%] rounded-xl shadow-lg  hover:shadow-xl transition bg-white flex items-center justify-center ">
-                    <img src="/src/img//residence-removebg-preview.png" alt="">
-                </div>
-                <div
-                    class="w-full md:w-[35%] rounded-xl shadow-lg  hover:shadow-xl transition items-center justify-center bg-white h-[12.3rem]">
-                    <img src="/src/img//ciputrapalembang-removebg-preview.png" alt="">
-                </div>
-            </div>
-
-        </section>
-        <!-- partner -->
-    </section>
-
-
-    <!-- pemimpin -->
-    <section class="md:px-0 px-0">
-        <div class="bg-patern bg-fixed dark:bg-white md:h-[80vh]">
-            <div class="flex flex-col  items-center">
-                <div class="bg-orange/40 w-[100px] rounded-full flex justify-center mt-11 animate-bounce">
-                    <p class="text-orange">PEMIMPIN</p>
-                </div>
-                <h1 class="text-3xl font-medium text-center py-2"><span class="text-orange">WALIKOTA</span> & FOUNDERS
-                </h1>
-
-            </div>
-
-            <div class="flex mt-7 items-center justify-center  gap-12 md:flex-row flex-col">
-                <div class="group h-96 w-80 [perspective:1000px]">
-                    <div
-                        class="relative bg-white h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                        <div class="absolute inset-0">
-                            <img class="h-[300px] w-full rounded-t-xl shadow-sm object-cover  shadow-black/40"
-                                src="/src/img/ceo1.jpeg" alt="" />
-                            <div class="flex flex-col ml-3">
-                                <h5 class="text-xl font-semibold mt-2">
-                                    Dr.chikonese
-                                </h5>
-                                <p class="mt-1 text-gray-400 font-medium">
-                                    Wakil walikota
-                                </p>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute inset-0 h-full w-full rounded-xl dark:bg-black/90 px-12 text-center text-white bg-orange/90 dark:text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                            <div class="flex min-h-full flex-col items-center justify-center">
-                                <h1 class="text-2xl font-bold w-full">Dr. chinkonese</h1>
-                                <p class="text-md font-semibold mt-3">Wakil walikota</p>
-                                <p class="text-sm mt-3">Menjadi walikota sejak 2012 pak jokowi berhasil membangun kota
-                                    kansas menjadi sangat sukses dan teratur berkatnya
-                                    kini kota kansas menjadi kota terbersih sedunia.
-                                </p>
-                                <button
-                                    class="mt-3 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900 text-white">Read
-                                    More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group h-96 w-80 [perspective:1000px]">
-                    <div
-                        class="relative bg-white h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                        <div class="absolute inset-0">
-                            <img class="h-[300px] w-full rounded-t-xl shadow-sm object-cover  shadow-black/40"
-                                src="/src/img/ceo5.jpeg" alt="" />
-                            <div class="flex flex-col ml-3">
-                                <h5 class="text-xl font-semibold mt-2">
-                                    Dr.dewan prawidata
-                                </h5>
-                                <p class="mt-1 text-gray-400 font-medium">
-                                    walikota
-                                </p>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute inset-0 h-full w-full rounded-xl dark:bg-black/90 px-12 text-center text-white bg-orange/90 dark:text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                            <div class="flex min-h-full flex-col items-center justify-center">
-                                <h1 class="text-2xl font-bold w-full">Dr. dewan prawidata</h1>
-                                <p class="text-md font-semibold mt-3">walikota</p>
-                                <p class="text-sm mt-3">Menjadi walikota sejak 2012 pak jokowi berhasil membangun kota
-                                    kansas menjadi sangat sukses dan teratur berkatnya
-                                    kini kota kansas menjadi kota terbersih sedunia.
-                                </p>
-                                <button
-                                    class="mt-3 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900 text-white">Read
-                                    More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group h-96 w-80 [perspective:1000px]">
-                    <div
-                        class="relative bg-white h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                        <div class="absolute inset-0">
-                            <img class="h-[300px] w-full rounded-t-xl shadow-sm object-cover  shadow-black/40"
-                                src="/src/img/fonder.jpeg" alt="" />
-                            <div class="flex flex-col ml-3">
-                                <h5 class="text-xl font-semibold mt-2">
-                                    kirani tri
-                                </h5>
-                                <p class="mt-1 text-gray-400 font-medium">
-                                    founders
-                                </p>
-                            </div>
-                        </div>
-                        <div
-                            class="absolute inset-0 h-full w-full rounded-xl bg-orange/90  dark:bg-black/90 px-12 text-center text-white dark:text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                            <div class="flex min-h-full flex-col items-center justify-center">
-                                <h1 class="text-2xl font-bold w-full">kirani tri</h1>
-                                <p class="text-md font-semibold mt-3">Wakil walikota</p>
-                                <p class="text-sm mt-3">Menjadi walikota sejak 2012 pak jokowi berhasil membangun kota
-                                    kansas menjadi sangat sukses dan teratur berkatnya
-                                    kini kota kansas menjadi kota terbersih sedunia.
-                                </p>
-                                <button
-                                    class="mt-3 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900 text-white">Read
-                                    More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="fixed bottom-6">
-                  <p class="text-lg font-semibold text-neutral-800">All Images are from <a href="https://unsplash.com" class="text-blue-600">Unsplash.com</a></p>
-                  <p class="text-lg font-semibold text-neutral-800">Visit <a href="https://beyondbuilder.io" class="text-blue-600">BeyondBuilder.io</a> to get more Tailwind CSS UI Components.</p>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    <!-- pemimpin -->
-
-    <!-- berita -->
-    <section class="md:px-20 w-screen mt-[10rem] px-7">
+    <section class="md:px-20 w-screen mt-[5rem] px-7">
         <button class="bg-orange/40 dark:bg-biru w-[110px] p-2 rounded-lg">
             <p class="text-red-500 dark:text-item">Berita</p>
         </button>
@@ -604,10 +286,6 @@
         <div class="flex md:justify-between flex-col md:flex-row mt-8">
             <h1 class="text-2xl font-medium dark:text-slate-300">Berita <span class="text-red-500 ">Terkini </span>kota
                 Kansaas</h1>
-            <button
-                class="border-orange text-orange dark:border-biru border-2 w-[130px] p-2 hover:bg-orange hover:text-white rounded-lg md:mt-0 mt-5 transition">
-                Berita Lainnya
-            </button>
         </div>
 
         <div class="flex md:flex-row justify-center md:px-0 flex-col gap-[2rem] mt-7 my-10 px-8">
@@ -1076,760 +754,149 @@
             <!-- berita 6 -->
         </div>
     </section>
-
-    <!-- agenda -->
-    <section class="md:px-20 px-7">
-        <div class="flex justify-between md:flex-row ">
-            <button class="bg-orange/40 dark:bg-biru md:w-[110px] w-[110px] h-[2.5rem] rounded-lg md:mt-10 mt-10">
-                <p class="text-red-500 dark:text-item">Agenda</p>
-            </button>
-            <button class="border-orange text-orange dark:border-biru hover:bg-orange border-2 w-[130px]  hover:text-white dark:hover:bg-abu transition ease-in-out;
-                 rounded-lg md:mt-10 mt-10">
-                Agenda Lainnya
-            </button>
-        </div>
-        <div class="mt-8">
-            <h1 class="text-2xl font-medium dark:text-slate-300">Daftar <span class="text-red-500">Agenda</span> kota
-                Kansaas</h1>
-        </div>
-
-        <!-- card -->
-        <div class="mt-12 flex md:flex-row justify-center px-8 md:px-0 flex-col flex-wrap gap-[2rem]">
-            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
-                <img class="w-full" src="data:image/png;base64,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" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
-                            class="fa-solid fa-calendar-days"></i> Monday, 09
-                        Mei 2029</div>
-                    <p class="text-gray-700 text-base dark:text-putih/90">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="border-y "></div>
-                <div class="px-6 pt-4 pb-2">
-                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru"></i>
-                    <span
-                        class="inline-block rounded-full px-3 py-1  text-sm font-semibold dark:text-putih/90 text-slate-500 mr-2 mb-2">los
-                        santos, USA</span>
-                </div>
+    <footer
+    class="w-full md:h-[411px] h-[700px] flex bg-footerCol md:flex-row flex-col justify-center md:items-start md:justify-start items-center mt-20">
+    <div class="md:flex md:items-end hidden  md:h-full md:p-6 ">
+        <p class="text-gray-400 text-sm">
+            &copy; 2023, All Rights Reserved
+        </p>
+    </div>
+    <div class="flex md:p-11 md:mt-4 md:ml-6 mt-6">
+        <div class="gmap_canvas"><iframe class="md:w-[350px] md:h-[250px] w-[350px] h-[250px] rounded-sm"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=kansas city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                href="https://capcuttemplate.org/"></a></div>
+    </div>
+    <div class="md:flex-col flex-row md:p-11 md:mt-4 md:items-center md:ml-[60px]  mt-4 cursor-pointer">
+        <div class="flex md:justify-between gap-2">
+            <div class="">
+                <img src="/src/img/call-calling.png" alt="..." class="w-9 h-9">
             </div>
-
-            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
-                <img class="w-full" src="data:image/png;base64,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" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
-                            class="fa-solid fa-calendar-days"></i> Monday, 09
-                        Mei 2029</div>
-                    <p class="text-gray-700 text-base dark:text-putih/90">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="border-y "></div>
-                <div class="px-6 pt-4 pb-2">
-                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru "></i>
-                    <span
-                        class="inline-block rounded-full px-3 py-1 text-sm  font-semibold dark:text-putih/90 text-slate-500 mr-2 mb-2">los
-                        santos, USA</span>
-                </div>
-            </div>
-
-            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
-                <img class="w-full" src="data:image/png;base64,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" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
-                            class="fa-solid fa-calendar-days"></i> Monday, 09
-                        Mei 2029</div>
-                    <p class="text-gray-700 text-base dark:text-putih/90">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="border-y "></div>
-                <div class="px-6 pt-4 pb-2">
-                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru"></i>
-                    <span
-                        class="inline-block rounded-full px-3 py-1 text-sm  font-semibold dark:text-putih/90 text-slate-500 mr-2 mb-2">los
-                        santos, USA</span>
-                </div>
-            </div>
-
-            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
-                <img class="w-full" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASkAAACqCAMAAADGFElyAAAAwFBMVEX///88UNIWLsn+/v78/P75+f34+P3y8vz09fzw8Pvq6/rs7frj5Pjo6fnm5/ne3/evsuzO0PM3TNHw8PDExvHMzvPZ2varruvJy/LS1PS7vu+yte2anuczSdG3uu6eougsRNDl5eWnquqAheEAGMacoOiSluUAIseIjON+g+GNkeSGi+Pc3NwoQc8MKMjy8vJla9ttc90AE8Z2e99xd95JXNVfZdoAAMUhPM9QV9aNl+JVZtdZYNlufNwuN89ebNgEl+CMAAAbIklEQVR4nO1di3/x2tJeCAkSQUMIEhWCKKUuRVX////qm1m3JOi799kfb/clc37nPRqRy5OZZ56ZrLUOIamlllpqqaWWWmqppZZaaqmlllpqqaWWWmqppZZaaqmlllpqqaWWWmqppZZaaqmlllpqqaWWWmr/Fstx++nr+FtbLmE/fTV/W8vdsp++qL+hCWgUaf9hsH7hMjGU8twisH7ymn+j3Yypm0ZRKkRG0fovQPUdGtfhxb+hMGmapqLB/2oIFtvrp+/lgfYLhOLRJeHC7QiTqhaLxTJYsYhoAVb/JqguaecGPhycwoXFAKM4AUglw6igGaVSuYhY/Rug+kPWEQhxXDRhIrrQZwoCRNgMOFV03WSm6xUDseJQ/fTN/hX7NUARTAKiCJ0ihpaMLogvdBqN78RwMpvNNrNm09QrpfI/DapfOs4VSSsROzOEODolA2KLBRfGl2EIOsLdGE7tWqNlobUatTZgZTCo/v7x98cA5eMWbWTsrAqEEB8dzYwbBpjB3KtYNihOLctxXDTHsVq1BFQ/dNP/Mzi5G+AU8nECkhwtkhiFqCLwaVLDuKqh8QCjaJVKJQMdCnFyq/aAWtV1rEbb1EtF9bfG341b/5MoXQFUSBK0GpnAi+FkMHaO8Gk0Wi0WWpYMsDYFC8EEhwKcbG8UBGHYHVQ7gBWH6vc51Xdu8qt9LgPsNj6CgZhFpENxouwM7iMAclhgdZhhhAFa4F3gWogmOFRn4Fmttl7U8nBtqmu7FgRgBeKPOtXvwknedVzwXcJ0HWDX8EhwMGgoQVOn0FEDMdIpM5w4OzOAOp1q1WaB5VGDD3YV0QLXQjipQznxCy+PKFS68ZucSiIgb5xz700vSgrEOEICIERHwmNGDNQUFG2UOE6UnQEhBpDnjUbdboCxNZnMJpMwDLoeggXcTT2uY3uBhles6s1G51gjxPaqTquNTvUbkBIYyKwtBV8Sq28EUFEtRunLuIZHEjQjadRAgnQEOwNCCFA4mflo4agKAQa7NWvOAAgJwOrQmKwOvKBKiLM9ZHrzfr//SUg7GHR+l1NxFPKi8qQJWeUVVT5edCXK02SAVSoJfNocnhhBQ4A5QgPRXRCnjj3wuoAQ4jMd2U6jaZaV5OUp7cEkGAFYNt13ahLy0atnmJWIFnq2+3uciuOUF1mbukYJuVdUn0ou0j9aXP9cOZDApxXxsyDoKhpwNGdoyk9u1RvBfTqtpl5xJuULhEq6oeXpR9ObBd0RBGYQziYKMXscp0zfJWTAnQo11WM5XToUlgoGZ14wQKtY5G5Fd6DVBBVAFCAzCrAIICuGD0UnQdDI0TYDq0VJp1qJrqNA4VE0veFUj5/bTL0Htt1UDdzemM5CsJm/6RAykkjVV4Q0Z+CL4FQPDz8OlCipBPWihKnQSp2yu9A/pUgACfppNBIOxPIX52ekHyRo8IWZPws8gGnggQxycVdI9yV+EZpRhH91f7Pt75F/enUeXvV6vz9tw3cVfz2dTtebpU6UrYi9TGZuEGUWDCD9caHwOKRiQBlU3LDYYXpPr/AQ5MWpwaBstyP9Q/FxeHwJfLoif818uDv8j9c2mQAiOSvAbIY7ex4EFvjP18d2Dq5Cavt6hEFkvX4I1FVcrzar1XINu81j39mQ/UJIf42mXnps+CFSFCijwpIRu3XKJoAVc6u4TJT6R8JDHUj4T8jw8Sdh4FWBPkoQVIrdip+yA8kMlBKwcwAsswf/Ac9BkVTr38CJ0tFWB79b7na7A+w360Xf1LcA9rTLw++RnC6BKomSit07BoioPlltKmViUv+IAGP+42OJ4WAkFBKnKRClrDdb1eMM3Eg5zoIAQZ2EgBS77b71K6QgCJuAyOFw6KmkkNir1yT5MOL0RyJFY48BRcUNix2UMIAVQoXFaSQTAUmqf3iATWYzKoGmHUhgpUL+6ipLTctB1LweCiD4B8JMXYPLwU+nPm6PkGp8i1SmngGvGvT78As3iVQXtsxY+AlOfwxQzKXKFQpUdQAAeJ7twAPSrUEHoGoznchxAunH9A/AMwuDEd2zVPF8LX7Uglo2Wx0PElh/v5/Pt4hUV4TMHLyjuaL0vJpGSGF8tpJIJUir/gF+eTrDbl8JLsPtpt8FTofwe6CkYi6llg0GlNdQ1bz8sg1PCgp1rEAimYg1PLBCE64qphCbFKAKSGpv8rna1ufUf9it1j/wkEeBVH2rAlUtN5sNpedRDCmLIwX5br7f97bbeT9CpQ/O09lrxLwg/V6bKEHgPTj8uEtB7DXbCFQz+qZQIDnI50hWqAYYTqMgHLSLF+0FzUQkdBRA/TnFJ3kv9Q8ljlSmt4E/w91yuTxt5HaKlMOQqn86VhuUeq6gWdMIq75BtK50wgipAMMPJdUjw48iRWOv3XI63iBHtKZld0MIm+wRrjxAqCzUA8Bg6E+uyn+pGnrbGRxnX4f5foEbzfmtBM+QyiWQyvTh0IXV6XQ6xJCqRUhh5pfW/hA/7MHPiiTPxVRvwD/UIbiNKQu/x1U0kUvVLHcQAKsezzxsMGb0SRe7ilQl2l53VkV5SIpOuPk49OboPzTA9shD5vd564skkcrM4URm5nCoA1IhRwrVZYcdo2+TnGrWWq6F9Y32xX9Z3+F5eH6sZzSfb5834CihF1U0D0CKBR93KdubFImWkZ5B4x+SPggGTHejMIDSlOSd1bx/EWB7jK5mTA5eILXCc4XxoMGcb83r/Y0URxQpmyNVJYUMRB1AuYZzakKS93CfT+5SgWS13gwONqPkaT4q/JDPMfGhS3UGgRdxKnd210e5gKIgmHn4RJ1t/zrI9rlfIAWikvrULIHUDnJlcN4Do0/Z8TAjSm3lEu10OAGT7U4HcJgW/ymWw2V+ethfEwfLqKTsB48MP8HnkPjQpWbwyDYRDhj/+gakAFXevgcnL29u4ARI4cHacaTA53o9KN+A4befR9qj9BO/7H2CAN0t1tJH5uiwQjE4gNRuuQJbnk5Q53FdgNKJByjlPgE+arFuSCsCVtE8BinG58hSswKpxB/8HEjWpxoxnE3B30jrG9Kex5FCgZDZfX2GA6vRFH0URSIirD8gxDiDnlpxpEBYSna3iApAbdZrEBKHSMdjmPHdIUAjSV8HOdrwuw9sKAiX0psNUAgTWxIFf+5wje4SJKI/XUMmBm18G6g6RarBkKp/1vRK8aIXp3YS3sqODmFlTaWOnBskrhiKOwAKWwer3VIT4QeI6AIc7NaINJipA8H6sqFwf6QEnxvA5+6g65uX8refI+XDagUScQ237iaISMRXr57ZUh7i+hrZjZuilNuu7fm73ti/PDSyC9wsiKgPjhS6H2d9cObyDlQ81EhrcKoSafJj+yI+69gVjnQ/ltfeAxsKiBS4FONz0EqoiRI3g/E/PYFC3AGI1j66yf68t/36nHXdRlunAiuniFzQG8FhLG/iTzfL5cTu2L1xNjsOJSIxp/qi1QD3izkehxPPvE1Ku80ay8n1ZnlQJVIh4akZdWqYl8qk/gHAQfi5jwm/JJ+PZk6sNssIbyduHQQicIoeSezep1UpJuo8YhWlavSIMnDh0Yod1EP2vOhGSMXKE+p+B44UZlZf5kGDIQU+tVtFT2EgEmyPH1wcdF4ieZ82FB7Rz4uJKeTzKajKizohkykTA67lAJEkb7QfluQhIB2YzqA7ObxrIin1BvFzKIUc6SzOC0/6TiamFuaQ9Yn4jNQW5cHKidbQgNTJi/irMeHULkK8KsIPzmpPePgV7x1+XEyhPodCJgwwt10AhfG/nu+xqy/8PNPAn+q1TrD+hPtYd51au+meNFLlqhF7lyqg73jH2WrbLxN3sc8OpO/U1Rhh9U35dGhW+JR5UD9h6lsDTZ0q8jH1msKtLb3tekf/a8s31L9ypIkNBQy/8p3DLwo+1OddvyVFYGRInG42U6CeRTfUUfa49WW1UYn3EvSiyOT1zedXvNRR4QD7bJXkxCFJSb6BAsmmkf4NpCpEP4BKwG7DwZbd4PqXI1JzfT6XrQqGnUkKvJ939/ATYorrc79ASvLEW3kBBimOI/en9UT58G5Fh1E0tUI7EKLErycrHXC27Dzrkpz4OtHZBAE6jyG1iZCqY69huTygPBE1sXf1KKMDQSLpPCj8rsVUVUTYRj47jKWlCazMUw7sZfTHyFsls2nZR//zIzPfU5UwuiI5agViA1IOyYmDkyiU8YiDePRtpLYy+6fTDmoZFLxdvnu/9S1QtLNjyvC7q6SKF8coppokJwik7xjyAqC4dQoi9+DlFE7Z7BLzeV/26jBGk72C6AYOChlk5wuLKIIDcV8/2lfcfB+3CwFukOYZPy6RFKuyEK7efhjsN1DPhw/p5zExRfmciilFiBZacMrSo6cTTd4ZVqjhYn8G+Kbx1yP+90htc8TL7gGpnJBjuG/8hZ04EW4X9V2JtA8rf4CcSDwBcV2//lXs90faz3tAOz0upqqjmRvjIpCJHdk9w/qKHPhzg5o9u5+f18kqrjfBfcLbSBGOlBIhBXLkssPLERRIlUHfs8s0ppIIBs1kDQ4Vwny+l9u2eaI/op1+KabKpDBHg/pkD4VxCT/QXsAXXLKxx0TW639gJpzPz+BDm35dWj/EI056nMuxC4h749FQPHcBqRbJM6TqwHHdNm1O1eX+9ANB0UaPUe8V2UVqtRlNoWjzL+LP6af+/jzvZbabY8ep6Xmy2tMLn2cheQfh/bMfr2SomKp6IWho5y1LbdHDIuNjwf7KjiGxtdlX4w1E3RmQAh/ajrPSxjM84iffMnx7H54PX5+hDeSKxdwsex63iPbOjr6H+9lD5RK+ZeOG20mhR8+6yLZNaxD6X/uhPMsiWypn2TWNq009ViFUh/wqPrGfF8t+90HqUkyBG31xbMYQ8HnSGQoYAMTWUCKygyd4Bh/aCiSzrKqTSI29Zrmoxa5Rz57P4wYpM2QWfUBqDCkhF8canw/sqs3FEd+Gw/E4dorFuE1sdhWLTHTwnKESdSywLpLSLNl6uRdSkZiaaEQXF/5WImpTnp/egjWUT81HnwKNkxkvxuNxHKkN+2toinMoWlG37On7cDh8q5EKRwpUQnjOAvzleQwJuH/4hbqPb4p/uwDPPrAvh1iENqCqmK0OGXzNuhHOjIXr3Tuf0ZsGIaY88Wh24NDd6PzZt6ZACkFzFgypev/jMxRuRJFa8RtpkkLDDdbLzOL9/XzazAZWrbWqEf1NIjKZ9+ZAKo24Uy22iNT5NlBjUODEfB/SM4wrRNvRhigo+N0ULkmEH6TkRnhnnZDkc9qZ6vHHOYQsmDnk5PkRB85T2TeVFM7nPUZfAXOT8DVar/LoBZ9qDpehV20Y0at3pULMN4nIrHfIHCrwcMQpcDtQPyTWmw719oUdmbxub7MQk7Bji/auWKcBcBOe+KaRwr2Jir45FsHnBRNJ2tnsWSM0QcvzA9eW3zlooJgbi/P5jTd93ThSPAeMzYtzKWqpAIfkJ0BE/MPpdFjloySA2/H9TelG8C2GqOKISQeEaLVjD2IswIE0dEzWdAXh54vwA0Vjd5miulc7L9GZ6mJnSpxtPBX7zMRtDBtE3oEBD/Q8Xpy7ncFUEbTPkOIcP9b570vwFAaz1Ufm/I6vh2scKah8fHzrcoJCTavLAyMHklKC5HHv8XBeRYys3aTNBs8oOVKcBV06vK8bTHAMSI37JvprM6Dvku9V+l13phRxjeOa1gTm8rdzebkAnnj4CxyLoQ529f0J39XwbISuRnKccBeuYx83mXN2DEw+HC8WCzgmifInIDLd0bcu8Hx0md+wf0wMccsLSBfDt+HicGzgzaqj1Wa9WXctOtQx3+l6gyobqRZMNvBkBL3BUyp49j2L5Fglg52pbsSK4EHvVxn6XLBEbI4zsXGZIgtgNiJKRhAd/Xkir+ELTcFpgIjPB7qYsfOOUedX3gHet7dFf7v6PLq1JmsZqu56Skemh5NJ4NRqNh0pioZj030IuaMIP3Duzj3bCUkxNfIbkZi6aUOrIDP64uxFQ8hCjhQOI1B63x4CU7zABBHx1z7c+Ww6A/0YDqn/DN8xf5b9rm2Z5WJ8kFqlOqOvHEdyRC0bA0fHSiBUkxxp0gc5fs9YwJ00990Vqeg1n0YqvwIqO/4ScZal1PHhd0ez7XkoFPQQ25yF+Xc/zy5o948jBQpjMuN8jC9bv3rbzy7cXfHyKsHr9ZoN+3bxLbZt4whtnEfjOGzSEY6/cdzBaGJCwQ0hPv5C11VtrqfuohJibWELKhmIncHw29ukt6cph4RgHifiC4UFyIfvf69LpBZvRxxt0WWDHieJCTBNmjULZd1sOPagG85wKBuiRAex82H/YuA/Hb0MUHUGXXhO3vvCp+1E1YXgu1+JnMx8KKYyv/QphMIcf78LimOiffv1YoHcVkWtvshssI7twt3TIZCBHK9VMJzpuisG++F0mYD5UpWPXm80YpNJTB2n5JgMKqADk70FqXSAz+84MeQi+IAgmm+3b1F+gNRufQ/VEFWAdvU1uh7w83ifQfmlt0xe1qo40giiyO2A51SBbardyXTq48D8APGhlETnYFFf4hP8khOUSnT6AB9H2GbHNQeBB7HXYDPY7oYUHY2ANV/oxKQTc4ExzUDvi8NebDsbv4LqDVWANpY/x0LvfbjfTcOR2wYRSGhLSpjmDjouG8hOJwzhyGNAZ8TnqA3ouGVOSHJmn6mLOW9s4j8dzVziUFUrOZJvA044K7J1x1mRierYC8tEOws5Dvonu99+QkXQLoPEO0rxiZxt9oa3sXrDh6q9U/mU7X1gj8gsJK5S9WvgxZBqLfAjmw7fpnNHLBzSjmO6kbCrdN6jKwiJTx6IptbGJlKymZRFDpULLmrjZIAOm2l7t0nJEaFDdTwCPncFIP22qcb3NAXRL+g7hbx3vonVG7KNdgQqrVyM3CB5fCBWde2DgMISpOvZHTpylE22qbXkRAEBD2ckOv+4GZuuHZ+cy6cVqkVDjqGnTogHvufsbYYU7yNg/zHemRJWNGuQsfpSQpcI9veKdmb8Nhzz8JTdhstSjyhls92A0huUAOVnSj8YXHR2UYNPKzb53BNmfH52W9AR7kFDrVwUK0wIjMSEbwYVnZdBYY6vCHBHpNjrq0E+6kwNdQh3y7WDKY6Fq4dRK4aKS5v6W7nmjo7YBCrLovhNJ7pLMKT1tgXZFPmZA8QQ8jj70DnFDCeDTnnTo7mkHB5TTME1GEhF6USXiwjk2cwMOqOgzbMizjJAoAr3meUe+RTIKXzTINrC2M84LNlbbuz9aESX4XcAlX0eqMkjxZA6rzYb+OlUepBIYBE/O/yx43OnIMjpbxFbc4D44hsCpfgiC7HVcMS0KD5/zDTFyiWFOy3yEheeHch8nS9KxVRABvReJzgFZrNrxJrAwwrJ7/eHiaNzKlIhHe44UhViAsJrSkQjDhBn6Bg/S4LGeYNiWjebcSr5uigIKQo2gdLlhGgOlSrhrhj3Xg1HNKfoO9EOzd+14zY7zKqkvGbDOkECTvwNFB6yisF+QVg/4IvdFTjcqT4PJI6AonnaTGdUUNtxfKwEP4s0JibCyWm68ZUULtjoNkgRVAUxzZWF6n1XWOLKEzV6w+pYvCtXdmx8t8HuFuVzON1oUccIu7rtzG4JoTmlsYmDdQRSBmkup5OATQd1EgC14/xcMZg7sfnNiZnfAp6IkBKhFjdxE4mp0zIr3nPVrlw0IqHdAk6vNgyR3IF+KfHScfqTTUMGGO2P51cr2v+YTPzpemnLdwCQGJvrkAkANsW4nWRoClEptrAWn7AbW01AoBMnpEt0rm5DTMePrb0kfnYPoNgkURyFzmYVdQajoFttFxVFdTw2R9ii6zcEs0C2AFgTwN74jK4h+29c2ZJaAFKzLhXIvHiV+LCZ35J/osXa6A1drSH0vQ99A1UuWuEhsb7DXYCKTSsSEpeWFDbUrB0hn1sWQjXViCq7DHucmxnScfw4b823SKE/pLpqWCbNgK2vwopXkcAkQWuXBP0N8/xplCKobq2pdyecOFL5hMSlM/RdKMf4WgZQd4BwnEHpu2JMBdVckxgTNjeETl5rkcI6tN2WjpK07QFQKJD5WiQqhpmaIKA/JOg/B88NrP7yz//U8aMZtXLqMbZ+eJ1lIoOx6SG0V7kYZo8l8KmAzzfCZmO8t5S3WRGPM3GFC93k5xhMV3f6l+/lQTDxw3PdxlcIw4n8DVa10zVX6ExbiD8on0tnxGlAxUQVQ0zOYWMvYXJF0GUUKFZyqfElpm4h9Ijn/hiY+NFvLZFg0tUkyriIj0lfwx8h/D7fDthJgEKni7NtG3Je5AAq+BFboYbOwuUlV+F7fB52P4+znIAquexGxSgz9YwrJ9D4AynQclBDFFrdrpiWbLIlWbATR+U45IHYEmz576nop2/7r5iAimEFTsQKClG1YzXFJnDTlUJI0Qlw+QwKCO8CtBsWX6yOV72yiL+G6Ydv9v9nDCqx4ipd90eVHBOJraprKErJxQij/UTOY4bO5nC3qB6n/FYpRatq/uPRSViOu1V8xalY66fIlwXoVDtVjy2VxTyHdQFKBl+1hBYsJkt6/46VWq8tlxN+FasoeOsnsSaHyxarQ9fR0XNYD4At8cILFgPXHv1nrKj5lywnwUqKXOVCbMVXGC1yOYnsxtZ3Y0uTqrKI/+m7eoxJzk2mdCm2TN5P5KvWGuWIyeSCXf/O9aSv7XY6T/QTkyshF1jFH+suyRX1/mVMfsuS+TyCSsUIq0SNJU3IJeVq3fu7djv+MRbTpapYsTSKMLm8crScp/LfxIkklhiM+olXa1Ze95R++rp/wKR+4GIrGWHf2E9f9M9YPMKulovFr9P/IyFhlwF2o0pJUeIW46PUdf7AUh76nywFKbXUUksttdRSSy211FJLLbXUUksttdRSSy211FJLLbXUUksttdRSSy21P7BcTnn9ZrCgory+/mrq5U9f+m825fXp+fnp6fX19Qn+fXri/9JPz/gN20K3sZ34Lq+v/zGoXp+flOdv7ElRXhJ/J799/elr/732+kxeX56eXl6elKdnXETwJfcCYffy+vzy/ERw8/MLAcByBDY8wxew0+uTQnKvz/8xpJ6eAYInwCWXe33JPT3nXhCr1xflSXmBj4jjiwKIPQNGz6+AKI3W5xz8/fTT1/577ZVCkIP/vqDTAEYAAXwENn/BD0oOUHpiX8F+8CFHdwD7j/nUKyUfART7TD+80G3sf/lXL2zjy3+Tp3Kvr1FO45/kFvEn20L/iu2a+z8hgbFa3dwXSAAAAABJRU5ErkJggg==" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
-                            class="fa-solid fa-calendar-days"></i> Monday, 09
-                        Mei 2029</div>
-                    <p class="text-gray-700 text-base dark:text-putih/90">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="border-y "></div>
-                <div class="px-6 pt-4 pb-2">
-                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru "></i>
-                    <span
-                        class="inline-block rounded-full px-3 py-1 text-sm font-semibold dark:text-putih text-slate-500 mr-2 mb-2">los
-                        santos, USA</span>
-                </div>
-            </div>
-
-            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
-                <img class="w-full" src="data:image/png;base64,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" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
-                            class="fa-solid fa-calendar-days"></i> Monday, 09
-                        Mei 2029</div>
-                    <p class="text-gray-700 text-base dark:text-putih/90">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="border-y "></div>
-                <div class="px-6 pt-4 pb-2">
-                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru"></i>
-                    <span
-                        class="inline-block rounded-full px-3 py-1 text-sm font-semibold dark:text-putih/90 text-slate-500 mr-2 mb-2">los
-                        santos, USA</span>
-                </div>
-            </div>
-
-            <div class="max-w-sm rounded overflow-hidden shadow-2xl dark:bg-abu">
-                <img class="w-full" src="data:image/png;base64,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" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                    <div class="font-medium text-slate-500 dark:text-putih mb-2"><i
-                            class="fa-solid fa-calendar-days"></i> Monday, 09
-                        Mei 2029</div>
-                    <p class="text-gray-700 text-base dark:text-putih/90">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                        perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="border-y "></div>
-                <div class="px-6 pt-4 pb-2">
-                    <i class=" fa-solid fa-location-dot text-slate-500 dark:text-biru"></i>
-                    <span
-                        class="inline-block rounded-full px-3 py-1 text-sm font-semibold dark:text-putih/90 text-slate-500 mr-2 mb-2">los
-                        santos, USA</span>
-                </div>
+            <div class="">
+                <h3 class="text-gray-400 text-sm font-light">Tel</h3>
+                <h4 class="text-white text-md">+62-456-7802</h4>
+                <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
             </div>
         </div>
-    </section>
-    <!-- agenda -->
-
-
-    <!-- galeri -->
-    <section class="md:px-32 px-10 md:mt-[3rem] mt-[3rem]">
-        <div class="flex justify-between md:flex-row ">
-            <button class="bg-orange/40 md:w-[110px] w-[110px] h-[2.5rem] rounded-lg md:mt-10 mt-10">
-                <p class="text-red-500">Galeri</p>
-            </button>
-            <button class="border-orange border-2 w-[130px]  rounded-lg md:mt-10 mt-[2rem]">
-                <p class="text-red-500">Galeri Lainnya</p>
-            </button>
-        </div>
-        <h1 class="text-2xl mt-10 dark:text-slate-300">Galeri <span class="text-red-500">terbaru</span> kota Kansaas
-        </h1>
-
-        <div class="my-10">
-            <div class="swiper mySwiper flex justify-center items-center w-full">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="/src/img/Rectangle 65.png" alt="" class="w-full">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/src/img/Rectangle 65.png" alt="" class="w-full">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/src/img/Rectangle 65.png" alt="" class="w-full">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/src/img/Rectangle 65.png" alt="" class="w-full">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/src/img/Rectangle 65.png" alt="" class="w-full">
-                    </div>
-                </div>
-
+        <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
+            <div class="">
+                <img src="/src/img/Icon.png" alt="..." class="w-9 h-9">
             </div>
-            <style>
-                .swiper-slide {
-                    text-align: center;
-                    background: #fff;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .swiper-slide img {
-                    display: block;
-                    /* width: 100%;
-                    height: 100%; */
-                    object-fit: cover;
-                }
-            </style>
-        </div>
-    </section>
-    <!-- galeri -->
-
-    <!-- peta -->
-    <div class="md:flex hidden gap-28 justify-center items-center md:flex-row flex-col">
-        <div class="md:w-[40%] w-[20rem] flex items-center content-center">
-            <svg version="1.2" viewbox="0 0 1000 1745" xmlns="http://www.w3.org/2000/svg">
-
-                <a title="kansas" href="#kansasselatan">
-                    <path class="fill-[#9BA4B5] stroke-black stroke-1 hover:fill-red-600 transition-all delay-75"
-                        d="M600.8 944.1l-0.3 7.4 3.2 10.1 1 8.6-4.3 21.1-4.2 20.9 2.1 36.5-14-1.6-8.9 1.4-4.9 8.2-2.9 2.5-3.2 1.8-5.3-6.7-7.3 3.6-18.2-0.1-14 11.5-12.7 1.9-16.4-13.6-6.6-2.5-6.1 3.7-2.7 7 1.5 16.3-9.4 10.5-16.3-1-28-17.6-9.1-12.6 0.2-4.6 2.5-3.3 0.9-5.4-1.3-5.6-2.2-4.7-2.7-4.4-4.4-9 1.1-9.4 6.2-5.7 1.6-3.8-0.1-4.1 1.3-5.3 0.2-5.2-8.1-7.9-2.4-13.8-1.3-14.9-2.3-3.2-1.6-1.1-0.1-7.7-3-7.7-4.4-7.4-3.1-6.9-3.4-0.9-3.9-2.2-1.1-7.9 2-7.2 9.4-7 14.9-5.5 7.8-9.5 7.1 0.3 5.3 3.5 6.6-4.6 3.2-5.4 3.1-2.1 2.9-1.7-0.3-3.2-1-2 5.7-5.9 4.2-6.5-0.1-8.3 2.5-7.1 4.4 0 3.3 0.9 2.6-1.8 8.6-9.1 5.7-5.1 8.4-4.2 9.3-3.8 3.8 3.8 6.2 6.9-0.2 7.9 2.4 2.6 3.7 1.4 2.9-1.8 0.2-2.9 5.3-2.5 5.1 1.4 7 1.5 6.5 3.9-13.3 13.9-4.3 21.1-1.2 10.2-4.3 18-1.5 3.2-0.8 3.3-12.8 2.8-3 12.3 6 27.1-0.8 8.7 4.3 6.2 11.7 2.6 11.1-4.7 8.8-8 3.8 5.3 6.7 4.2 2-7.8 1-8 23.7 1.7 22.8-4.2z"
-                        id="LKA2449" name="Mātale">
-                    </path>
-                </a>
-
-                <a title="kansas timur" href="#kansastimur">
-                    <path
-                        class="fill-[#9BA4B5] stroke-black stroke-1 hover:fill-blue-600 transition-all delay-75 duration-75"
-                        d="M969.1 1046.4l-6.6 5.4-6.2-4.9-2.8-2.9-0.6-4.5 1.9-28.9-1.3-9.7-4.8-4.2-1.9-3.9-14.7-21.8-0.8-4.7-3.8-8.1-1.5-4.4 0.2-4.6 1.4-4.1 0.6-4.3-2.2-5.2 5.7 5.5 5.4 12.9 4 5.9 5.1 13.7 15.7 25 7.5 38.9-0.3 8.9z m-23.3 13.5l-20.5 3.4-9 7.2-15.4 15.4-3.3-7.2-1.3-25.3-3.4-10.9-0.2-11.2-10.4 5.8-29.4 3.2-29-5-7.5-7.3-13.9-8.3-4.1-6.7-0.8-7.5 4.3-12.9 0.6-13.4-14-2.7-13.4-3.8-9.8-9.4-15.1-21.9-11.8-3.8-14.2 0.7-12-2.4-6.2-34.5 3.9-34.3 3.3-13 9.9-6.7 12.6-1.8 16.1 2.2 4-0.3-3.6-16.7-7.4-16.1-3.3-16.4 3.6-70.4-2.3-23.3 7.3-2.6 39.7 4.2 10.5 35.9 3.5 20.3-8 11.1-5.1-21-6.7-18.6-3.3 0-0.5 14.1 0.5 4.5-0.6 1.1 0 2.3 0.6 2.7 1.5 1.7 3.8 1.2 0.7 1.4 3.6 9.3 7.8 5.7 7.4-0.6 2.6-9.6 2.7 0 3.6 6.5 3.6 16.1 3.7 6.2 5 5.4 3.1 5.3 5.5 12.6 2.1-2.2 2.9-2.1 1.3-2.1 1.9 4.2-1.9 2.2 2.5 3.8 0.2 2 2.3-1.8 4.5-2.2 2.3-1.8 2.3 5.6-0.9 3.6-1.6 3.6 0.2 5.5 3.1 6 9 6.9 3.2 5.4-2 0.1-4 2.6-2.6 9.8 5.2 15.2 9.1 10.5 9.4-1.7 3 0 3.1 9.3 4.6 7.6 19 19.9 6.2 9.8 1 8.6-9.8 3-4.5-3.1-10.9-13.9-5.6-4.9-7.4-2.7-6 0.5-4.6 4.8-3.2 9.8 5.3 2.5 5.1 0.7 4.4-1.7 3.3-4.5 5.2 2 4.8 2.3 2.8 3.4-0.7 4.8 11.7 11 4.6 5.3 4.9 8-2.3 2.7-0.6 2.5 0.7 3.1 2.2 4.2 2.7-3.4-1.7-6.1 5.2 1.9 10.3 7.6 2.4 3.6 8.2 20.7-0.5 0.9-2.6 11.3 0.5 1.4 2.1 4.3 0.5 1.8-1.8 3-3.1 2.5-1.9 2.7 2.2 4 2.2 2.8 0.8 2.5 1.3 2.6 3.3 2.9-4.8 3.4 0.4 1.6z"
-                        id="LKA2452" name="Maḍakalapuva">
-                    </path>
-                </a>
-
-                <a title="kansas pusat" href="#kansaspusat">
-                    <path
-                        class="fill-[#9BA4B5] stroke-black stroke-1 hover:fill-yellow-500 transition-all delay-75 duration-75 "
-                        d="M742.8 704.6l2.3 23.3-3.6 70.4 3.3 16.4 7.4 16.1 3.6 16.7-4 0.3-16.1-2.2-12.6 1.8-9.9 6.7-3.3 13-3.9 34.3 6.2 34.5-2 10 1.4 10.6-2.4 4.8-2.9 2.9-2 5.3-1.1 4.6-8.6-1.1-10.4-6-21.4-6.6-13-13.1-16.1-6.2-8.1 1.4-16.5 1.6-8.3 0-22.8 4.2-23.7-1.7-1 8-2 7.8-6.7-4.2-3.8-5.3-8.8 8-11.1 4.7-11.7-2.6-4.3-6.2 0.8-8.7-6-27.1 3-12.3 12.8-2.8 0.8-3.3 1.5-3.2 4.3-18 1.2-10.2 4.3-21.1 13.3-13.9-6.5-3.9-7-1.5-5.1-1.4-5.3 2.5-0.2 2.9-2.9 1.8-3.7-1.4-2.4-2.6 0.2-7.9-6.2-6.9-3.8-3.8 0.6-11.8 8.6-12.1-8.8-7 0.7-15.5 3-17.5 6.4-16.8 3.6-18.8 6.5-17.1 17.5-3.3 19.6 0 5.6-3.3 1.9-7.8 3.3-7.9 5.7-6 6.6-1.9 5.2 7.6 7.1 2.8 6.8 5.3 1.8 9.3 5.6 5.6 18.6-1.8 33.5 8.2 7.9 0 7.3 4.2 7.1 5.5 7.8 4 5.6-0.4 3.2 4.4 0.6 5.7-0.1 5.8 1.5 8.4-2.4 5.6-5.1 3.2 1.8 1.3 2.1 0.7 11.1-2.5 6.2-14.7 2.3-4.3 2.8-11.6 3-2.7 3.4-2.5 2.9-5.3 4-4.4 12.4 0z"
-                        id="LKA2453" name="Pŏḷŏnnaruva">
-                    </path>
-                </a>
-
-                <a title="kansas utara" href="#kansasutara">
-                    <path
-                        class="fill-[#9BA4B5] stroke-black stroke-1 hover:fill-pink-600 transition-all delay-75 duration-75"
-                        d="M789.8 706.2l-39.7-4.2-7.3 2.6-12.4 0-4 4.4-2.9 5.3-3.4 2.5-3 2.7-2.8 11.6-2.3 4.3-6.2 14.7-11.1 2.5-2.1-0.7-1.8-1.3 5.1-3.2 2.4-5.6-1.5-8.4 0.1-5.8-0.6-5.7-3.2-4.4-5.6 0.4-7.8-4-7.1-5.5-7.3-4.2-7.9 0-33.5-8.2-18.6 1.8-5.6-5.6-1.8-9.3-6.8-5.3-7.1-2.8-5.2-7.6-6.6 1.9 9.6-34.3 1-5.6 1.8-5.4 5.5-5.4 6.3-4.1 3.6-6.6-3-6.8-5.1-4-3.9-5-6.3-14.9-11.6-17.4-1.9-10.7-4.7-4.6-3.7-4.3-0.4-9.1 6.9-16-3.4-9.4-8.2-17.9-0.3-19.3 7.5-11 5.2-11.6-4.2-3.2-3.6-4.9-6.8-7.4-19.2-13.5-11.3-6.4-12.9-0.3-12.5 5.1 2-7.8 3.6-6.4 17.4-8.1 20.4-2.7 8.5-2.4 7.6-4.6 8.5-2.4 7-3.1 0.2 7 5.2 3.7-4.7 4.5-4.2 4.9 7 5.5 7.4-0.5 6.2-5.8 4.5-8 3-7.3 16 19.4 14.1 24.4 5.8 6 8.1 2.4 6.5 5.2 9.5 23.1 4.9 5.3 10.9 4.9 5.5 11.7 6.2 23.3 1.1-4.3 1.4-1.6 2.4 0.5 4.3 2.4-1.2 4.3 12.3 13.4 4 6.7 0 8.1-3.2 3.2-4.6 2.1-4.2 4.9 6.5-1.7 2.6-1.3 9.5 20.9 1.4 10.9-11 1.7 2.3-7.2-3-5.7-4.8-0.9-3.5 7.7 1.2 6 3.1 4.2 1.7 4.6-3.3 6.8-7.4-5.7-7.6-4.7-7.8-1.8-7.3 3.1-5.7 7.7 2 4.1 6.8-1.1 9.2-7.6 6.3 6.7 5.7 8.1 7 6.8 9.7 2.8 20.3-0.4 6.8-4.4-4.5-10.5 11.6-5.3 4.6-1.4 4.9 0.3 5.4 3.1 4.9 5.3 3.7 6.1 3.1 17.9 6.9 23 0.4 12-5.6-3.9-5.8-11.9-5.2-2.5-0.2 3.2 2.3 15.7 2.4 5.5 5.7 2.7 6 0 4.8 2.1 2.8 17.1 3.9 13.8 1 7.3z"
-                        id="LKA2454" name="Trikuṇāmalaya">
-                    </path>
-                </a>
-
-                <a title="kansas barat" href="#kansasbarat">
-                    <path
-                        class="fill-[#9BA4B5] stroke-black stroke-1 hover:fill-green-600 transition-all delay-75 duration-75"
-                        d="M572.2 669.1l-5.7 6-3.3 7.9-1.9 7.8-5.6 3.3-19.6 0-17.5 3.3-6.5 17.1-3.6 18.8-6.4 16.8-3 17.5-0.7 15.5 8.8 7-8.6 12.1-0.6 11.8-9.3 3.8-8.4 4.2-5.7 5.1-8.6 9.1-2.6 1.8-3.3-0.9-4.4 0-2.5 7.1 0.1 8.3-4.2 6.5-5.7 5.9 1 2 0.3 3.2-2.9 1.7-3.1 2.1-3.2 5.4-6.6 4.6-5.3-3.5-7.1-0.3-7.8 9.5-14.9 5.5-9.4 7-11.2-10.9 1.7-15.4-2.2-10.6-4.2-10.3-1.1-7.5-3.7-6.2-7.1-0.5-6.2-2.6-0.8-7.7 0.6-8.1-1.3-9.6 0.8-5.6-0.1-5.6-6.7-5.5-8.3 0.3-8-4.9-7.2-7.3-13.3-10.9-14.6-5.6-8.2-1.2-6.6-4.8-8.5-3.4-8.7-2.2-40.7-18.7-9.6-5.4-4.9-6.4-6.5-5.2-9 0.3-7.9-5.9-7.4 3.4-9.2 0-2.7-7.9-11-45-6.5-12.6 4.8-11 7.4-3.5 2.1-4 0.6-3.1 13.7-11.3 8.1-17.1-2.5-18.5 3.6 1.8 4.3 0.5 0.9-41.4-3.5-26.2 19.6 8.1 21.7 0 43-11.3 0.2 14.5 4.5 12.6 6.7 2.3 6.5 3 2.9 5.5 1.6 6.1 4.7 9.5 9.3 5 4.6 1.2 4.3 0.3 6.8-12.2 7.8-3.5 8.3-19.2 17.4-22.7 13.4-6.2 8.2 4.4 7.5 5.3 14-0.1 11.8-9 11.2-10.1 9.6-11.3 5.4-8.2 6.2-7.6 10.5-8.4-3.7-11.6-8.1-10.5-11.5-4-0.9-9.8 32.9-1.2 12.8-9 11.6-3.3 12.2-2.3 12.5-5.1 12.9 0.3 11.3 6.4 19.2 13.5 6.8 7.4 3.6 4.9 4.2 3.2-5.2 11.6-7.5 11 0.3 19.3 8.2 17.9 3.4 9.4-6.9 16 0.4 9.1 3.7 4.3 4.7 4.6 1.9 10.7 11.6 17.4 6.3 14.9 3.9 5 5.1 4 3 6.8-3.6 6.6-6.3 4.1-5.5 5.4-1.8 5.4-1 5.6-9.6 34.3z"
-                        id="LKA2455" name="Anurādhapura">
-                    </path>
-                </a>
-            </svg>
-        </div>
-
-        <div class="md:w-[50%] w-screen flex flex-col gap-2 ">
-            <h4 class="text-4xl dark:text-putih font-medium font-poppins text-black pb-52">
-                Wilayah <span class="font-poppins text-orange">Kansaas</span>
-            </h4>
-            <div class="flex">
-                <div class="flex flex-col gap-4 justify-center dark:text-white">
-                    <div class="shadow-lg rounded-lg p-4 border absolute hidden" id="kansasSelatan">
-                        <img src="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?crop=faces%2Cedges&cs=tinysrgb&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjg1OTQzNzU1fA&ixlib=rb-4.0.3&q=60&w=1200&auto=format&h=630&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-mode=normal&blend-alpha=10&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=000000"
-                            alt=".." class="gambar1 h-[200px] w-[500px] rounded-lg">
-                        <h5 class="text-2xl my-2 font-poppins font-medium dark:text-white text-black">
-                            Kansas Selatan
-                        </h5>
-                        <p class="w-[30rem] text-justify text-black dark:text-white">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur alias vitae
-                            quisquam
-                            explicabo, temporibus iure voluptatibus suscipit facilis molestiae excepturi laudantium et,
-                            in
-                            quasi! Repellat officia odio laborum excepturi. laborum excepturi.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4 justify-center ">
-                    <div class="shadow-lg rounded-lg p-4 border absolute hidden" id="kansasTimur">
-                        <img src="https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNpdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                            alt=".." class="gambar2 h-[200px] w-[500px] rounded-lg">
-                        <h5 class="text-2xl my-2 font-poppins font-medium dark:text-white text-black">
-                            Kansas Timur
-                        </h5>
-                        <p class="w-[30rem] text-justify text-black dark:text-white">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur alias vitae
-                            quisquam
-                            explicabo, temporibus iure voluptatibus suscipit facilis molestiae excepturi laudantium et,
-                            in
-                            quasi! Repellat officia odio laborum excepturi. laborum excepturi.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4 justify-center dark:text-white">
-                    <div class="shadow-lg rounded-lg p-4 border absolute hidden" id="kansasBarat">
-                        <img src="https://cdn.discordapp.com/attachments/1048418492258471976/1115154764955656242/bandung.jpg"
-                            alt=".." class="gambar3 h-[200px] w-[500px] rounded-lg">
-                        <h5 class="text-2xl my-2 font-poppins dark:text-white font-medium text-black">
-                            Kansas Barat
-                        </h5>
-                        <p class="w-[30rem] text-justify text-black dark:text-white">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur alias vitae
-                            quisquam
-                            explicabo, temporibus iure voluptatibus suscipit facilis molestiae excepturi laudantium et,
-                            in
-                            quasi! Repellat officia odio laborum excepturi. laborum excepturi.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4 justify-center dark:text-white">
-                    <div class="shadow-lg rounded-lg p-4 border absolute" id="kansasPusat">
-                        <img src="https://images.unsplash.com/photo-1444084316824-dc26d6657664?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNpdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                            alt=".." class="gambar4 h-[200px] w-[500px] rounded-lg">
-                        <h5 class="text-2xl my-2 font-poppins dark:text-white font-medium text-black">
-                            Kansas Pusat
-                        </h5>
-                        <p class="w-[30rem] text-justify text-black dark:text-white">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur alias vitae
-                            quisquam
-                            explicabo, temporibus iure voluptatibus suscipit facilis molestiae excepturi laudantium et,
-                            in
-                            quasi! Repellat officia odio laborum excepturi. laborum excepturi.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-4 justify-center dark:text-white">
-                    <div class="shadow-lg rounded-lg p-4 border absolute hidden" id="kansasUtara">
-                        <img src="https://images.unsplash.com/photo-1619147531445-82ddcc8d8fb1?crop=faces%2Cedges&cs=tinysrgb&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjg1OTQ1MzQwfA&ixlib=rb-4.0.3&q=60&w=1200&auto=format&h=630&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-mode=normal&blend-alpha=10&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=000000"
-                            alt=".." class="gambar5 h-[200px] w-[500px] rounded-lg">
-                        <h5 class="text-2xl my-2 font-poppins dark:text-white font-medium text-black">
-                            Kansas Utara
-                        </h5>
-                        <p class="w-[30rem] text-justify text-black dark:text-white">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis tenetur alias vitae
-                            quisquam
-                            explicabo, temporibus iure voluptatibus suscipit facilis molestiae excepturi laudantium et,
-                            in
-                            quasi! Repellat officia odio laborum excepturi. laborum excepturi.
-                        </p>
-                    </div>
-                </div>
+            <div class="">
+                <h3 class="text-gray-400 text-sm font-light">Mail</h3>
+                <h4 class="text-white text-md">kansascityGoverment@gmail.com</h4>
+                <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
             </div>
         </div>
-
+        <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
+            <div class="">
+                <img src="/src/img/Icon-1.png" alt="..." class="w-9 h-9">
+            </div>
+            <div class="">
+                <h3 class="text-gray-400 text-sm font-light">Address</h3>
+                <h4 class="text-white text-md">706 Campfire Ave.Meriden, CT 06450</h4>
+            </div>
+        </div>
+    </div>
+    <div
+        class="md:p-11 mt-4 md:ml-26 flex flex-col md:justify-start md:items-start items-center justify-center cursor-pointer">
+        <h5 class="text-white font-semibold text-md md:text-xl">
+            Social Media
+        </h5>
+        <p class="md:w-[70%] text-gray-400 text-sm mt-1 md:mt-2">
+            Follow our social media to get the latest news and events for sure
+        </p>
+        <div class="flex gap-3 md:mt-0 mt-5">
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-blue-900 hover:transition-colors">
+                <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4 ">
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                <img src="/src/img/Social_Icons-1.png" alt=".." class="w-4 h-4">
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-green-900 hover:transition-colors">
+                <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4">
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-gray-900 hover:transition-colors">
+                <img src="/src/img/Social_Icons-3.png" alt=".." class="w-4 h-4">
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                <img src="/src/img/Social_Icons-3.png" alt=".." class="w-5 h-4">
+            </div>
+        </div>
+        <div class="flex md:justify-end md:mt-20 mt-4 md:w-[340px]">
+            <h5 class="text-white text-2xl">
+                <span class="text-3xl">K</span>ansas City
+            </h5>
+            <img src="/src//img/city-removebg-preview.png" alt="..." class="w-7 h-7">
+        </div>
+    </div>
+    <div class="md:hidden flex justify-end items-end h-screen">
+        <p class="text-gray-400 text-sm">
+            &copy; 2023, All Rights Reserved
+        </p>
     </div>
 
-    <section class="my-24">
-        <div class="flex justify-center items-center my-5">
-            <div class="flex-none">
-                <h1 class="text-3xl font-medium text-center dark:text-slate-200">Destinasi dan Atraksi</h1>
-                <p class="font-poppins text-slate-400 ">Kami menyediakan keindahan, keragaman, dan kenyamana di Kansaas</p>
-            </div>
-        </div>
-        <div class="swiper mySwiper flex justify-center items-center w-full md:w-[60%]">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="shadow-2xl rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/destinasi1.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 hover:text-orange-400 dark:text-slate-400"
-                            onclick="halaman()">Tempat Rekreasi dan
-                            Taman Bermain</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl  rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/destinasi2.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Wisata Bersejarah</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl  rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/destinasi3.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Pusat Pembelanjaan</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl  rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/destinasi1.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Tempat Rekreasi dan
-                            Taman Bermain</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/destinasi2.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Wisata Bersejarah</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/kebudayaan.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Kebudayaan kansas</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/olahraga.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Olahraga & pertandingan
-                        </h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/tamankota.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Taman Kota</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/wisatakuliner.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Wisata kuliner</h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/wisatakepulauan.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Wisata Kepulauan
-                        </h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/hiburan.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Hiburan
-                        </h2>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class=" shadow-xl rounded-lg w-3/4 md:w-1/2 h-full">
-                        <img src="/src/img/pavillion.png" alt="" class=" rounded-t-lg w-full object-top">
-                        <h2 class="my-3 text-lg font-semibold text-gray-500 dark:text-slate-400">Pavillion Hill
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-        <style>
-            .swiper-slide {
-                text-align: center;
-                background: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .swiper-slide img {
-                display: block;
-                /* width: 100%;
-            height: 100%; */
-                object-fit: cover;
-            }
-
-            .swiper-button-next {
-                color: orange;
-            }
-
-            .swiper-button-prev {
-                color: orange;
-            }
-        </style>
-    </section>
-
-    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
-        class="hidden fixed z-90 bottom-8 right-8 border-0 w-10 h-10 rounded-full drop-shadow-md bg-white text-orange text-xl font-bold  items-center justify-center transition ease-out delay-200">&uarr;</button>
-
-   
-
-    <footer
-        class="w-full md:h-[411px] h-[700px] flex bg-footerCol md:flex-row flex-col justify-center md:items-start md:justify-start items-center mt-20">
-        <div class="md:flex md:items-end hidden  md:h-full md:p-6 ">
-            <p class="text-gray-400 text-sm">
-                &copy; 2023, All Rights Reserved
-            </p>
-        </div>
-        <div class="flex md:p-11 md:mt-4 md:ml-6 mt-6">
-            <div class="gmap_canvas"><iframe class="md:w-[350px] md:h-[250px] w-[350px] h-[250px] rounded-sm"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=kansas city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                    href="https://capcuttemplate.org/"></a></div>
-        </div>
-        <div class="md:flex-col flex-row md:p-11 md:mt-4 md:items-center md:ml-[60px]  mt-4 cursor-pointer">
-            <div class="flex md:justify-between gap-2">
-                <div class="">
-                    <img src="/src/img/call-calling.png" alt="..." class="w-9 h-9">
-                </div>
-                <div class="">
-                    <h3 class="text-gray-400 text-sm font-light">Tel</h3>
-                    <h4 class="text-white text-md">+62-456-7802</h4>
-                    <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
-                </div>
-            </div>
-            <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
-                <div class="">
-                    <img src="/src/img/Icon.png" alt="..." class="w-9 h-9">
-                </div>
-                <div class="">
-                    <h3 class="text-gray-400 text-sm font-light">Mail</h3>
-                    <h4 class="text-white text-md">kansascityGoverment@gmail.com</h4>
-                    <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
-                </div>
-            </div>
-            <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
-                <div class="">
-                    <img src="/src/img/Icon-1.png" alt="..." class="w-9 h-9">
-                </div>
-                <div class="">
-                    <h3 class="text-gray-400 text-sm font-light">Address</h3>
-                    <h4 class="text-white text-md">706 Campfire Ave.Meriden, CT 06450</h4>
-                </div>
-            </div>
-        </div>
-        <div
-            class="md:p-11 mt-4 md:ml-26 flex flex-col md:justify-start md:items-start items-center justify-center cursor-pointer">
-            <h5 class="text-white font-semibold text-md md:text-xl">
-                Social Media
-            </h5>
-            <p class="md:w-[70%] text-gray-400 text-sm mt-1 md:mt-2">
-                Follow our social media to get the latest news and events for sure
-            </p>
-            <div class="flex gap-3 md:mt-0 mt-5">
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-blue-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4 ">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons-1.png" alt=".." class="w-4 h-4">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-green-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-gray-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons-3.png" alt=".." class="w-4 h-4">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons-3.png" alt=".." class="w-5 h-4">
-                </div>
-            </div>
-            <div class="flex md:justify-end md:mt-20 mt-4 md:w-[340px]">
-                <h5 class="text-white text-2xl">
-                    <span class="text-3xl">K</span>ansas City
-                </h5>
-                <img src="/src//img/city-removebg-preview.png" alt="..." class="w-7 h-7">
-            </div>
-        </div>
-        <div class="md:hidden flex justify-end items-end h-screen">
-            <p class="text-gray-400 text-sm">
-                &copy; 2023, All Rights Reserved
-            </p>
-        </div>
-
-    </footer>
+</footer>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+        if (
+  localStorage.getItem("color-theme") === "dark" ||
+  (!("color-theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
 
-    <!-- Load library from the CDN -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
+var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
 
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Selamat Datang di Website Resmi', 'Kota Masa depan Anda',],
-            typeSpeed: 50,
-        });
+// Change the icons inside the button based on previous settings
+if (
+  localStorage.getItem("color-theme") === "dark" ||
+  (!("color-theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  themeToggleDarkIcon.classList.remove("hidden");
+} else {
+  themeToggleLightIcon.classList.remove("hidden");
+}
+
+var themeToggleBtn = document.getElementById("theme-toggle");
+
+themeToggleBtn.addEventListener("click", function () {
+  // toggle icons inside button
+  themeToggleDarkIcon.classList.toggle("hidden");
+  themeToggleLightIcon.classList.toggle("hidden");
+
+  // if set via local storage previously
+  if (localStorage.getItem("color-theme")) {
+    if (localStorage.getItem("color-theme") === "light") {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("color-theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("color-theme", "light");
+    }
+
+    // if NOT set via local storage previously
+  } else {
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("color-theme", "light");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("color-theme", "dark");
+    }
+  }
+});
     </script>
 </body>
-<script>
-    function Menu(e) {
-        let list = document.querySelector("ul");
-        e.name === "menu"
-            ? ((e.name = "close"),
-                list.classList.add("top-[80px]"),
-                list.classList.add("opacity-100"))
-            : ((e.name = "menu"),
-                list.classList.remove("top-[80px]"),
-                list.classList.remove("opacity-100"));
-    }
-
-    function lingkungan() {
-        window.location.href = 'http://127.0.0.1:5500/public/lingkungan.html'
-    }
-
-   
- 
-    function goToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function buka() {
-        pop.classList.add("flex")
-        pop.classList.remove("hidden")
-    }
-    function buka1() {
-        pop1.classList.add("flex")
-        pop1.classList.remove("hidden")
-    }
-    function buka2() {
-        pop2.classList.add("flex")
-        pop2.classList.remove("hidden")
-    }
-    function buka3() {
-        pop3.classList.add("flex")
-        pop3.classList.remove("hidden")
-    }
-    function buka4() {
-        pop4.classList.add("flex")
-        pop4.classList.remove("hidden")
-    }
-    function buka5() {
-        pop5.classList.add("flex")
-        pop5.classList.remove("hidden")
-    }
-
-
-    const tutup = document.querySelectorAll('.tutup')
-    const pop = document.getElementById("pop")
-    const pop1 = document.getElementById("pop1")
-    const pop2 = document.getElementById("pop2")
-    const pop3 = document.getElementById("pop3")
-    const pop4 = document.getElementById("pop4")
-    const pop5 = document.getElementById("pop5")
-
-    for (let i = 0; 0 < tutup.length; i++) {
-        tutup[i].addEventListener('click', function () {
-            pop.classList.add('hidden')
-            pop1.classList.add('hidden')
-            pop2.classList.add('hidden')
-            pop3.classList.add('hidden')
-            pop4.classList.add('hidden')
-            pop5.classList.add('hidden')
-        })
-    }
-</script>
-<script>
-    // function random() {
-    //     const kansasRandom = Math.random()
-    //     const kansasSelatan = document.getElementById('kansasSelatan')
-    //     const kansasTimur = document.getElementById('kansasTimur')
-    //     const kansasBarat = document.getElementById('kansasBarat')
-
-
-
-
-    //     if (kansasRandom < 0.34) return kansasSelatan;
-    //     if(kansasRandom >= 0.36 && kansasRandom < 0.67) return kansasTimur
-    //     return  kansasBarat
-    // }
-
-
-    const selatan = document.getElementById('LKA2449')
-    const kansasSelatan = document.getElementById('kansasSelatan')
-    selatan.addEventListener('click', function () {
-        setTimeout(function () {
-            kansasSelatan.classList.add('block')
-            kansasSelatan.classList.remove('hidden')
-        }, 250)
-        kansasTimur.classList.add('hidden')
-        kansasTimur.classList.remove('block')
-        kansasBarat.classList.add('hidden')
-        kansasBarat.classList.remove('block')
-        kansasPusat.classList.add('hidden')
-        kansasPusat.classList.remove('block')
-        kansasUtara.classList.add('hidden')
-        kansasUtara.classList.remove('block')
-    })
-
-    const timur = document.getElementById('LKA2452')
-    const kansasTimur = document.getElementById('kansasTimur')
-    timur.addEventListener('click', function () {
-        setTimeout(function () {
-            kansasTimur.classList.add('block')
-            kansasTimur.classList.remove('hidden')
-        }, 250)
-        kansasSelatan.classList.add('hidden')
-        kansasSelatan.classList.remove('block')
-        kansasBarat.classList.add('hidden')
-        kansasBarat.classList.remove('block')
-        kansasPusat.classList.add('hidden')
-        kansasPusat.classList.remove('block')
-        kansasUtara.classList.add('hidden')
-        kansasUtara.classList.remove('block')
-    })
-
-    const barat = document.getElementById('LKA2455')
-    const kansasBarat = document.getElementById('kansasBarat')
-    barat.addEventListener('click', function () {
-        setTimeout(function () {
-            kansasBarat.classList.add('block')
-            kansasBarat.classList.remove('hidden')
-        }, 250)
-        kansasTimur.classList.add('hidden')
-        kansasTimur.classList.remove('block')
-        kansasSelatan.classList.add('hidden')
-        kansasSelatan.classList.remove('block')
-        kansasPusat.classList.add('hidden')
-        kansasPusat.classList.remove('block')
-        kansasUtara.classList.add('hidden')
-        kansasUtara.classList.remove('block')
-    })
-
-    const pusat = document.getElementById('LKA2453')
-    const kansasPusat = document.getElementById('kansasPusat')
-    pusat.addEventListener('click', function () {
-        setTimeout(function () {
-            kansasPusat.classList.add('block')
-            kansasPusat.classList.remove('hidden')
-        }, 250)
-        kansasTimur.classList.add('hidden')
-        kansasTimur.classList.remove('block')
-        kansasSelatan.classList.add('hidden')
-        kansasSelatan.classList.remove('block')
-        kansasBarat.classList.add('hidden')
-        kansasBarat.classList.remove('block')
-        kansasUtara.classList.add('hidden')
-        kansasUtara.classList.remove('block')
-    })
-
-    const utara = document.getElementById('LKA2454')
-    const kansasUtara = document.getElementById('kansasUtara')
-    utara.addEventListener('click', function () {
-        setTimeout(function () {
-            kansasUtara.classList.add('block')
-            kansasUtara.classList.remove('hidden')
-        }, 250)
-        kansasTimur.classList.add('hidden')
-        kansasTimur.classList.remove('block')
-        kansasSelatan.classList.add('hidden')
-        kansasSelatan.classList.remove('block')
-        kansasBarat.classList.add('hidden')
-        kansasBarat.classList.remove('block')
-        kansasPusat.classList.add('hidden')
-        kansasPusat.classList.remove('block')
-    })
-
-    function visimisi() {
-        window.location.href = 'http://127.0.0.1:5500/public/visimisi.html'
-    }
-</script>
-<script src="/src/js/home.js"></script>
-<script src="/src/js/location.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-
-</body>
-
 </html>

@@ -2839,6 +2839,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-black) {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:hover\:border-biru:hover) {
   --tw-border-opacity: 1;
   border-color: rgb(147 222 255 / var(--tw-border-opacity));
@@ -3225,6 +3230,10 @@ video {
     justify-content: space-between;
   }
 
+  .md\:gap-0 {
+    gap: 0px;
+  }
+
   .md\:gap-12 {
     gap: 3rem;
   }
@@ -3235,10 +3244,6 @@ video {
 
   .md\:gap-\[2rem\] {
     gap: 2rem;
-  }
-
-  .md\:gap-0 {
-    gap: 0px;
   }
 
   .md\:rounded-xl {

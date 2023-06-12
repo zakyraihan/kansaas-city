@@ -28,7 +28,7 @@
         <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
             <div class="flex justify-between items-center">
                 <div class="text-2xl font-medium cursor-pointer ">
-                    <span class="dark:text-putih font-poppins">Kansaas</span><span class="dark:text-white"></span>
+                    <a href="http://127.0.0.1:5500/public/home.html"><span class="dark:text-putih font-poppins">Kansaas</span><span class="dark:text-white"></span></a>
                     <img class="h-[50px]  w-[50px] inline" src="/src/img/city-removebg-preview.png">
                 </div>
                 <span class="text-3xl cursor-pointer mx-2 md:hidden block">
@@ -37,36 +37,32 @@
             </div>
             <ul
                 class="md:flex md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
-                <li class="text-orange dark:text-biru font-medium "><a href="">Beranda</a></li>
+                <li class="text-orange dark:text-biru font-medium "><a href="http://127.0.0.1:5500/public/home.html">Beranda</a></li>
 
+                
                 <li class="hidden md:flex">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
                         class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profil
                         <i
                             class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
                     <div
-                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-48  md:absolute md:top-[3.5rem] md:right-[38rem] mt-2 lg:peer-hover:flex hover:flex">
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-36  md:absolute md:top-[3.5rem] md:right-[38rem] mt-2 lg:peer-hover:flex hover:flex">
                         <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="#"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
-                                    onclick="visimisi()"">Visi
+                                <a href="http://127.0.0.1:5500/public/visimisi.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" 
+                                    onclick="visimisi()">Visi
                                     & misi</a>
                             </li>
                             <li>
-                                <a href=" #"
+                                <a href="http://127.0.0.1:5500/public/sejarah.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
                                     onclick="sejarah()">Sejarah</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/geografis.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
                                     onclick="geografis()">Geografis</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
-                                    onclick="penghargaan()">Penghargaan</a>
                             </li>
                         </ul>
                     </div>
@@ -80,48 +76,39 @@
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/visimisi.html"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Visi
                                     & misi</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/sejarah.html"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Sejarah</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/geografis.html"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Geografis</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Penghargaan</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-
                 <li class="hidden md:flex">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
                         class="text-slate-700 dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center h-9">Informasi<i
                             class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
                     <div
-                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[28rem] mt-2 lg:peer-hover:flex hover:flex">
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-48 h-36 rounded-lg  md:absolute md:top-[3.5rem] md:right-[28rem] mt-2 lg:peer-hover:flex hover:flex">
                         <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="#"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" onclick="berita()">Berita</a>
+                                <a href="http://127.0.0.1:5500/public/berandaberita.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Berita</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" onclick="agenda()">Agenda</a>
+                                <a href="http://127.0.0.1:5500/public/agenda.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Agenda</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" onclick="galeri()">Galeri</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Dokumen</a>
+                                <a href="http://127.0.0.1:5500/public/gallery.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Galeri</a>
                             </li>
                         </ul>
                     </div>
@@ -135,20 +122,16 @@
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onclick="berita()">Berita</a>
+                                <a href="http://127.0.0.1:5500/public/berandaberita.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >Berita</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onclick="agenda()">Agenda</a>
+                                <a href="http://127.0.0.1:5500/public/agenda.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >Agenda</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onclick="galeri()">Galeri</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dokumen</a>
+                                <a href="http://127.0.0.1:5500/public/gallery.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galeri</a>
                             </li>
                         </ul>
                     </div>
@@ -163,20 +146,20 @@
                         class="z-10 hidden bg-white border-t-2  border-orange divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[16.5rem] mt-2 lg:peer-hover:flex hover:flex">
                         <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition ">Profile
                                     Pemimpin</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">DPRD</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">SKPD</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Pemerintahan</a>
                             </li>
                         </ul>
@@ -191,15 +174,15 @@
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings1</a>
                             </li>
                             <li>

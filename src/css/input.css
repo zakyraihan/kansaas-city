@@ -4,7 +4,7 @@
     scrollbar-color: var(--secondary) var(--primary);}:root {--primary:rgb(244, 170, 33) ;--secondary: rgb(249, 167, 17);}
   
     *::-webkit-scrollbar {
-      width: 10px;
+      width: 5px;
     }
   
     *::-webkit-scrollbar-thumb {

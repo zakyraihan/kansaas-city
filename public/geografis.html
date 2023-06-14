@@ -26,36 +26,36 @@
         <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
             <div class="flex justify-between items-center">
                 <div class="text-2xl font-medium cursor-pointer ">
-                    <a href="http://127.0.0.1:5500/public/home.html"><span class="dark:text-putih font-poppins">Kansaas</span><span class="dark:text-white"></span></a>
+                    <a href="http://127.0.0.1:5500/public/home.html"><span
+                            class="dark:text-putih font-poppins">Kansas</span><span class="dark:text-white"></span></a>
                     <img class="h-[50px]  w-[50px] inline" src="/src/img/city-removebg-preview.png">
                 </div>
-                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                <span class="text-3xl  cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)" class="dark:text-putih"></ion-icon>
                 </span>
             </div>
             <ul
-                class="md:flex md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
-                <li class="text-orange dark:text-biru font-medium "><a href="http://127.0.0.1:5500/public/home.html#">Beranda</a></li>
+                class="md:flex dark:text-putih  md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
 
-                
+
                 <li class="hidden md:flex">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profil
+                        class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profile
                         <i
-                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
+                            class="fas fa-thin dark: fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
                     <div
-                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-36  md:absolute md:top-[3.5rem] md:right-[38rem] mt-2 lg:peer-hover:flex hover:flex">
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-36  md:absolute md:top-[3.5rem] md:right-[36rem] mt-2 lg:peer-hover:flex hover:flex">
                         <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="http://127.0.0.1:5500/public/visimisi.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" 
-                                    onclick="visimisi()">Visi
+                                <a href="#visimisi"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
+                                    >Visi
                                     & misi</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/sejarah.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
-                                    onclick="sejarah()">Sejarah</a>
+                                    onclick="sejarah()">Historical</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/geografis.html"
@@ -65,9 +65,9 @@
                         </ul>
                     </div>
                 </li>
-                <li class="flex flex-col md:hidden">
+                <li class="flex flex-col md:hidden dark:bg-item">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
                         onclick="dorpDown()">Profil<i class="fas fa-thin fa-chevron-down px-2 text-lg"
                             id="down"></i></a>
                     <div id="dropdown"
@@ -75,16 +75,16 @@
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="http://127.0.0.1:5500/public/visimisi.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Visi
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Visi
                                     & misi</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/sejarah.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Sejarah</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Historical</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/geografis.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Geografis</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Geografis</a>
                             </li>
                         </ul>
                     </div>
@@ -94,42 +94,42 @@
                         class="text-slate-700 dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center h-9">Informasi<i
                             class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
                     <div
-                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-48 h-36 rounded-lg  md:absolute md:top-[3.5rem] md:right-[28rem] mt-2 lg:peer-hover:flex hover:flex">
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-48 h-36 rounded-lg  md:absolute md:top-[3.5rem] md:right-[26rem] mt-2 lg:peer-hover:flex hover:flex">
                         <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="http://127.0.0.1:5500/public/berandaberita.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Berita</a>
+                                <a href="#berita"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">news</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/agenda.html"
+                                <a href="#agenda"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Agenda</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/gallery.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Galeri</a>
+                                <a href="#galeri"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Galeri</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex flex-col md:hidden">
+                <li class="flex flex-col md:hidden dark:bg-item">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
                         onclick="dorpDown1()">Informasi<i class="fas fa-thin fa-chevron-down px-2 text-lg"
                             id="down1"></i></a>
                     <div id="dropdown2"
-                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
+                        class="z-10 hidden dark:bg-item dark:text-putih bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[26rem] ">
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="http://127.0.0.1:5500/public/berandaberita.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >Berita</a>
+                                <a href="#berita"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Berita</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/agenda.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >Agenda</a>
+                                <a href="#agenda"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Agenda</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/gallery.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galeri</a>
+                                <a href="#galeri"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Galeri</a>
                             </li>
                         </ul>
                     </div>
@@ -137,7 +137,7 @@
 
                 <li class="hidden md:flex">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-slate-700 peer dark:text-putih focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Pemerintahan
+                        class="text-slate-700 dark:text-putih peer  focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Government
                         <i
                             class="fas fa-thin fa-chevron-down hover:translate-y-1 group-hover:translate-y-1 group-hover:text-orange transition px-2 text-lg"></i></a>
                     <div
@@ -146,7 +146,7 @@
                             <li>
                                 <a href="http://127.0.0.1:5500/public/informasi.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition ">Profile
-                                    Pemimpin</a>
+                                    Leader</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/informasi.html"
@@ -158,15 +158,15 @@
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/informasi.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Pemerintahan</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Government</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex flex-col md:hidden">
+                <li class="flex flex-col md:hidden dark:bg-item">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                        onclick="dorpDown2()">Pemerintah<i class="fas fa-thin fa-chevron-down px-2 text-lg"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        onclick="dorpDown2()">Government<i class="fas fa-thin fa-chevron-down px-2 text-lg"
                             id="down2"></i></a>
                     <div id="dropdown3"
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
@@ -192,7 +192,7 @@
                     </div>
                 </li>
 
-                <div class=" flex justify-center items-center">
+                <div class=" flex   items-center">
                     <div x-data="{ open: false }" class=" flex justify-center items-center">
                         <div @click="open = !open" class="relative "
                             :class="{' transform transition duration-300 ': open}"
@@ -204,8 +204,8 @@
                                     <img src="https://images.unsplash.com/photo-1610397095767-84a5b4736cbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                                         alt="" class="w-full h-full object-cover">
                                 </div>
-                                <div class="text-slate-500 text-lg ">
-                                    <div class="cursor-pointer dark:text-putih">Hi, Human</div>
+                                <div class=" text-lg ">
+                                    <div class="cursor-pointer text-slate-400 dark:text-slate-500">Hi, Human</div>
                                 </div>
                             </div>
 
@@ -273,7 +273,7 @@
                 </div>
 
                 <div id="theme-toggle" type="button"
-                    class="text-gray-500  cursor-pointer dark:text-gray-100  text-sm p-2.5">
+                    class="text-gray-500  cursor-pointer dark:text-putih  text-sm p-2.5">
                     <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -293,9 +293,6 @@
     <div class="bg-beritaimg w-full h-[15rem] ">
         <div class="relative top-[2rem]">
             <h1 class="text-4xl font-semibold text-white ml-20 absolute top-10">Geografis</h1>
-
-
-            <h1 class="text-2xl font-medium text-white ml-[7rem] absolute top-[5rem]">Beranda / Geografis
             </h1>
         </div>
     </div>
@@ -373,15 +370,11 @@
         </div>
     </main>
 
-    <footer class="w-full md:h-[411px] h-[700px] mt-[5rem] flex bg-footerCol md:flex-row flex-col justify-center md:items-start md:justify-start items-center">
-        <div class="md:flex md:items-end hidden  md:h-full md:p-6 ">
-            <p class="text-gray-400 text-sm">
-            &copy; 2023, All Rights Reserved
-            </p>
-        </div>
+    <footer
+        class="w-full md:h-[411px] h-[700px] flex bg-footerCol md:flex-row flex-col justify-center md:items-start md:justify-start items-center mt-20">
         <div class="flex md:p-11 md:mt-4 md:ml-6 mt-6">
-            <div class="gmap_canvas"><iframe class="md:w-[350px] md:h-[250px] w-[350px] h-[250px] rounded-sm" frameborder="0" scrolling="no" marginheight="0"
-                    marginwidth="0"
+            <div class="gmap_canvas"><iframe class="md:w-[350px] md:h-[250px] w-[350px] h-[250px] rounded-sm"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                     src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=kansas city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
                     href="https://capcuttemplate.org/"></a></div>
         </div>
@@ -397,8 +390,8 @@
                 </div>
             </div>
             <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
-                <div class="">
-                    <img src="/src/img/Icon.png" alt="..." class="w-9 h-9">
+                <div class="text-4xl ">
+                    <i class="fa-solid fa-address-book text-slate-500"></i>
                 </div>
                 <div class="">
                     <h3 class="text-gray-400 text-sm font-light">Mail</h3>
@@ -416,7 +409,8 @@
                 </div>
             </div>
         </div>
-        <div class="md:p-11 mt-4 md:ml-26 flex flex-col md:justify-start md:items-start items-center justify-center cursor-pointer">
+        <div
+            class="md:p-11 mt-4 md:ml-26 flex flex-col md:justify-start md:items-start items-center justify-center cursor-pointer">
             <h5 class="text-white font-semibold text-md md:text-xl">
                 Social Media
             </h5>
@@ -424,35 +418,40 @@
                 Follow our social media to get the latest news and events for sure
             </p>
             <div class="flex gap-3 md:mt-0 mt-5">
-            <div class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-blue-900 hover:transition-colors">
-                <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4 ">
+                <div
+                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-blue-900 hover:transition-colors">
+                    <i class="fa-brands fa-github text-white"></i>
+                </div>
+                <div
+                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                    <i class="fa-brands fa-linkedin text-white"></i>
+                </div>
+                <div
+                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-green-900 hover:transition-colors">
+                    <i class="fa-solid fa-address-book text-white"></i>
+                </div>
+                <div
+                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-gray-900 hover:transition-colors">
+                    <i class="fa-brands fa-facebook text-white"></i>
+                </div>
+                <div
+                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                    <i class="fa-brands fa-instagram text-white"></i>
+                </div>
             </div>
-            <div class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
-                <img src="/src/img/Social_Icons-1.png" alt=".." class="w-4 h-4">
+            <div class="flex md:justify-end md:mt-20 mt-4 md:w-[340px]">
+                <h5 class="text-white text-2xl">
+                    <span class="text-3xl">K</span>ansas City
+                </h5>
+                <img src="/src//img/city-removebg-preview.png" alt="..." class="w-7 h-7">
             </div>
-            <div class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-green-900 hover:transition-colors">
-                <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4">
-            </div>
-            <div class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-gray-900 hover:transition-colors">
-                <img src="/src/img/Social_Icons-3.png" alt=".." class="w-4 h-4">
-            </div>
-            <div class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
-                <img src="/src/img/Social_Icons-3.png" alt=".." class="w-5 h-4">
-            </div>
-        </div>
-        <div class="flex md:justify-end md:mt-20 mt-4 md:w-[340px]">
-            <h5 class="text-white text-2xl">
-               <span class="text-3xl">K</span>ansas City
-            </h5>
-            <img src="/src//img/city-removebg-preview.png" alt="..." class="w-7 h-7">
-        </div>
         </div>
         <div class="md:hidden flex justify-end items-end h-screen">
             <p class="text-gray-400 text-sm">
                 &copy; 2023, All Rights Reserved
-                </p>
+            </p>
         </div>
-       
+
     </footer>
 </body>
 

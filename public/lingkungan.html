@@ -27,36 +27,35 @@
         <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
             <div class="flex justify-between items-center">
                 <div class="text-2xl font-medium cursor-pointer ">
-                    <a href="http://127.0.0.1:5500/public/home.html"><span class="dark:text-putih font-poppins">Kansaas</span><span class="dark:text-white"></span></a>
+                    <a href="http://127.0.0.1:5500/public/home.html"><span
+                            class="dark:text-putih font-poppins">Kansas</span><span class="dark:text-white"></span></a>
                     <img class="h-[50px]  w-[50px] inline" src="/src/img/city-removebg-preview.png">
                 </div>
-                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                <span class="text-3xl  cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)" class="dark:text-putih"></ion-icon>
                 </span>
             </div>
             <ul
-                class="md:flex md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
-                <li class="text-orange dark:text-biru font-medium "><a href="http://127.0.0.1:5500/public/home.html#">Beranda</a></li>
+                class="md:flex dark:text-putih  md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
 
-                
+
                 <li class="hidden md:flex">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profil
+                        class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profile
                         <i
-                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
+                            class="fas fa-thin dark: fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
                     <div
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-36  md:absolute md:top-[3.5rem] md:right-[38rem] mt-2 lg:peer-hover:flex hover:flex">
                         <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="http://127.0.0.1:5500/public/visimisi.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" 
-                                    onclick="visimisi()">Visi
+                                <a href="#visimisi"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Visi
                                     & misi</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/sejarah.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
-                                    onclick="sejarah()">Sejarah</a>
+                                    onclick="sejarah()">Historical</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/geografis.html"
@@ -66,9 +65,9 @@
                         </ul>
                     </div>
                 </li>
-                <li class="flex flex-col md:hidden">
+                <li class="flex flex-col md:hidden dark:bg-item">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
                         onclick="dorpDown()">Profil<i class="fas fa-thin fa-chevron-down px-2 text-lg"
                             id="down"></i></a>
                     <div id="dropdown"
@@ -76,16 +75,16 @@
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="http://127.0.0.1:5500/public/visimisi.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Visi
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Visi
                                     & misi</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/sejarah.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Sejarah</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Historical</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/geografis.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Geografis</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Geografis</a>
                             </li>
                         </ul>
                     </div>
@@ -98,39 +97,39 @@
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-48 h-36 rounded-lg  md:absolute md:top-[3.5rem] md:right-[28rem] mt-2 lg:peer-hover:flex hover:flex">
                         <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="http://127.0.0.1:5500/public/berandaberita.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Berita</a>
+                                <a href="#berita"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">news</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/agenda.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Agenda</a>
+                                <a href="#agenda"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Agenda</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/gallery.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Galeri</a>
+                                <a href="#galeri"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Galeri</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex flex-col md:hidden">
+                <li class="flex flex-col md:hidden dark:bg-item">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
                         onclick="dorpDown1()">Informasi<i class="fas fa-thin fa-chevron-down px-2 text-lg"
                             id="down1"></i></a>
                     <div id="dropdown2"
-                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
+                        class="z-10 hidden dark:bg-item dark:text-putih bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="http://127.0.0.1:5500/public/berandaberita.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >Berita</a>
+                                <a href="#berita"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Berita</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/agenda.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >Agenda</a>
+                                <a href="#agenda"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Agenda</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/gallery.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galeri</a>
+                                <a href="#galeri"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Galeri</a>
                             </li>
                         </ul>
                     </div>
@@ -138,7 +137,7 @@
 
                 <li class="hidden md:flex">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-slate-700 peer dark:text-putih focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Pemerintahan
+                        class="text-slate-700 dark:text-putih peer  focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Government
                         <i
                             class="fas fa-thin fa-chevron-down hover:translate-y-1 group-hover:translate-y-1 group-hover:text-orange transition px-2 text-lg"></i></a>
                     <div
@@ -147,7 +146,7 @@
                             <li>
                                 <a href="http://127.0.0.1:5500/public/informasi.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition ">Profile
-                                    Pemimpin</a>
+                                    Leader</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/informasi.html"
@@ -159,15 +158,15 @@
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/informasi.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Pemerintahan</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Government</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex flex-col md:hidden">
+                <li class="flex flex-col md:hidden dark:bg-item">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                        onclick="dorpDown2()">Pemerintah<i class="fas fa-thin fa-chevron-down px-2 text-lg"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        onclick="dorpDown2()">Government<i class="fas fa-thin fa-chevron-down px-2 text-lg"
                             id="down2"></i></a>
                     <div id="dropdown3"
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
@@ -193,7 +192,7 @@
                     </div>
                 </li>
 
-                <div class=" flex justify-center items-center">
+                <div class=" flex   items-center">
                     <div x-data="{ open: false }" class=" flex justify-center items-center">
                         <div @click="open = !open" class="relative "
                             :class="{' transform transition duration-300 ': open}"
@@ -205,8 +204,8 @@
                                     <img src="https://images.unsplash.com/photo-1610397095767-84a5b4736cbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                                         alt="" class="w-full h-full object-cover">
                                 </div>
-                                <div class="text-slate-500 text-lg ">
-                                    <div class="cursor-pointer dark:text-putih">Hi, Human</div>
+                                <div class=" text-lg ">
+                                    <div class="cursor-pointer text-slate-400 dark:text-slate-500">Hi, Human</div>
                                 </div>
                             </div>
 
@@ -241,7 +240,7 @@
                                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         stroke-width="2"
-                                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.40 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.40 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
                                                     </path>
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -274,7 +273,7 @@
                 </div>
 
                 <div id="theme-toggle" type="button"
-                    class="text-gray-500  cursor-pointer dark:text-gray-100  text-sm p-2.5">
+                    class="text-gray-500  cursor-pointer dark:text-putih  text-sm p-2.5">
                     <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -296,12 +295,12 @@
         <div class="flex md:justify-between md:flex-row flex-col  items-center mx-16 content-center h-screen ">
             <div class="">
                 <h1 class="md:w-[35rem] md:text-5xl text-[#394867] text-3xl font-poppins md:font-medium font-medium">
-                    masa depan yang lebih <span class="text-green-600">hijau</span> dengan solusi penyimpanan <span
-                        class="text-green-600">energi</span>
+                    a <span class="text-green-600">greener</span> future with <span class="text-green-600"> energy
+                        storage solutions</span>
                 </h1>
                 <button
                     class="animate-pulse border mt-4 p-4 text-green-700 rounded-full border-green-600 font-medium hover:bg-green-600 hover:text-white transition">
-                    Meminta Penawaran
+                    ask for a quote
                 </button>
             </div>
             <div class="w-[40rem] order-[-1] md:order-1">
@@ -316,26 +315,28 @@
             <div class="border p-5">
                 <i class="fa-sharp fa-solid fa-bolt text-5xl text-green-600"></i>
                 <h1 class="text-2xl my-4 font-poppins text-[#394867]">solusi penyimpanan energi</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eligendi unde maiores. Ex, nulla
-                    dolores. Facere eligendi unde maiores. Ex, nulla dolores.
+                <p>we can save energy for our individual needs, and we also save energy for daily use in order to
+                    maximize activity
                 </p>
-                <p class="mt-10 animate-pulse">Lebih Lanjut <i class="fas fa-arrow-right text-green-600  ml-1"></i></p>
+                <p class="mt-10 animate-pulse">Furthermore <i class="fas fa-arrow-right text-green-600  ml-1"></i></p>
             </div>
             <div class="border p-5">
                 <i class="fa-sharp fa-solid fa-square-share-nodes text-5xl text-green-600"></i>
-                <h1 class="text-2xl my-4 font-poppins text-[#394867]">memproduksi lebih dari mengkonsumsi</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eligendi unde maiores. Ex, nulla
-                    dolores. Facere eligendi unde maiores. Ex, nulla dolores.
+                <h1 class="text-2xl my-4 font-poppins text-[#394867]">producing more than consuming</h1>
+                <p>we can producing more than consuming for our individual needs, and we also save energy for daily use
+                    in order to
+                    maximize activity
                 </p>
-                <p class="mt-10 animate-pulse">Lebih Lanjut <i class="fas fa-arrow-right text-green-600 ml-1"></i></p>
+                <p class="mt-10 animate-pulse">Furthermore <i class="fas fa-arrow-right text-green-600 ml-1"></i></p>
             </div>
             <div class="border p-5">
                 <i class="fas fa-temperature-high text-5xl text-green-600"></i>
-                <h1 class="text-2xl my-4 font-poppins text-[#394867]">mengoptimalkan siklus energi harian</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eligendi unde maiores. Ex, nulla
-                    dolores. Facere eligendi unde maiores. Ex, nulla dolores.
+                <h1 class="text-2xl my-4 font-poppins text-[#394867]">optimize the daily energy cycle</h1>
+                <p>optimize the daily energy cycle we can producing more than consuming for our individual needs, and we
+                    also save energy for daily use in order to
+                    maximize activity
                 </p>
-                <p class="mt-10 animate-pulse">Lebih Lanjut <i class="fas fa-arrow-right text-green-600 ml-1"></i></p>
+                <p class="mt-10 animate-pulse">Furthermore <i class="fas fa-arrow-right text-green-600 ml-1"></i></p>
             </div>
         </div>
     </section>
@@ -368,21 +369,19 @@
             </div>
             <div class="md:w-4/12 w-full">
                 <p class="text-green-500">Inisiatif kolektif</p>
-                <h1 class="md:text-4xl text-3xl font-poppins font-medium my-4 text-[#394867]">kelompok daur ulang
-                    Kekuatan Publik</h1>
-                <p class="text-slate-500 md:text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Corporis
-                    consequuntur itaque ad quisquam
-                    numquam necessitatibus! numquam necessitatibus!</p>
+                <h1 class="md:text-4xl text-3xl font-poppins font-medium my-4 text-[#394867]">Public Power recycling
+                    group</h1>
+                <p class="text-slate-500 md:text-justify">we as a team here are rich in togetherness to recycle what is
+                    not used so it is not wasted</p>
                 <div class="flex gap-8 mt-5">
                     <div class="">
-                        <p class="text-slate-500">Efisiensi energi</p>
+                        <p class="text-slate-500">Efisiensi energy</p>
                         <div data-aos="zoom-out">
                             <p class="text-2xl text-green-600">65%</p>
                         </div>
                     </div>
                     <div class="">
-                        <p class="text-slate-500">KW terpasang</p>
+                        <p class="text-slate-500">KW installed</p>
                         <div data-aos="zoom-out">
                             <p class="text-2xl text-green-600">75.000</p>
                         </div>
@@ -398,34 +397,39 @@
             <div class="flex gap-5 items-center md:flex-row flex-col">
                 <div class=" p-5">
                     <div class="items-center flex flex-col">
-                        <p class="font-roboto text-[10em] text-green-600 ">80</p>
-                        <p class="mt-[-4rem] text-3xl font-semibold font-roboto text-green-600 my-4">GW</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium similique qui animi
-                            facere
-                            officia. Ab ipsam natus voluptatem est. Repellat.</p>
-                        <p class="mt-10">Lebih Lanjut <i class="fas fa-arrow-right text-green-600"></i></p>
+                        <div class="flex flex-row">
+                            <p class="font-roboto text-[10em] text-green-600 ">80</p>
+                            <p class="mt-[9rem] text-3xl font-semibold font-roboto text-green-600 my-4">GW</p>
+                        </div>
+                        <p>Discover effective ways to control and reduce your 80 GW with our
+                            comprehensive guide. We empower individuals to make informed choices and take proactive steps
+                            towards minimizing their carbon emissions. </p>
+                        <p class="mt-10">Furthermore <i class="fas fa-arrow-right text-green-600"></i></p>
                     </div>
                 </div>
                 <div class=" p-5">
                     <div class="items-center flex flex-col">
-                        <p class="font-roboto text-[10em] text-green-600">5</p>
-                        <p class="mt-[-4rem] text-3xl font-semibold font-roboto text-green-600 my-4">TWh</p>
+                        <div class="flex flex-row">
+                            <p class="font-roboto text-[10em] text-green-600">5</p>
+                            <p class="mt-[9rem] text-3xl font-semibold font-roboto text-green-600 my-4">TWh</p>
+                        </div>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium similique qui animi
-                            facere
-                            officia. Ab ipsam natus voluptatem est. Repellat.</p>
-                        <p class="mt-10">Lebih Lanjut <i class="fas fa-arrow-right text-green-600"></i></p>
+                        <p>Discover effective ways to control and reduce your 5 TWH with our
+                            comprehensive guide. We empower individuals to make informed choices and take proactive steps
+                            towards minimizing their carbon emissions. </p>
+                        <p class="mt-10">Furthermore <i class="fas fa-arrow-right text-green-600"></i></p>
                     </div>
                 </div>
                 <div class=" p-5">
                     <div class="items-center flex flex-col">
-                        <p class="font-roboto text-[10em] text-green-600">90</p>
-                        <p class="mt-[-4rem] text-3xl font-semibold font-roboto text-green-600 my-4">GW p.a.</p>
-                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium similique qui
-                            animi
-                            facere
-                            officia. Ab ipsam natus voluptatem est. Repellat.</p>
-                        <p class="mt-10">Lebih Lanjut <i class="fas fa-arrow-right text-green-600"></i></p>
+                        <div class="flex flex-row">
+                            <p class="font-roboto text-[10em] text-green-600">90</p>
+                            <p class="mt-[9rem] text-3xl font-semibold font-roboto text-green-600 my-4">GW p.a.</p>
+                        </div>
+                        <p class="">Discover effective ways to control and reduce your 90 GW p.a footprint with our
+                            comprehensive guide. We empower individuals to make informed choices and take proactive steps
+                            towards minimizing their carbon emissions. </p>
+                        <p class="mt-10">Furthermore <i class="fas fa-arrow-right text-green-600"></i></p>
                     </div>
                 </div>
             </div>
@@ -434,7 +438,7 @@
 
     <section class="md:mx-10 mx-8 md:mt-30 mt-28 md:flex hidden justify-center">
         <div class="text-center">
-            <h1 class="text-2xl font-poppins font-medium text-slate-400">dipercaya oleh</h1>
+            <h1 class="text-2xl font-poppins font-medium text-slate-400">trusted by</h1>
             <div class="flex justify-center gap-20 ">
                 <img src="/src/img/gogreen-removebg-preview.png" alt="">
                 <img src="/src/img/greengroup-removebg-preview.png" alt="">
@@ -446,7 +450,7 @@
 
     <section class="md:mx-10 mx-8 md:mt-30 mt-28 ">
         <div class="text-center">
-            <p class="text-slate-500">Proyek Terbaru</p>
+            <p class="text-slate-500">Recent Projects</p>
             <h1 class="md:text-3xl text-2xl font-poppins font-medium my-1 text-[#394867]">Friendly and affordable energy
                 sources
             </h1>
@@ -456,31 +460,30 @@
 
         <div class="flex md:flex-row flex-col gap-5 mt-10 justify-center  items-center">
             <div
-                class="border p-4 md:w-5/6 w-auto cursor-pointer hover:-translate-y-2 transition group rounded-xl text-[#394867] border-[#394867]">
+                class="border p-4 md:w-5/6 md:h-[29rem] w-auto cursor-pointer hover:-translate-y-2 transition group rounded-xl text-[#394867] border-[#394867]">
                 <p class="text-2xl font-poppins font-medium text-[#394867 group-hover:text-green-600">way of controling
                     your CO2 footprint</p>
-                <p class="text-slate-500 my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est,
-                    similique a non aut suscipit
-                    ducimus odio sint ipsa tempore consequuntur necessitatibus </p>
+                <p class="text-slate-500 my-4">Discover effective ways to control and reduce your CO2 footprint with our
+                    comprehensive guide. We empower individuals to make informed choices and take proactive steps
+                    towards minimizing their carbon emissions. </p>
                 <img src="/src/img/recycleimg-removebg-preview.png" alt="" class="w-[50%] mx-auto">
             </div>
             <div
-                class="border p-4 md:w-5/6 w-auto cursor-pointer hover:-translate-y-2 transition group rounded-xl text-[#394867] border-[#394867]">
-                <p class="text-2xl font-poppins font-medium text-[#394867 group-hover:text-green-600">way of controling
-                    your CO2 footprint</p>
-                <p class="text-slate-500 my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est,
-                    similique a non aut suscipit
-                    ducimus odio sint ipsa tempore consequuntur necessitatibus </p>
-                <img src="/src/img/recycleimg-removebg-preview.png" alt="" class="w-[50%] mx-auto">
+                class="border p-4 md:w-5/6 w-auto md:h-[29rem] cursor-pointer hover:-translate-y-2 transition group rounded-xl text-[#394867] border-[#394867]">
+                <p class="text-2xl font-poppins font-medium text-[#394867 group-hover:text-green-600">Green Oasis :
+                    Nurturing Nature for a Sustainable Future</p>
+                <p class="text-slate-500 my-4">Welcome to Green Oasis, where we celebrate the power of nature and
+                    promote sustainable living. Our project aims to raise awareness about the importance of going green
+                    and the significant role of plants in creating a sustainable future. </p>
+                <img src="/src/img/download__1_-removebg-preview 1.png" alt="" class="w-[50%] mx-auto">
             </div>
             <div
-                class="border p-4 md:w-5/6 w-auto cursor-pointer hover:-translate-y-2 transition group rounded-xl text-[#394867] border-[#394867]">
-                <p class="text-2xl font-poppins font-medium text-[#394867 group-hover:text-green-600">way of controling
-                    your CO2 footprint</p>
-                <p class="text-slate-500 my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est,
-                    similique a non aut suscipit
-                    ducimus odio sint ipsa tempore consequuntur necessitatibus </p>
-                <img src="/src/img/recycleimg-removebg-preview.png" alt="" class="w-[50%] mx-auto">
+                class="border p-4 md:w-5/6 w-auto  md:h-[29rem] cursor-pointer hover:-translate-y-2 transition group rounded-xl text-[#394867] border-[#394867]">
+                <p class="text-2xl font-poppins font-medium text-[#394867 group-hover:text-green-600">EcoHaven:
+                    Cultivating Green Spaces for a Sustainable Future</p>
+                <p class="text-slate-500 my-4">Welcome to EcoHaven, a platform dedicated to promoting a sustainable
+                    future through the power of plants and green spaces. </p>
+                <img src="/src/img/images-removebg-preview 1.png" alt="" class="w-[50%] mx-auto">
             </div>
 
 

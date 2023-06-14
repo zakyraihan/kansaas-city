@@ -26,8 +26,12 @@ module.exports = {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
+        'geologica': ['Geologica', 'sans-serif'],
+        'Joesefi': ['Josefin Sans', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+],
 };

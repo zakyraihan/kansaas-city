@@ -304,12 +304,12 @@
                 <form id="contact" action="https://formspree.io/f/mqkoojjo" method="POST">
                     <div class="flex-col flex ">
                         <label for="" class="text-[#1F1F1F]">Fullname</label>
-                        <input type="text" name="full-name" class="px-5 py-3 rounded-md border border-slate-400 "
+                        <input id="username" type="text" name="full-name" class="px-5 py-3 rounded-md border border-slate-400 "
                             placeholder="Enter your name!">
                     </div>
                     <div class=" flex-col flex my-5">
                         <label for="email" class="text-[#1F1F1F]">Email</label>
-                        <input type="email" name="email" class="py-3  rounded-md border border-slate-400 px-5"
+                        <input type="email" name="email" class="py-3  rounded-md border border-slate-400 px-5" id="email"
                             placeholder="Enter your email!">
                     </div>
                     <div class="flex-col flex ">
@@ -322,6 +322,8 @@
                         <textarea name="message" id="" cols="30" rows="10"
                             class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700  px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
                     </div>
+                    <p id="errorMessage" class="text-red-500 mt-5"></p>
+
 
                     <button class="bg-[#CD1C1C] py-4 w-full my-7 rounded-md">
                         <p class="text-white ">Send my Massage <i class="fa-sharp fa-solid fa-comments"></i></p>
@@ -332,98 +334,118 @@
     </div>
 
     <footer
-        class="w-full md:h-[411px] h-[700px] flex bg-footerCol md:flex-row flex-col justify-center md:items-start md:justify-start items-center mt-20">
-        <div class="md:flex md:items-end hidden  md:h-full md:p-6 ">
-            <p class="text-gray-400 text-sm">
-                &copy; 2023, All Rights Reserved
-            </p>
-        </div>
-        <div class="flex md:p-11 md:mt-4 md:ml-6 mt-6">
-            <div class="gmap_canvas"><iframe class="md:w-[350px] md:h-[250px] w-[350px] h-[250px] rounded-sm"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=kansas city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                    href="https://capcuttemplate.org/"></a></div>
-        </div>
-        <div class="md:flex-col flex-row md:p-11 md:mt-4 md:items-center md:ml-[60px]  mt-4 cursor-pointer">
-            <div class="flex md:justify-between gap-2">
-                <div class="">
-                    <img src="/src/img/call-calling.png" alt="..." class="w-9 h-9">
-                </div>
-                <div class="">
-                    <h3 class="text-gray-400 text-sm font-light">Tel</h3>
-                    <h4 class="text-white text-md">+62-456-7802</h4>
-                    <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
-                </div>
+    class="w-full md:h-[411px] h-[700px] flex bg-footerCol md:flex-row flex-col justify-center md:items-start md:justify-start items-center mt-20">
+    <div class="flex md:p-11 md:mt-4 md:ml-6 mt-6">
+        <div class="gmap_canvas"><iframe class="md:w-[350px] md:h-[250px] w-[350px] h-[250px] rounded-sm"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=kansas city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                href="https://capcuttemplate.org/"></a></div>
+    </div>
+    <div class="md:flex-col flex-row md:p-11 md:mt-4 md:items-center md:ml-[60px]  mt-4 cursor-pointer">
+        <div class="flex md:justify-between gap-2">
+            <div class="">
+                <img src="/src/img/call-calling.png" alt="..." class="w-9 h-9">
             </div>
-            <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
-                <div class="">
-                    <img src="/src/img/Icon.png" alt="..." class="w-9 h-9">
-                </div>
-                <div class="">
-                    <h3 class="text-gray-400 text-sm font-light">Mail</h3>
-                    <h4 class="text-white text-md">kansascityGoverment@gmail.com</h4>
-                    <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
-                </div>
-            </div>
-            <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
-                <div class="">
-                    <img src="/src/img/Icon-1.png" alt="..." class="w-9 h-9">
-                </div>
-                <div class="">
-                    <h3 class="text-gray-400 text-sm font-light">Address</h3>
-                    <h4 class="text-white text-md">706 Campfire Ave.Meriden, CT 06450</h4>
-                </div>
+            <div class="">
+                <h3 class="text-gray-400 text-sm font-light">Tel</h3>
+                <h4 class="text-white text-md">+62-456-7802</h4>
+                <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
             </div>
         </div>
-        <div
-            class="md:p-11 mt-4 md:ml-26 flex flex-col md:justify-start md:items-start items-center justify-center cursor-pointer">
-            <h5 class="text-white font-semibold text-md md:text-xl">
-                Social Media
+        <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
+            <div class="text-4xl ">
+                <i class="fa-solid fa-address-book text-slate-500"></i>
+            </div>
+            <div class="">
+                <h3 class="text-gray-400 text-sm font-light">Mail</h3>
+                <h4 class="text-white text-md">kansascityGoverment@gmail.com</h4>
+                <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
+            </div>
+        </div>
+        <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
+            <div class="">
+                <img src="/src/img/Icon-1.png" alt="..." class="w-9 h-9">
+            </div>
+            <div class="">
+                <h3 class="text-gray-400 text-sm font-light">Address</h3>
+                <h4 class="text-white text-md">706 Campfire Ave.Meriden, CT 06450</h4>
+            </div>
+        </div>
+    </div>
+    <div
+        class="md:p-11 mt-4 md:ml-26 flex flex-col md:justify-start md:items-start items-center justify-center cursor-pointer">
+        <h5 class="text-white font-semibold text-md md:text-xl">
+            Social Media
+        </h5>
+        <p class="md:w-[70%] text-gray-400 text-sm mt-1 md:mt-2">
+            Follow our social media to get the latest news and events for sure
+        </p>
+        <div class="flex gap-3 md:mt-0 mt-5">
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-blue-900 hover:transition-colors">
+                <i class="fa-brands fa-github text-white"></i>
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                <i class="fa-brands fa-linkedin text-white"></i>
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-green-900 hover:transition-colors">
+                <i class="fa-solid fa-address-book text-white"></i>
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-gray-900 hover:transition-colors">
+                <i class="fa-brands fa-facebook text-white"></i>
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                <i class="fa-brands fa-instagram text-white"></i>
+            </div>
+        </div>
+        <div class="flex md:justify-end md:mt-20 mt-4 md:w-[340px]">
+            <h5 class="text-white text-2xl">
+                <span class="text-3xl">K</span>ansas City
             </h5>
-            <p class="md:w-[70%] text-gray-400 text-sm mt-1 md:mt-2">
-                Follow our social media to get the latest news and events for sure
-            </p>
-            <div class="flex gap-3 md:mt-0 mt-5">
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-blue-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4 ">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons-1.png" alt=".." class="w-4 h-4">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-green-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-gray-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons-3.png" alt=".." class="w-4 h-4">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons-3.png" alt=".." class="w-5 h-4">
-                </div>
-            </div>
-            <div class="flex md:justify-end md:mt-20 mt-4 md:w-[340px]">
-                <h5 class="text-white text-2xl">
-                    <span class="text-3xl">K</span>ansas City
-                </h5>
-                <img src="/src//img/city-removebg-preview.png" alt="..." class="w-7 h-7">
-            </div>
+            <img src="/src//img/city-removebg-preview.png" alt="..." class="w-7 h-7">
         </div>
-        <div class="md:hidden flex justify-end items-end h-screen">
-            <p class="text-gray-400 text-sm">
-                &copy; 2023, All Rights Reserved
-            </p>
-        </div>
+    </div>
+    <div class="md:hidden flex justify-end items-end h-screen">
+        <p class="text-gray-400 text-sm">
+            &copy; 2023, All Rights Reserved
+        </p>
+    </div>
 
-    </footer>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        const username = document.getElementById("username");
+        const email = document.getElementById("email");
+        const form = document.querySelector("form");
+        const errorMessage = document.getElementById("errorMessage");
+        const input = document.querySelector('input')
+       
+        form.addEventListener("submit", (e) => {
+            const errors = [];
+
+            if (username.value.trim() === "") {
+                errors.push("please input User Name")
+            }
+
+            if (email.value.length < 4) {
+                errors.push("Please Input User email")
+            }
+            if (errors.length > 0) {
+                e.preventDefault();
+                errorMessage.toggleAttribute('hidden');
+                errorMessage.innerHTML = errors.join(' & ');
+            }
+        })
+    </script>
 
     <!-- Setup and start animation! -->
     <script>

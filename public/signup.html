@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up</title>
     <link rel="icon" type="image/x-icon" href="/src/img/city_86340.png">
     <link rel="stylesheet" href="/src/css/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -61,36 +61,37 @@
         </div>
         <div class="md:w-2/4 bg-white flex justify-center items-center w-full">
             <main class="w-4/6">
-                <form action="/" id="form">
+                <form action="../public/home.html" method="GET">
                     <div class="text-center my-10">
                         <h1 class="text-2xl font-poppins text-slate-600">Create Account</h1>
                     </div>
 
                     <div class="mb-3">
                         <label for="" class="font-poppins text-[#1F1F1F]">Name*</label>
-                        <input type="name" id="nama"
+                        <input type="name" id="usernama"
                             class=" px-4 py-4 bg-slate-100 rounded-md border shadow-md w-full hover:border-clrfigma"
                             placeholder="">
-                        <p id="error" class="text-red-500"></p>
                     </div>
 
-                    <div class="mb-3 ">
+                    <!-- <div class="mb-3 ">
                         <label for="" class="font-poppins text-[#1F1F1F]">Email*</label>
-                        <input type="email" id="email"
+                        <input type="email" id="useremail"
                             class=" mt-4 px-4 bg-slate-100 py-4 rounded-md border shadow-md w-full hover:border-clrfigma"
                             placeholder="">
-                        <p id="error" class="text-red-500"></p>
-                    </div>
+
+                    </div> -->
 
                     <div class="mb-3">
                         <label for="" class="font-poppins text-[#1F1F1F]">Password*</label>
                         <input type="password" id="password"
                             class=" mt-4 px-4 bg-slate-100 py-4 rounded-md border shadow-md w-full hover:border-clrfigma"
                             placeholder="">
-                        <p id="error" class="text-red-500"></p>
+
                     </div>
 
-                    <button id="btn"
+                    <h1 class="text-red-500" id="errorMessage"></h1>
+
+                    <button id="btn" value="Submit" type="submit"
                         class="w-full py-4 bg-orange mt-5 text-putih font-medium hover:bg-transparent hover:text-item hover:ring-2 hover:ring-orange transition-all ease-in-out rounded-md">Sign
                         Up</button>
 
@@ -104,74 +105,36 @@
         </div>
     </div>
 
+    <script src="https://cdn.lordicon.com/bhenfmcm.js%22%3E"></script>
     <script>
-        const form = document.getElementById('form');
-        const nama = document.getElementById('nama');
-        const email = document.getElementById('email')
-        const password = document.getElementById('password')
+        const username = document.getElementById("username");
+        const useremail= document.getElementById("useremail");
+        const password = document.getElementById("password");
+        const form = document.querySelector("form");
+        const errorMessage = document.getElementById("errorMessage");
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
+        form.addEventListener("submit", (e) => {
+            const errors = [];
 
-            validateInputs();
+            if (username.value.trim() === "") {
+                errors.push("Please input username!")
+            }
+
+            if (useremail.value.trim() === "") {
+                errors.push("Please input user email!")
+            }
+
+            if (password.value.length < 4) {
+                errors.push("Minimum Password must be 4 characters")
+            }
+
+            if (errors.length > 0) {
+                e.preventDefault();
+                errorMessage.toggleAttribute('hidden');
+                errorMessage.innerHTML = errors.join(' & ');
+            }
         })
 
-        const setError = (element, message) => {
-            const inputControl = element.parentElement;
-            const errorDisplay = inputControl.querySelector('#error')
-            const border = document.getElementById('nama');
-
-            border.classList.add('border')
-            border.classList.add('border-red-500')
-            errorDisplay.innerText = message;
-            inputControl.classList.add('error');
-            inputControl.classList.remove('succes');
-        }
-
-        const setSucces = element => {
-            const inputControl = element.parentElement;
-            const errorDisplay = inputControl.querySelector('#error');
-            const border = document.getElementById('nama');
-
-            border.classList.add('border')
-            border.classList.add('border-green-500')
-            errorDisplay.innerText = '';
-            inputControl.classList.add('succes');
-            inputControl.classList.remove('error');
-        };
-
-
-        const validateInputs = () => {
-            const usernameValue = nama.value.trim();
-            const emailValue = email.value.trim();
-            const passwordValue = password.value.trim();
-
-            if (usernameValue === '') {
-                setError(nama, 'username is required');
-            } else {
-                setSucces(nama)
-            }
-
-            if (emailValue === '') {
-                setError(email, 'email is required');
-            } else {
-                setSucces(email)
-            }
-
-            if (passwordValue == '') {
-                setError(password, 'password is required');
-            } else {
-                setSucces(password);
-            }
-
-        }
-
-        if (nama && email && password) {
-            document.getElementById('btn').addEventListener('click', function () {
-                window.location.href = 'http://127.0.0.1:5500/public/index.html'
-                console.log('berhasil')
-            })
-        } 
 
 
     </script>

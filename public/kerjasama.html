@@ -18,6 +18,8 @@
         rel="stylesheet">
     <link href="/src/css/output.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <script src="https://kit.fontawesome.com/903f15c174.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -26,36 +28,36 @@
         <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
             <div class="flex justify-between items-center">
                 <div class="text-2xl font-medium cursor-pointer ">
-                    <a href="http://127.0.0.1:5500/public/home.html"><span class="dark:text-putih font-poppins">Kansaas</span><span class="dark:text-white"></span></a>
+                    <a href="http://127.0.0.1:5500/public/home.html"><span
+                            class="dark:text-putih font-poppins">Kansas</span><span class="dark:text-white"></span></a>
                     <img class="h-[50px]  w-[50px] inline" src="/src/img/city-removebg-preview.png">
                 </div>
-                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                <span class="text-3xl  cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)" class="dark:text-putih"></ion-icon>
                 </span>
             </div>
             <ul
-                class="md:flex md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
-                <li class="text-orange dark:text-biru font-medium "><a href="http://127.0.0.1:5500/public/home.html#">Beranda</a></li>
+                class="md:flex dark:text-putih  md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
 
-                
+
                 <li class="hidden md:flex">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profil
+                        class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profile
                         <i
-                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
+                            class="fas fa-thin dark: fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
                     <div
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-36  md:absolute md:top-[3.5rem] md:right-[38rem] mt-2 lg:peer-hover:flex hover:flex">
                         <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="http://127.0.0.1:5500/public/visimisi.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" 
-                                    onclick="visimisi()">Visi
+                                <a href="#visimisi"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
+                                    >Visi
                                     & misi</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/sejarah.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
-                                    onclick="sejarah()">Sejarah</a>
+                                    onclick="sejarah()">Historical</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/geografis.html"
@@ -65,9 +67,9 @@
                         </ul>
                     </div>
                 </li>
-                <li class="flex flex-col md:hidden">
+                <li class="flex flex-col md:hidden dark:bg-item">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
                         onclick="dorpDown()">Profil<i class="fas fa-thin fa-chevron-down px-2 text-lg"
                             id="down"></i></a>
                     <div id="dropdown"
@@ -75,16 +77,16 @@
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
                                 <a href="http://127.0.0.1:5500/public/visimisi.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Visi
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Visi
                                     & misi</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/sejarah.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Sejarah</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Historical</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/geografis.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Geografis</a>
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Geografis</a>
                             </li>
                         </ul>
                     </div>
@@ -97,39 +99,39 @@
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-48 h-36 rounded-lg  md:absolute md:top-[3.5rem] md:right-[28rem] mt-2 lg:peer-hover:flex hover:flex">
                         <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="http://127.0.0.1:5500/public/berandaberita.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Berita</a>
+                                <a href="#berita"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">news</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/agenda.html"
+                                <a href="#agenda"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Agenda</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/gallery.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Galeri</a>
+                                <a href="#galeri"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Galeri</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex flex-col md:hidden">
+                <li class="flex flex-col md:hidden dark:bg-item">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
                         onclick="dorpDown1()">Informasi<i class="fas fa-thin fa-chevron-down px-2 text-lg"
                             id="down1"></i></a>
                     <div id="dropdown2"
-                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
+                        class="z-10 hidden dark:bg-item dark:text-putih bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
                         <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="http://127.0.0.1:5500/public/berandaberita.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >Berita</a>
+                                <a href="#berita"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Berita</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/agenda.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >Agenda</a>
+                                <a href="#agenda"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Agenda</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:5500/public/gallery.html"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galeri</a>
+                                <a href="#galeri"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Galeri</a>
                             </li>
                         </ul>
                     </div>
@@ -137,7 +139,7 @@
 
                 <li class="hidden md:flex">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-slate-700 peer dark:text-putih focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Pemerintahan
+                        class="text-slate-700 dark:text-putih peer  focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Government
                         <i
                             class="fas fa-thin fa-chevron-down hover:translate-y-1 group-hover:translate-y-1 group-hover:text-orange transition px-2 text-lg"></i></a>
                     <div
@@ -146,7 +148,7 @@
                             <li>
                                 <a href="http://127.0.0.1:5500/public/informasi.html"
                                     class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition ">Profile
-                                    Pemimpin</a>
+                                    Leader</a>
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/informasi.html"
@@ -158,15 +160,15 @@
                             </li>
                             <li>
                                 <a href="http://127.0.0.1:5500/public/informasi.html"
-                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Pemerintahan</a>
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Government</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="flex flex-col md:hidden">
+                <li class="flex flex-col md:hidden dark:bg-item">
                     <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                        class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                        onclick="dorpDown2()">Pemerintah<i class="fas fa-thin fa-chevron-down px-2 text-lg"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        onclick="dorpDown2()">Government<i class="fas fa-thin fa-chevron-down px-2 text-lg"
                             id="down2"></i></a>
                     <div id="dropdown3"
                         class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
@@ -192,7 +194,7 @@
                     </div>
                 </li>
 
-                <div class=" flex justify-center items-center">
+                <div class=" flex   items-center">
                     <div x-data="{ open: false }" class=" flex justify-center items-center">
                         <div @click="open = !open" class="relative "
                             :class="{' transform transition duration-300 ': open}"
@@ -204,8 +206,8 @@
                                     <img src="https://images.unsplash.com/photo-1610397095767-84a5b4736cbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
                                         alt="" class="w-full h-full object-cover">
                                 </div>
-                                <div class="text-slate-500 text-lg ">
-                                    <div class="cursor-pointer dark:text-putih">Hi, Human</div>
+                                <div class=" text-lg ">
+                                    <div class="cursor-pointer text-slate-400 dark:text-slate-500">Hi, Human</div>
                                 </div>
                             </div>
 
@@ -240,7 +242,7 @@
                                                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         stroke-width="2"
-                                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.40 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.40 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
                                                     </path>
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -273,7 +275,7 @@
                 </div>
 
                 <div id="theme-toggle" type="button"
-                    class="text-gray-500  cursor-pointer dark:text-gray-100  text-sm p-2.5">
+                    class="text-gray-500  cursor-pointer dark:text-putih  text-sm p-2.5">
                     <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -295,7 +297,7 @@
                 <div class="w-full px-4">
                     <div class="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
                         <span class="font-semibold text-xl text-oren mb-2 block">
-                            <span class="text-black ">Kota</span> kansas
+                            <span class="text-black ">Kansas</span> City
                         </span>
                         <h2 class="
                        font-bold
@@ -305,12 +307,9 @@
                        text-dark
                        mb-4
                        ">
-                            Kerja Sama
-                        </h2>
+                       Cooperation                        </h2>
                         <p class="text-base text-body-color">
-                            Berdiri selama 215 tahun kota kansas telah bekerja sama dengan 120 kota
-                            dengan tercatat. baik berupa kerja sama bilateral, multiteral, ataupun regional. berikut
-                            beberapa contoh kerja sama kota kansas dengan beberapa kota.
+                            Established for 215 years, the city of Kansas has collaborated with 120 cities with registration. whether in the form of bilateral, multilateral or regional cooperation. Here are some examples of cooperation between the City of Kansas and several cities.
                         </p>
                     </div>
                 </div>
@@ -327,11 +326,11 @@
                             </div>
                         </div>
                         <h4 class="font-semibold text-xl text-dark mb-3 text-oren">
-                            Bappenas Berkomitmen Dukung UN Global Pulse Asia Pacific
+                            Bappenas Committed to Support UN Global Pulse Asia Pacific
                         </h4>
                         <p class="text-body-color">
-                            Pemerintah kansas yang diwakili Kementerian PPN/Bappenas dan Pemerintah Australia
-                            berkomitmen dalam mendukung transisi Pulse Lab Jakarta menjadi United Nations Global ...
+                            The Kansas government represented by the Ministry of National Development Planning/Bappenas and the Australian Government
+                            committed to supporting Pulse Lab Jakarta's transition to becoming a United Nations Global ...
                         </p>
                     </div>
                 </div>
@@ -361,11 +360,9 @@
                             </div>
                         </div>
                         <h4 class="font-semibold text-xl text-dark mb-3 text-oren">
-                            Malaysia dan kansas bekerja sama untuk pupuk organik
-                        </h4>
+                            Malaysia and Kansas cooperate on organic fertilizers                        </h4>
                         <p class="text-body-color">
-                            beberapa waktu lalu kansas menemukan beberapa masalah pada perternakan di selatan, sehingga
-                            membutuhkan bantuan
+                            some time ago kansas encountered some problems on a southern ranch, so needed help
                         </p>
                     </div>
                 </div>
@@ -395,13 +392,90 @@
                             </div>
                         </div>
                         <h4 class="font-semibold text-xl text-dark mb-3 text-oren">
-                            Indonesia-Australia Perkuat Kerja Sama Riset
-                            dan Inovasi Melalui Hibah Koneksi
+                            Indonesia-Australia Strengthen Research Cooperation
+                            and Innovation Through Connection Grants
 
                         </h4>
                         <p class="text-body-color">
-                            Setelah melalui proses pembahasan sejak Agustus 2022, Kementerian PPN/Bappenas bersama
-                            Department of Foreign Affairs and Trade Australia menandatangani naskah kerja ...
+                            After going through a discussion process since August 2022, the Ministry of National Development Planning/Bappenas is together
+                             Department of Foreign Affairs and Trade Australia signed a working paper ...
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 cursor-pointer">
+                    <div class="
+                    p-10
+                    md:px-7
+                    xl:px-10
+                    rounded-[20px]
+                    bg-white
+                    shadow-md
+                    hover:shadow-lg
+                    mb-8
+                    ">
+                        <div class="
+                      
+                       flex
+                       items-center
+                       justify-center
+                       bg-primary
+                       rounded-2xl
+                       mb-8
+                       ">
+                            <div class="w-full flex justify-center items-center rounded">
+                                <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                    class="rounded-md" alt="..">
+                            </div>
+                        </div>
+                        <h4 class="font-semibold text-xl text-dark mb-3 text-oren">
+                            EU-Kansas Commitment to Inclusive and Sustainable Economic Recovery
+
+                        </h4>
+                        <p class="text-body-color">
+                            Minister of National Development Planning/Head of Bappenas Kansas Suharso
+                            Monoarfa and Ambassador of the European Union to Indonesia and Brunei
+
+                            Darussalam Vincent Piket on...
+
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 cursor-pointer">
+                    <div class="
+                    p-10
+                    md:px-7
+                    xl:px-10
+                    rounded-[20px]
+                    bg-white
+                    shadow-md
+                    hover:shadow-lg
+                    mb-8
+                    ">
+                        <div class="
+                       
+                       flex
+                       items-center
+                       justify-center
+                       bg-primary
+                       rounded-2xl
+                       mb-8
+                       ">
+                            <div class="w-full flex justify-center items-center rounded">
+                                <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                    class="rounded-md" alt="..">
+                            </div>
+                        </div>
+                        <h4 class="font-semibold text-xl text-dark mb-3 text-oren">
+                            Kansas & Canada Collaboration Supports
+                            Climate-Resistant Livelihoods for Women I...
+
+                        </h4>
+                        <p class="text-body-color">
+                            Kansas Government through the Ministry of National Development Planning/Bappenas
+                            with the Government of Canada through Global Affairs Canada
+                            collaborate to create climate-resilient livelihoods and
+
+                            food security ...
 
                         </p>
                     </div>
@@ -432,92 +506,13 @@
                             </div>
                         </div>
                         <h4 class="font-semibold text-xl text-dark mb-3 text-oren">
-                            Komitmen EU-Kansas Untuk PemulihanEkonomi Inklusif dan Berkelanjutan
-
+                            Support SDGs, P4G Provides Scale-Up Funding
+                            for Three Innovative Partnerships in Kansas...
                         </h4>
                         <p class="text-body-color">
-                            Menteri PPN/Kepala Bappenas Kansas Suharso
-                            Monoarfa dan Duta Besar Uni Eropa untuk Indonesia dan Brunei
-
-                            Darussalam Vincent Piket pada ...
-
-                        </p>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 cursor-pointer">
-                    <div class="
-                    p-10
-                    md:px-7
-                    xl:px-10
-                    rounded-[20px]
-                    bg-white
-                    shadow-md
-                    hover:shadow-lg
-                    mb-8
-                    ">
-                        <div class="
-                       
-                       flex
-                       items-center
-                       justify-center
-                       bg-primary
-                       rounded-2xl
-                       mb-8
-                       ">
-                            <div class="w-full flex justify-center items-center rounded">
-                                <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                                    class="rounded-md" alt="..">
-                            </div>
-                        </div>
-                        <h4 class="font-semibold text-xl text-dark mb-3 text-oren">
-                            Kolaborasi Kansas & Kanada Mendukung
-                            Penghidupan Tahan Iklim Bagi Perempuan I...
-
-                        </h4>
-                        <p class="text-body-color">
-                            Pemerintah Kansas melalui Kementerian PPN/Bappenas
-                            bersama Pemerintah Kanada melalui Global Affairs Canada
-                            berkolaborasi menciptakan penghidupan tahan iklim dan
-
-                            ketahanan pangan ...
-
-                        </p>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 cursor-pointer">
-                    <div class="
-                    p-10
-                    md:px-7
-                    xl:px-10
-                    rounded-[20px]
-                    bg-white
-                    shadow-md
-                    hover:shadow-lg
-                    mb-8
-                    ">
-                        <div class="
-                      
-                       flex
-                       items-center
-                       justify-center
-                       bg-primary
-                       rounded-2xl
-                       mb-8
-                       ">
-                            <div class="w-full flex justify-center items-center rounded">
-                                <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                                    class="rounded-md" alt="..">
-                            </div>
-                        </div>
-                        <h4 class="font-semibold text-xl text-dark mb-3 text-oren">
-                            Dukung SDGs, P4G Berikan Scale-Up Funding
-                            untuk Tiga Kemitraan Inovatif di Kansas...
-
-                        </h4>
-                        <p class="text-body-color">
-                            Boldam, kansas —- Inisiatif Kemitraan untuk Pertumbuhan Hijau
-                            dan Tujuan Global 2030 (Partnering for Green Growth and the
-                            Global Goals 2030) ...
+                            Boldam, kansas —- Partnership Initiative for Green Growth
+                             and the 2030 Global Goals (Partnering for Green Growth and the
+                             Global Goals 2030) ...
 
                         </p>
                     </div>
@@ -528,101 +523,97 @@
     <section>
         <div class="w-full mt-12 md:mt-44 flex justify-center items-center flex-col">
             <img src="/src/img/Team work_Monochromatic.png" alt="..." class="w-[200px]">
-            <p class="text-gray-400 w-[75%]  md:w-[30%] mt-3">"Setiap orang memiliki kelebihan dan kekurangan
-                masing-masing. Oleh karena itu, setiap anggota harus bekerja sama dan saling bahu-membahu untuk menutupi
-                kekurangan dengan kelebihannya." </p>
+            <p class="text-gray-400 w-[75%]  md:w-[30%] mt-3">"Everyone has strengths and weaknesses
+                each. Therefore, each member must work together and work hand in hand to cover
+                disadvantages with advantages."</p>
             <span class="text-black font-light text-center mt-2 mb-12">-Mahatma gandi-</span>
         </div>
     </section>
 
     <footer
-        class="w-full md:h-[411px] h-[700px] flex bg-footerCol md:flex-row flex-col justify-center md:items-start md:justify-start items-center mt-20">
-        <div class="md:flex md:items-end hidden  md:h-full md:p-6 ">
-            <p class="text-gray-400 text-sm">
-                &copy; 2023, All Rights Reserved
-            </p>
-        </div>
-        <div class="flex md:p-11 md:mt-4 md:ml-6 mt-6">
-            <div class="gmap_canvas"><iframe class="md:w-[350px] md:h-[250px] w-[350px] h-[250px] rounded-sm"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=kansas city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                    href="https://capcuttemplate.org/"></a></div>
-        </div>
-        <div class="md:flex-col flex-row md:p-11 md:mt-4 md:items-center md:ml-[60px]  mt-4 cursor-pointer">
-            <div class="flex md:justify-between gap-2">
-                <div class="">
-                    <img src="/src/img/call-calling.png" alt="..." class="w-9 h-9">
-                </div>
-                <div class="">
-                    <h3 class="text-gray-400 text-sm font-light">Tel</h3>
-                    <h4 class="text-white text-md">+62-456-7802</h4>
-                    <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
-                </div>
+    class="w-full md:h-[411px] h-[700px] flex bg-footerCol md:flex-row flex-col justify-center md:items-start md:justify-start items-center mt-20">
+    <div class="flex md:p-11 md:mt-4 md:ml-6 mt-6">
+        <div class="gmap_canvas"><iframe class="md:w-[350px] md:h-[250px] w-[350px] h-[250px] rounded-sm"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=kansas city&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                href="https://capcuttemplate.org/"></a></div>
+    </div>
+    <div class="md:flex-col flex-row md:p-11 md:mt-4 md:items-center md:ml-[60px]  mt-4 cursor-pointer">
+        <div class="flex md:justify-between gap-2">
+            <div class="">
+                <img src="/src/img/call-calling.png" alt="..." class="w-9 h-9">
             </div>
-            <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
-                <div class="">
-                    <img src="/src/img/Icon.png" alt="..." class="w-9 h-9">
-                </div>
-                <div class="">
-                    <h3 class="text-gray-400 text-sm font-light">Mail</h3>
-                    <h4 class="text-white text-md">kansascityGoverment@gmail.com</h4>
-                    <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
-                </div>
-            </div>
-            <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
-                <div class="">
-                    <img src="/src/img/Icon-1.png" alt="..." class="w-9 h-9">
-                </div>
-                <div class="">
-                    <h3 class="text-gray-400 text-sm font-light">Address</h3>
-                    <h4 class="text-white text-md">706 Campfire Ave.Meriden, CT 06450</h4>
-                </div>
+            <div class="">
+                <h3 class="text-gray-400 text-sm font-light">Tel</h3>
+                <h4 class="text-white text-md">+62-456-7802</h4>
+                <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
             </div>
         </div>
-        <div
-            class="md:p-11 mt-4 md:ml-26 flex flex-col md:justify-start md:items-start items-center justify-center cursor-pointer">
-            <h5 class="text-white font-semibold text-md md:text-xl">
-                Social Media
+        <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
+            <div class="text-4xl ">
+                <i class="fa-solid fa-address-book text-slate-500"></i>
+            </div>
+            <div class="">
+                <h3 class="text-gray-400 text-sm font-light">Mail</h3>
+                <h4 class="text-white text-md">kansascityGoverment@gmail.com</h4>
+                <h4 class="opacity-0">706 Campfire Ave.Meriden, CT 06450</h4>
+            </div>
+        </div>
+        <div class="flex md:justify-between md:mt-1 md:gap-2 gap-2">
+            <div class="">
+                <img src="/src/img/Icon-1.png" alt="..." class="w-9 h-9">
+            </div>
+            <div class="">
+                <h3 class="text-gray-400 text-sm font-light">Address</h3>
+                <h4 class="text-white text-md">706 Campfire Ave.Meriden, CT 06450</h4>
+            </div>
+        </div>
+    </div>
+    <div
+        class="md:p-11 mt-4 md:ml-26 flex flex-col md:justify-start md:items-start items-center justify-center cursor-pointer">
+        <h5 class="text-white font-semibold text-md md:text-xl">
+            Social Media
+        </h5>
+        <p class="md:w-[70%] text-gray-400 text-sm mt-1 md:mt-2">
+            Follow our social media to get the latest news and events for sure
+        </p>
+        <div class="flex gap-3 md:mt-0 mt-5">
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-blue-900 hover:transition-colors">
+                <i class="fa-brands fa-github text-white"></i>
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                <i class="fa-brands fa-linkedin text-white"></i>
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-green-900 hover:transition-colors">
+                <i class="fa-solid fa-address-book text-white"></i>
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-gray-900 hover:transition-colors">
+                <i class="fa-brands fa-facebook text-white"></i>
+            </div>
+            <div
+                class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
+                <i class="fa-brands fa-instagram text-white"></i>
+            </div>
+        </div>
+        <div class="flex md:justify-end md:mt-20 mt-4 md:w-[340px]">
+            <h5 class="text-white text-2xl">
+                <span class="text-3xl">K</span>ansas City
             </h5>
-            <p class="md:w-[70%] text-gray-400 text-sm mt-1 md:mt-2">
-                Follow our social media to get the latest news and events for sure
-            </p>
-            <div class="flex gap-3 md:mt-0 mt-5">
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-blue-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4 ">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons-1.png" alt=".." class="w-4 h-4">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-green-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons.png" alt=".." class="w-4 h-4">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-gray-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons-3.png" alt=".." class="w-4 h-4">
-                </div>
-                <div
-                    class="md:mt-9 bg-footerImgCol w-12 p-4 rounded-full justify-center items-center cursor-pointer hover:animate-bounce hover:bg-red-900 hover:transition-colors">
-                    <img src="/src/img/Social_Icons-3.png" alt=".." class="w-5 h-4">
-                </div>
-            </div>
-            <div class="flex md:justify-end md:mt-20 mt-4 md:w-[340px]">
-                <h5 class="text-white text-2xl">
-                    <span class="text-3xl">K</span>ansas City
-                </h5>
-                <img src="/src//img/city-removebg-preview.png" alt="..." class="w-7 h-7">
-            </div>
+            <img src="/src//img/city-removebg-preview.png" alt="..." class="w-7 h-7">
         </div>
-        <div class="md:hidden flex justify-end items-end h-screen">
-            <p class="text-gray-400 text-sm">
-                &copy; 2023, All Rights Reserved
-            </p>
-        </div>
+    </div>
+    <div class="md:hidden flex justify-end items-end h-screen">
+        <p class="text-gray-400 text-sm">
+            &copy; 2023, All Rights Reserved
+        </p>
+    </div>
 
-    </footer>
+</footer>
+
 </body>
 
 </html>

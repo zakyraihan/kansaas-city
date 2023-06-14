@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="icon" type="image/x-icon" href="/src/img/city_86340.png">
-    <link rel="stylesheet" href="/src/css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
+    <script src="https://kit.fontawesome.com/903f15c174.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -44,9 +49,10 @@
             </ul>
         </nav>
     </header>
+    <marquee behavior="" direction="">Bagi anda yang sudah mendapatkan akun Gov, Silahkan Login ke Website kami </marquee>
     <div class="flex md:justify-between md:flex-row-reverse max-h-screen  flex-col ">
-        <div
-            class=" bg-login2 md:w-2/4 w-full min-h-screen bg-cover relative flex justify-center items-center flex-col">
+        <div class="md:w-[60%] w-full  min-h-screen  relative flex justify-center items-center flex-col">
+            <img src="/src/img/group 84.png" alt="" class="">
             <!-- <div class="md:text-start text-center">
                 <h1 class="text-4xl text-putih font-semibold absolute right-[20rem] top-[10rem]">
                     Explore the World of
@@ -56,19 +62,18 @@
                 <h2 class="text-2xl font-poppins my-10 text-putih absolute right-[17.5rem] bottom-[22rem]">discover the thousand of culture and nature</h2>
             </div> -->
         </div>
-        <div class="md:w-2/4 h-screen bg-white flex justify-center items-center w-full">
+        <div class="md:w-2/4 h-screen bg-white flex justify-center items-center w-full ">
             <main class="w-4/6">
-                <form action="/" id="form">
+                <form action="../public/home.html" method="GET">
                     <div class="text-center my-10">
                         <h1 class="text-2xl font-poppins text-slate-600">Login</h1>
                     </div>
 
                     <div class="mb-3">
                         <label for="" class="font-poppins text-[#1F1F1F]">Name*</label>
-                        <input type="name" id="nama"
+                        <input type="name" id="username"
                             class=" px-4 py-4 bg-slate-100 rounded-md border shadow-md w-full hover:border-clrfigma"
                             placeholder="">
-                        <p id="error" class="text-red-500"></p>
                     </div>
 
                     <div class="mb-3">
@@ -76,14 +81,36 @@
                         <input type="password" id="password"
                             class=" mt-4 px-4 bg-slate-100 py-4 rounded-md border shadow-md w-full hover:border-clrfigma"
                             placeholder="">
-                        <p id="error" class="text-red-500"></p>
+                        <div class="relative">
+                            <i class="fas fa-eye absolute right-[1rem] text-2xl text-slate-500 top-[-45px] md:right-[1rem] md:top-[-45px] cursor-pointer"
+                                id="eye"></i>
+                            <i class="fas fa-eye-slash absolute right-[1rem] text-slate-500 text-2xl top-[-45px] md:right-[1rem] md:top-[-45px] hidden cursor-pointer"
+                                id="eyehidden"></i>
+                        </div>
                     </div>
 
+                    <p id="errorMessage" class="text-red-500"></p>
+
                     <button id="btn"
-                        class="border-2 border-orange flex items-center justify-center mx-auto my-10 w-full p-3 rounded-lg font-medium text-xl text-white bg-orange hover:bg-transparent hover:text-orange transition">
+                        class="border-2 hover:border-orange-50 bg-orange-500 flex items-center justify-center mx-auto my-10 w-full p-3 rounded-lg font-medium text-xl text-white bg-orange hover:bg-transparent hover:text-orange-500 transition">
                         Login
                     </button>
 
+                    <div class="flex gap-10 justify-center">
+                        <div class="flex border items-center cursor-pointer p-3 rounded-lg gap-3">
+                            <i class="fa-brands fa-apple text-3xl"></i>
+                            <p class="font-medium text-2xl">Apple</p>
+                        </div>
+
+                        <div class="border-l-2"></div>
+
+                        <div class="flex border items-center cursor-pointer p-3 rounded-lg gap-3">
+                            <i class="fa-brands fa-google text-red-500 text-3xl"></i>
+                            <p class="font-medium text-xl">Google</p>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-400 mt-20">*Akun Gov didapatkan jika anda tinggal di Kota Tersebut!!!!</p>
                     <!-- <p class="text-[#686868] text-center mt-20">already have an account? <a href=""
                 class="text-item font-semibold">Login</a></p> -->
         </div>
@@ -98,67 +125,47 @@
 
     <script src="https://cdn.lordicon.com/bhenfmcm.js%22%3E"></script>
     <script>
-        const form = document.getElementById('form');
-        const nama = document.getElementById('nama');
-        const password = document.getElementById('password')
+        const username = document.getElementById("username");
+        const password = document.getElementById("password");
+        const form = document.querySelector("form");
+        const errorMessage = document.getElementById("errorMessage");
+        const input = document.querySelector('input')
+        const eye = document.getElementById('eye')
+        const eyeHidden = document.getElementById('eyehidden')
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-
-            validateInputs();
+        eye.addEventListener('click', function () {
+            eye.classList.add('hidden')
+            eyeHidden.classList.remove('hidden')
+            eyeHidden.classList.remove('flex')
+            if (password.type === 'password') {
+                password.type = 'text'
+            }
+        })
+        eyeHidden.addEventListener('click', function () {
+            eyeHidden.classList.add('hidden')
+            eye.classList.remove('hidden')
+            eye.classList.remove('flex')
+            if (password.type === 'text') {
+                password.type = 'password'
+            }
         })
 
-        const setError = (element, message) => {
-            const inputControl = element.parentElement;
-            const errorDisplay = inputControl.querySelector('#error')
-            const border = document.getElementById('nama');
+        form.addEventListener("submit", (e) => {
+            const errors = [];
 
-            border.classList.add('border')
-            border.classList.add('border-red-500')
-            errorDisplay.innerText = message;
-            inputControl.classList.add('error');
-            inputControl.classList.remove('succes');
-        }
-
-        const setSucces = element => {
-            const inputControl = element.parentElement;
-            const errorDisplay = inputControl.querySelector('#error');
-            const border = document.getElementById('nama');
-
-            border.classList.add('border')
-            border.classList.add('border-green-500')
-            errorDisplay.innerText = '';
-            inputControl.classList.add('succes');
-            inputControl.classList.remove('error');
-        };
-
-
-        const validateInputs = () => {
-            const usernameValue = nama.value.trim();
-            const passwordValue = password.value.trim();
-
-            if (usernameValue === '') {
-                setError(nama, 'username is required');
-            } else {
-                setSucces(nama)
+            if (username.value.trim() === "") {
+                errors.push("Please Enter Username")
             }
 
-            if (passwordValue == '') {
-                setError(password, 'password is required');
-            } else {
-                setSucces(password);
-                password.true
+            if (password.value.length < 4) {
+                errors.push("Minimum Password must be 4 characters")
             }
-
-        }
-
-        if (nama && password) {
-            document.getElementById('btn').addEventListener('click', function () {
-                window.location.href = 'http://127.0.0.1:5500/public/home.html';
-                console.log('berhasil')
-            })
-        } 
-
+            if (errors.length > 0) {
+                e.preventDefault();
+                errorMessage.toggleAttribute('hidden');
+                errorMessage.innerHTML = errors.join(', ');
+            }
+        })
 
 
     </script>

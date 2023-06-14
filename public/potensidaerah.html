@@ -30,292 +30,291 @@
   Tailwind Play Link: https://play.tailwindcss.com/WE5RGyQ61x
  -->
 
- <header class=" w-full z-50 " id="header">
-    <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
-        <div class="flex justify-between items-center">
-            <div class="text-2xl font-medium cursor-pointer ">
-                <a href="http://127.0.0.1:5500/public/home.html"><span class="dark:text-putih font-poppins">Kansaas</span><span class="dark:text-white"></span></a>
-                <img class="h-[50px]  w-[50px] inline" src="/src/img/city-removebg-preview.png">
+    <header class=" w-full z-50 " id="header">
+        <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-medium cursor-pointer ">
+                    <a href="http://127.0.0.1:5500/public/home.html"><span
+                            class="dark:text-putih font-poppins">Kansas</span><span class="dark:text-white"></span></a>
+                    <img class="h-[50px]  w-[50px] inline" src="/src/img/city-removebg-preview.png">
+                </div>
+                <span class="text-3xl  cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)" class="dark:text-putih"></ion-icon>
+                </span>
             </div>
-            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-            </span>
-        </div>
-        <ul
-            class="md:flex md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
-            <li class="text-orange dark:text-biru font-medium "><a href="http://127.0.0.1:5500/public/home.html#">Beranda</a></li>
+            <ul
+                class="md:flex dark:text-putih  md:items-center z-50 md:z-auto md:static absolute md:bg-transparent bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-8">
 
-            
-            <li class="hidden md:flex">
-                <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                    class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profil
-                    <i
-                        class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
-                <div
-                    class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-36  md:absolute md:top-[3.5rem] md:right-[38rem] mt-2 lg:peer-hover:flex hover:flex">
-                    <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/visimisi.html"
-                                class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" 
-                                onclick="visimisi()">Visi
-                                & misi</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/sejarah.html"
-                                class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
-                                onclick="sejarah()">Sejarah</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/geografis.html"
-                                class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
-                                onclick="geografis()">Geografis</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="flex flex-col md:hidden">
-                <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                    class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                    onclick="dorpDown()">Profil<i class="fas fa-thin fa-chevron-down px-2 text-lg"
-                        id="down"></i></a>
-                <div id="dropdown"
-                    class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
-                    <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/visimisi.html"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Visi
-                                & misi</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/sejarah.html"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Sejarah</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/geografis.html"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Geografis</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="hidden md:flex">
-                <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                    class="text-slate-700 dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center h-9">Informasi<i
-                        class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
-                <div
-                    class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-48 h-36 rounded-lg  md:absolute md:top-[3.5rem] md:right-[28rem] mt-2 lg:peer-hover:flex hover:flex">
-                    <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/berandaberita.html"
-                                class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Berita</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/agenda.html"
-                                class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Agenda</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/gallery.html"
-                                class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition" >Galeri</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="flex flex-col md:hidden">
-                <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                    class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                    onclick="dorpDown1()">Informasi<i class="fas fa-thin fa-chevron-down px-2 text-lg"
-                        id="down1"></i></a>
-                <div id="dropdown2"
-                    class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
-                    <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/berandaberita.html"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >Berita</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/agenda.html"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" >Agenda</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/gallery.html"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Galeri</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
 
-            <li class="hidden md:flex">
-                <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                    class="text-slate-700 peer dark:text-putih focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Pemerintahan
-                    <i
-                        class="fas fa-thin fa-chevron-down hover:translate-y-1 group-hover:translate-y-1 group-hover:text-orange transition px-2 text-lg"></i></a>
-                <div
-                    class="z-10 hidden bg-white border-t-2  border-orange divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[16.5rem] mt-2 lg:peer-hover:flex hover:flex">
-                    <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/informasi.html"
-                                class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition ">Profile
-                                Pemimpin</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/informasi.html"
-                                class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">DPRD</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/informasi.html"
-                                class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">SKPD</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/informasi.html"
-                                class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Pemerintahan</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="flex flex-col md:hidden">
-                <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
-                    class="text-black focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                    onclick="dorpDown2()">Pemerintah<i class="fas fa-thin fa-chevron-down px-2 text-lg"
-                        id="down2"></i></a>
-                <div id="dropdown3"
-                    class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
-                    <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/informasi.html"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/informasi.html"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:5500/public/informasi.html"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings1</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                                out</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
+                <li class="hidden md:flex">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md text-slate-700 px-4 py-2.5 text-center inline-flex items-center h-9">Profile
+                        <i
+                            class="fas fa-thin dark: fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
+                    <div
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 rounded-lg  shadow-lg w-48 h-36  md:absolute md:top-[3.5rem] md:right-[38rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#visimisi"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Visi
+                                    & misi</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/sejarah.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
+                                    onclick="sejarah()">Historical</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/geografis.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition"
+                                    onclick="geografis()">Geografis</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col md:hidden dark:bg-item">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        onclick="dorpDown()">Profil<i class="fas fa-thin fa-chevron-down px-2 text-lg"
+                            id="down"></i></a>
+                    <div id="dropdown"
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/visimisi.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Visi
+                                    & misi</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/sejarah.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Historical</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/geografis.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:text-putih dark:hover:bg-gray-600 dark:hover:text-white hover:text-orange transition">Geografis</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hidden md:flex">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-slate-700 dark:text-putih peer focus:outline-none group font-medium rounded-lg text-md px-4 py-2.5 text-center inline-flex items-center h-9">Informasi<i
+                            class="fas fa-thin fa-chevron-down px-2 group-hover:translate-y-1 group-hover:text-orange transition text-lg"></i></a>
+                    <div
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-48 h-36 rounded-lg  md:absolute md:top-[3.5rem] md:right-[28rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="#berita"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">news</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/agenda.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Agenda</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/gallery.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Galeri</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col md:hidden dark:bg-item">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        onclick="dorpDown1()">Informasi<i class="fas fa-thin fa-chevron-down px-2 text-lg"
+                            id="down1"></i></a>
+                    <div id="dropdown2"
+                        class="z-10 hidden dark:bg-item dark:text-putih bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/berandaberita.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Berita</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/agenda.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Agenda</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/gallery.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-putih dark:hover:text-white">Galeri</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
-            <div class=" flex justify-center items-center">
-                <div x-data="{ open: false }" class=" flex justify-center items-center">
-                    <div @click="open = !open" class="relative "
-                        :class="{' transform transition duration-300 ': open}"
-                        x-transition:enter-end="transform opacity-100 scale-100"
-                        x-transition:leave="transition ease-in duration-75"
-                        x-transition:leave-start="transform opacity-100 scale-100">
-                        <div class="flex justify-center items-center gap-2 space-x-3 cursor-pointer">
-                            <div class="w-12 h-12 rounded-full overflow-hidden ">
-                                <img src="https://images.unsplash.com/photo-1610397095767-84a5b4736cbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-                                    alt="" class="w-full h-full object-cover">
-                            </div>
-                            <div class="text-slate-500 text-lg ">
-                                <div class="cursor-pointer dark:text-putih">Hi, Human</div>
-                            </div>
-                        </div>
+                <li class="hidden md:flex">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-slate-700 dark:text-putih peer  focus:outline-none font-medium rounded-lg group text-md px-4 py-2.5 text-center inline-flex items-center h-9">Government
+                        <i
+                            class="fas fa-thin fa-chevron-down hover:translate-y-1 group-hover:translate-y-1 group-hover:text-orange transition px-2 text-lg"></i></a>
+                    <div
+                        class="z-10 hidden bg-white border-t-2  border-orange divide-y divide-gray-100 shadow-lg w-48 h-48 rounded-lg  md:absolute md:top-[3.5rem] md:right-[16.5rem] mt-2 lg:peer-hover:flex hover:flex">
+                        <ul class="py-2 text-sm text-black w-full" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition ">Profile
+                                    Leader</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">DPRD</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">SKPD</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
+                                    class="text-lg font-poppins block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-400 dark:hover:text-white hover:text-orange transition">Government</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col md:hidden dark:bg-item">
+                    <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"
+                        class="text-black dark:text-putih focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                        onclick="dorpDown2()">Government<i class="fas fa-thin fa-chevron-down px-2 text-lg"
+                            id="down2"></i></a>
+                    <div id="dropdown3"
+                        class="z-10 hidden bg-white border-t-2 border-orange divide-y divide-gray-100 shadow-lg w-44 mt-3 md:absolute md:top-[4rem] md:right-[28rem] ">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:5500/public/informasi.html"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings1</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
-                        <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                            x-transition:enter-start="transform opacity-0 scale-95"
+                <div class=" flex   items-center">
+                    <div x-data="{ open: false }" class=" flex justify-center items-center">
+                        <div @click="open = !open" class="relative "
+                            :class="{' transform transition duration-300 ': open}"
                             x-transition:enter-end="transform opacity-100 scale-100"
                             x-transition:leave="transition ease-in duration-75"
-                            x-transition:leave-start="transform opacity-100 scale-100"
-                            x-transition:leave-end="transform opacity-0 scale-95"
-                            class="absolute w-[12.5rem] px-5 py-3 dark:bg-gray-800 bg-white rounded-lg shadow border dark:border-transparent mt-5">
-                            <ul class="space-y-3 dark:text-white">
-                                <li class="font-medium">
-                                    <a href="#"
-                                        class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-indigo-700">
-                                        <div class="mr-3">
-                                            <svg class="w-6 h-6" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        Account
-                                    </a>
-                                </li>
-                                <li class="font-medium">
-                                    <a href="#"
-                                        class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-indigo-700">
-                                        <div class="mr-3">
-                                            <svg class="w-6 h-6" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
-                                                </path>
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                            </svg>
-                                        </div>
-                                        Setting
-                                    </a>
-                                </li>
-                                <hr class="dark:border-gray-700">
-                                <li class="font-medium">
-                                    <a href="#"
-                                        class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-red-600">
-                                        <div class="mr-3 text-red-600">
-                                            <svg class="w-6 h-6" fill="none" stroke="currentColor"
-                                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    stroke-width="2"
-                                                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        Logout
-                                    </a>
-                                </li>
-                            </ul>
+                            x-transition:leave-start="transform opacity-100 scale-100">
+                            <div class="flex justify-center items-center gap-2 space-x-3 cursor-pointer">
+                                <div class="w-12 h-12 rounded-full overflow-hidden ">
+                                    <img src="https://images.unsplash.com/photo-1610397095767-84a5b4736cbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                                        alt="" class="w-full h-full object-cover">
+                                </div>
+                                <div class=" text-lg ">
+                                    <div class="cursor-pointer text-slate-400 dark:text-slate-500">Hi, Human</div>
+                                </div>
+                            </div>
+
+                            <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                                x-transition:enter-start="transform opacity-0 scale-95"
+                                x-transition:enter-end="transform opacity-100 scale-100"
+                                x-transition:leave="transition ease-in duration-75"
+                                x-transition:leave-start="transform opacity-100 scale-100"
+                                x-transition:leave-end="transform opacity-0 scale-95"
+                                class="absolute w-[12.5rem] px-5 py-3 dark:bg-gray-800 bg-white rounded-lg shadow border dark:border-transparent mt-5">
+                                <ul class="space-y-3 dark:text-white">
+                                    <li class="font-medium">
+                                        <a href="#"
+                                            class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-indigo-700">
+                                            <div class="mr-3">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            Account
+                                        </a>
+                                    </li>
+                                    <li class="font-medium">
+                                        <a href="#"
+                                            class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-indigo-700">
+                                            <div class="mr-3">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                                                    </path>
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                                </svg>
+                                            </div>
+                                            Setting
+                                        </a>
+                                    </li>
+                                    <hr class="dark:border-gray-700">
+                                    <li class="font-medium">
+                                        <a href="#"
+                                            class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-red-600">
+                                            <div class="mr-3 text-red-600">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
+                </div>
 
-            <div id="theme-toggle" type="button"
-                class="text-gray-500  cursor-pointer dark:text-gray-100  text-sm p-2.5">
-                <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-                <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                        fill-rule="evenodd" clip-rule="evenodd"></path>
-                </svg>
+                <div id="theme-toggle" type="button"
+                    class="text-gray-500  cursor-pointer dark:text-putih  text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
 
-            </div>
-        </ul>
-    </nav>
-</header>
+                </div>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section id="slider">
 
             <div class="w-screen h-[500px] mt-32 px-10 md:px-32 flex justify-between gap-2 flex-col md:flex-row">
                 <div class="w-full md:w-3/5 h-[600px] order-2 md:order-1">
 
-                    <h3 class="text-6xl font-semibold text-gray-800 md:w-[70%]">
-                        Potensi <span class="text-oren">Daerah</span>
-                        <span class="text-oren"> Kota </span> Kansas
+                    <h3 class="text-6xl font-semibold text-gray-800 md:w-[80%]">
+                        Kansas <span class="text-oren">City</span>
+                        <span class="text-oren"> Regional </span> Potential
 
                     </h3>
                     <p class="w-full text-md md:w-[73%] text-xl text-gray-400 mt-6">
-                        Disini Kami menjelaskan tentang potensi-potensi daerah kota kansas baik di bagian pariwisata,
-                        pertanian. dll
+                        Here we explain about the regional potentials of the city of Kansas both in the tourism and
+                        agriculture sectors.
                     </p>
                     </p>
                     <button
                         class="py-3 px-8 bg-oren hover:bg-white text-yellow-50 hover:text-oren hover:ring hover:ring-oren transition duration-300 mt-6 rounded-full">
-                        Tentang Potensi Daerah
+                        About Regional Potential
                     </button>
                 </div>
                 <div class="w-full md:w-2/5 h-[600px] order-1 md:order-2">
@@ -333,22 +332,21 @@
                                 class="w-full object-cover object-right-top h-[550px]" alt=".." />
                         </div>
                         <div class="p-10">
-                            <h3 class="text-3xl  font-bold text-black">Potensi Daerah Kota Kansas</h3>
-                            <p class="mt-2 text-slate-500">Kota kansas memiliki banyak sekali potensi daerah potensi
-                                daerah kota kansas dikembangkan secara tepat oleh para walikota sehingga memiliki hasil
-                                yang bagus.</p>
-                            <a href="" class="mt-2 inline-flex text-oren">Lebih lanjut →</a>
+                            <h3 class="text-3xl  font-bold text-black">Kansas City Regional Potential</h3>
+                            <p class="mt-2 text-slate-500">Kansas City has a lot of regional potential, the potential of
+                                the Kansas City area was developed appropriately by the mayors so that it has good
+                                results.</p>
+                            <a href="" class="mt-2 inline-flex text-oren">Furthermore →</a>
                         </div>
                     </div>
                     <div class="flex rounded-md border border-slate-200">
                         <div class="flex-1 p-10">
                             <h3 class="text-xl font-medium text-gray-700">Bagaimana kota kansas mengembagkan potensi
                                 daerahnya?</h3>
-                            <p class="mt-2 text-slate-500">Menurut para peneliti di kota kami, kota kami meimiliki
-                                potensi daeerah terbesar diantara kota - kota tetangga kami karena memiliki potensi yang
-                                besar bagaimana cara kansas mengelola potensinya? klik tombol di bawah untuk lebih
-                                lanjut.</p>
-                            <a href="" class="mt-2 inline-flex text-oren">Lebih lanjut →</a>
+                            <p class="mt-2 text-slate-500">According to researchers in our city, our city has the
+                                greatest regional potential among our neighboring cities because it has great potential.
+                                How does Kansas manage its potential? click the button below for more.</p>
+                            <a href="" class="mt-2 inline-flex text-oren">Furthermore →</a>
                         </div>
 
                         <div class="relative hidden h-full w-1/3 overflow-hidden lg:block">
@@ -360,12 +358,14 @@
                     </div>
                     <div class="flex rounded-md border border-slate-200">
                         <div class="flex-1 p-10">
-                            <h3 class="text-xl font-medium text-gray-700">Mengapa potensi daerah kota kami menjadi yang
-                                terbaik?</h3>
-                            <p class="mt-2 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Esse, voluptate earum magnam quisquam aperiam incidunt praesentium, odio facere ad qui,
-                                nesciunt tempora at quos perferendis dolorem assumenda dolor. Voluptatem, nam?.</p>
-                            <a href="" class="mt-2 inline-flex text-oren">Lebih lanjut →</a>
+                            <h3 class="text-xl font-medium text-gray-700">Why is the potential of our city area the
+                                best?</h3>
+                            <p class="mt-2 text-slate-500">Based on the description above, it can be defined that
+                                regional potential is everything that is owned (Natural Resources and Human Resources)
+                                of a region, both those that have been mobilized and those that have not been mobilized,
+                                which can support efforts to improve the welfare of the population in the area concerned
+                                and</p>
+                            <a href="" class="mt-2 inline-flex text-oren">Furthermore →</a>
                         </div>
 
                         <div class="relative hidden h-full w-1/3 overflow-hidden lg:block">
@@ -382,7 +382,7 @@
         <section class="bg-[#F3F4F6] pt-20 pb-10 lg:pt-[120px] lg:pb-20">
             <div class="w-full flex justify-center mb-20">
                 <h4 class="text-3xl font-bold">
-                    Potensi daerah kota <span class="text-oren">Kansas</span>
+                    Potential area of <span class="text-oren">Kansas City</span>
                 </h4>
             </div>
             <div class="container mx-auto">
@@ -396,18 +396,17 @@
                                 <h3>
                                     <a
                                         class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        Perkebunan
+                                        Plantation
                                     </a>
                                 </h3>
                                 <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Produksi tanaman perkebunan pada tahun 2022 didominasi oleh kakao yang produksinya
-                                    mencapai 943,99 ton pada areal seluas 1.515,29 hektar. Selain kakao, di Palopo juga
-                                    menghasilkan tanaman kopi dan kelapa dengan produksi masingmasing 19,21 dan 15,33
-                                    ton.
+                                    Plantation crop production in 2022 will be dominated by cocoa, which will produce
+                                    943.99 tons in an area of 1,515.29 hectares. Apart from cocoa, Palopo also produces
+                                    coffee and coconut plants with a production of 19.21 and 15.33 tonnes respectively.
                                 </p>
                                 <a
                                     class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
+                                    See details
                                 </a>
                             </div>
                         </div>
@@ -415,23 +414,23 @@
                     <div class="w-full px-4 md:w-1/2 xl:w-1/3">
                         <div class="mb-10 overflow-hidden rounded-lg bg-white">
                             <img src="https://images.unsplash.com/photo-1611501355758-0d8b8208e1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                                alt="image" class="w-full" />
+                                alt="image" class="w-full h-[21rem]" />
                             <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
                                 <h3>
                                     <a
                                         class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        Pertanian
+                                        Agriculture
                                     </a>
                                 </h3>
                                 <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Kota Palopo dengan luas 24.762 Ha terdiri dari 11.297 Ha (45,62 persen) lahan
-                                    pertanian dan 13.475 Ha lahan bukan pertanian (54,38 persen). Lahan pertanian di
-                                    Kota Palopo pada tahun 2022 mencakup 1.676,25 Ha lahan sawah dan 9.620,75 Ha lahan
-                                    bukan sawah.
+                                    Kansas City with an area of 24,762 hectares consists of 11,297 hectares (45.62
+                                    percent) of agricultural land and 13,475 hectares of non-agricultural land (54.38
+                                    percent). Agricultural land in Palopo City in 2022 covers 1,676.25 Ha of paddy
+                                    fields and 9,620.75 Ha of non-paddy fields.
                                 </p>
                                 <a
                                     class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
+                                    See details
                                 </a>
                             </div>
                         </div>
@@ -439,23 +438,23 @@
                     <div class="w-full px-4 md:w-1/2 xl:w-1/3">
                         <div class="mb-10 overflow-hidden rounded-lg bg-white">
                             <img src="https://images.unsplash.com/photo-1621949072684-aa1b5bfe6a11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBldGVybmFrYW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
+                                alt="image" class="w-full h-[21rem]" />
                             <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
                                 <h3>
                                     <a
                                         class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        peternakan
+                                        farm
                                     </a>
                                 </h3>
                                 <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Populasi ternak di Kota Palopo didominasi oleh kambing yang jumlahnya mencapai 1.730
-                                    ekor, dimana jumlah kambing terbanyak berada di Kecamatan Wara Selatan sebanyak 529
-                                    ekor. Populasi unggas terbanyak adalah ayam pedaging yang berjumlah 2.026.960 ekor
-                                    di tahun 2022.
+                                    Kansas City with an area of 24,762 hectares consists of 11,297 hectares (45.62
+                                    percent) of agricultural land and 13,475 hectares of non-agricultural land (54.38
+                                    percent). Agricultural land in Palopo City in 2022 covers 1,676.25 Ha of paddy
+                                    fields and 9,620.75 Ha of non-paddy fields.
                                 </p>
                                 <a
                                     class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
+                                    See details
                                 </a>
                             </div>
                         </div>
@@ -467,21 +466,22 @@
                     <div class="w-full px-4 md:w-1/2 xl:w-1/3">
                         <div class="mb-10 overflow-hidden rounded-lg bg-white">
                             <img src="https://images.unsplash.com/photo-1507991426709-5bbee2c6a189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmlzaCUyMG1hcmtldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
+                                alt="image" class="w-full h-[17rem]" />
                             <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
                                 <h3>
                                     <a
                                         class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        perikanan
+                                        fishery
                                     </a>
                                 </h3>
                                 <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Produksi perikanan terdiri dari perikanan tangkap di laut dengan jumlah produksi
-                                    18.254,40 ton dan perikanan budidaya 174.750,87 ton.
+                                    Fishery production consisted of capture fisheries at sea with a total production of
+                                    18,254.40 tons and aquaculture with 174,750.87 tons. Fishery production consists of
+                                    capture fisheries at sea with a total production of 18,254.40 tons and aquaculture
                                 </p>
                                 <a
                                     class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
+                                    See details
                                 </a>
                             </div>
                         </div>
@@ -494,18 +494,18 @@
                                 <h3>
                                     <a
                                         class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        pariwisata
+                                        tourist
                                     </a>
                                 </h3>
                                 <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Saat ini sektor pariwisata merupakan salah satu sektor primadona dalam
-                                    menghasilkandevisa negara. Selain itu juga diharapkan sebagai sektor yang padat
-                                    karya yakni sektor yang banyak menyerap tenaga kerja, dan diharapkan berperan dalam
-                                    meningkatkan pendapatan masyarakat.
+                                    Currently the tourism sector is one of the prima donna sectors in Amerika
+                                    generate foreign exchange. Besides that, it is also expected to be a solid sector
+                                    work, namely a sector that absorbs a lot of labor, and is expected to play a role in
+                                    increase people's income
                                 </p>
                                 <a
                                     class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
+                                    See details
                                 </a>
                             </div>
                         </div>
@@ -518,328 +518,26 @@
                                 <h3>
                                     <a
                                         class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        pertambangan
+                                        mining
                                     </a>
                                 </h3>
                                 <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Provinsi Kalimantan Selatan merupakan daerah yang terkenal kaya akan sumber daya
-                                    alam khususnya tambang. Bahan galian tambang yang ditemukan di wilayah Kalimantan
-                                    Selatan terdiri atas bahan galian energi, bahan galian logam, maupun bahan galian
-                                    industri.
+                                    South Kalimantan Province is an area that is known to be rich in resources
+                                    nature, especially mines. Mine minerals found in the Kalimantan region
+                                    South consists of energy minerals, metal minerals, and minerals
+                                    industry.
                                 </p>
                                 <a
                                     class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
+                                    See details
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="w-full flex justify-center md:justify-end">
-                    <button id="btn-open"
-                        class="py-3 px-8 bg-oren hover:bg-white text-yellow-50 hover:text-oren hover:ring hover:ring-oren transition duration-300 mt-6 rounded-full">
-                        Lebih banyak
-                    </button>
                 </div>
             </div>
-            <div id="more" class="container mx-auto mt-12 hidden transition">
-                <div class="-mx-4 flex flex-wrap">
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1507991426709-5bbee2c6a189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmlzaCUyMG1hcmtldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        perikanan
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Produksi perikanan terdiri dari perikanan tangkap di laut dengan jumlah produksi
-                                    18.254,40 ton dan perikanan budidaya 174.750,87 ton.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1535496821524-1170ddfa6f38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHVuaXZlcnNhbCUyMHN0dWRpb3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        pariwisata
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Saat ini sektor pariwisata merupakan salah satu sektor primadona dalam
-                                    menghasilkandevisa negara. Selain itu juga diharapkan sebagai sektor yang padat
-                                    karya yakni sektor yang banyak menyerap tenaga kerja, dan diharapkan berperan dalam
-                                    meningkatkan pendapatan masyarakat.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1505833464198-4993b36cdfab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1pbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        pertambangan
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Provinsi Kalimantan Selatan merupakan daerah yang terkenal kaya akan sumber daya
-                                    alam khususnya tambang. Bahan galian tambang yang ditemukan di wilayah Kalimantan
-                                    Selatan terdiri atas bahan galian energi, bahan galian logam, maupun bahan galian
-                                    industri.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="-mx-4 flex flex-wrap">
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1507991426709-5bbee2c6a189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmlzaCUyMG1hcmtldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        perikanan
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Produksi perikanan terdiri dari perikanan tangkap di laut dengan jumlah produksi
-                                    18.254,40 ton dan perikanan budidaya 174.750,87 ton.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1535496821524-1170ddfa6f38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHVuaXZlcnNhbCUyMHN0dWRpb3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        pariwisata
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Saat ini sektor pariwisata merupakan salah satu sektor primadona dalam
-                                    menghasilkandevisa negara. Selain itu juga diharapkan sebagai sektor yang padat
-                                    karya yakni sektor yang banyak menyerap tenaga kerja, dan diharapkan berperan dalam
-                                    meningkatkan pendapatan masyarakat.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1505833464198-4993b36cdfab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1pbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        pertambangan
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Provinsi Kalimantan Selatan merupakan daerah yang terkenal kaya akan sumber daya
-                                    alam khususnya tambang. Bahan galian tambang yang ditemukan di wilayah Kalimantan
-                                    Selatan terdiri atas bahan galian energi, bahan galian logam, maupun bahan galian
-                                    industri.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="-mx-4 flex flex-wrap">
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1507991426709-5bbee2c6a189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmlzaCUyMG1hcmtldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        perikanan
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Produksi perikanan terdiri dari perikanan tangkap di laut dengan jumlah produksi
-                                    18.254,40 ton dan perikanan budidaya 174.750,87 ton.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1535496821524-1170ddfa6f38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHVuaXZlcnNhbCUyMHN0dWRpb3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        pariwisata
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Saat ini sektor pariwisata merupakan salah satu sektor primadona dalam
-                                    menghasilkandevisa negara. Selain itu juga diharapkan sebagai sektor yang padat
-                                    karya yakni sektor yang banyak menyerap tenaga kerja, dan diharapkan berperan dalam
-                                    meningkatkan pendapatan masyarakat.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1505833464198-4993b36cdfab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1pbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        pertambangan
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Provinsi Kalimantan Selatan merupakan daerah yang terkenal kaya akan sumber daya
-                                    alam khususnya tambang. Bahan galian tambang yang ditemukan di wilayah Kalimantan
-                                    Selatan terdiri atas bahan galian energi, bahan galian logam, maupun bahan galian
-                                    industri.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="-mx-4 flex flex-wrap">
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1507991426709-5bbee2c6a189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmlzaCUyMG1hcmtldHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        perikanan
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Produksi perikanan terdiri dari perikanan tangkap di laut dengan jumlah produksi
-                                    18.254,40 ton dan perikanan budidaya 174.750,87 ton.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1535496821524-1170ddfa6f38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHVuaXZlcnNhbCUyMHN0dWRpb3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        pariwisata
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Saat ini sektor pariwisata merupakan salah satu sektor primadona dalam
-                                    menghasilkandevisa negara. Selain itu juga diharapkan sebagai sektor yang padat
-                                    karya yakni sektor yang banyak menyerap tenaga kerja, dan diharapkan berperan dalam
-                                    meningkatkan pendapatan masyarakat.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-                            <img src="https://images.unsplash.com/photo-1505833464198-4993b36cdfab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1pbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="image" class="w-full" />
-                            <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-                                <h3>
-                                    <a
-                                        class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]">
-                                        pertambangan
-                                    </a>
-                                </h3>
-                                <p class="text-body-color mb-7 text-base leading-relaxed">
-                                    Provinsi Kalimantan Selatan merupakan daerah yang terkenal kaya akan sumber daya
-                                    alam khususnya tambang. Bahan galian tambang yang ditemukan di wilayah Kalimantan
-                                    Selatan terdiri atas bahan galian energi, bahan galian logam, maupun bahan galian
-                                    industri.
-                                </p>
-                                <a
-                                    class="text-black hover:border-primary hover:bg-oren inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white cursor-pointer">
-                                    liat detail
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full flex justify-center md:justify-end">
-                    <button id="less"
-                        class="py-3 px-8 bg-oren hover:bg-white text-yellow-50 hover:text-oren hover:ring hover:ring-oren transition duration-300 mt-6 rounded-full">
-                        Lebih sedikit
-                    </button>
-                </div>
-            </div>
-
-
         </section>
     </main>
 

@@ -28,6 +28,7 @@ module.exports = {
         'roboto': ['Roboto', 'sans-serif'],
         'geologica': ['Geologica', 'sans-serif'],
         'Joesefi': ['Josefin Sans', 'sans-serif'],
+        'Inter': ['Inter', 'sans-serif'],
       },
     },
   },

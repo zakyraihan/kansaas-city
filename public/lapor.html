@@ -314,12 +314,12 @@
                     </div>
                     <div class="flex-col flex ">
                         <label for="" class="text-[#1F1F1F]">Subjek</label>
-                        <input type="text" class="py-3 px-5 rounded-md border border-slate-400">
+                        <input type="text" class="py-3 px-5 rounded-md border border-slate-400" id="subjek">
                     </div>
 
                     <div class="flex-col flex mt-4">
                         <label for="" class="text-[#1F1F1F]">Keluhan</label>
-                        <textarea name="message" id="" cols="30" rows="10"
+                        <textarea name="message" id="keluhan" cols="30" rows="10" 
                             class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700  px-3 leading-8 transition-colors duration-200 ease-in-out"></textarea>
                     </div>
                     <p id="errorMessage" class="text-red-500 mt-5"></p>
@@ -425,6 +425,8 @@
     <script>
         const username = document.getElementById("username");
         const email = document.getElementById("email");
+        const subjek = document.getElementById("subjek");
+        const keluhan = document.getElementById("keluhan");
         const form = document.querySelector("form");
         const errorMessage = document.getElementById("errorMessage");
         const input = document.querySelector('input')
@@ -439,6 +441,15 @@
             if (email.value.length < 4) {
                 errors.push("Please Input User email")
             }
+
+            if (subjek.value.length < 4) {
+                errors.push("Please Input Subject")
+            }
+
+            if (keluhan.value.length < 4) {
+                errors.push("Please Input keluhan")
+            }
+
             if (errors.length > 0) {
                 e.preventDefault();
                 errorMessage.toggleAttribute('hidden');
